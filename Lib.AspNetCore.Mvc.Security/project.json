@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0-alpha1",
+  "description": "Lib.AspNetCore.Mvc.Security Class Library",
+  "authors": [ "Tomasz Pęczek" ],
+  "tags": [ "AspNetCore", "Security", "CSP", "HSTS" ],
+  "projectUrl": "https://github.com/tpeczek/Lib.AspNetCore.Mvc.Security",
+  "licenseUrl": "https://github.com/tpeczek/Lib.AspNetCore.Mvc.Security/blob/master/LICENSE.md",
+  "frameworks": {
+    "net451": { },
+    "dotnet5.4": {
+      "dependencies": {
+        "Microsoft.CSharp": "4.0.1-beta-23516",
+        "System.Collections": "4.0.11-beta-23516",
+        "System.Linq": "4.0.1-beta-23516",
+        "System.Runtime": "4.0.21-beta-23516",
+        "System.Threading": "4.0.11-beta-23516"
+      }
+    }
+  },
+  "dependencies": {
+    "Microsoft.AspNet.Mvc.Core": "6.0.0-rc1-final",
+    "Microsoft.AspNet.Mvc.ViewFeatures": "6.0.0-rc1-final"
+  }
+}
