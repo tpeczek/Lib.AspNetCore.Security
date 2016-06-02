@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.AspNet.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Lib.AspNetCore.Mvc.Security.Filters;
-using Microsoft.Extensions.WebEncoders;
 using System.IO;
 using System.Text;
 using System.Security.Cryptography;
+using System.Text.Encodings.Web;
 
 namespace Lib.AspNetCore.Mvc.Security.Rendering
 {

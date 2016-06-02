@@ -1,10 +1,7 @@
-﻿using Microsoft.AspNet.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNet.Mvc.Filters;
 using System.Text;
+using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace Lib.AspNetCore.Mvc.Security.Filters
 {
@@ -63,7 +60,7 @@ namespace Lib.AspNetCore.Mvc.Security.Filters
         /// Determines whether a request is secured (HTTPS). If it is sets the Strict-Transport-Security header. If it is not calls the HandleNonHttpsRequest method.
         /// </summary>
         /// <param name="filterContext">The filter context.</param>
-        public override void OnAuthorization(AuthorizationContext filterContext)
+        public override void OnAuthorization(AuthorizationFilterContext filterContext)
         {
             if (filterContext == null)
             {
