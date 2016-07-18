@@ -5,11 +5,11 @@ Lib.AspNetCore.Mvc.Security is a library which provides security features like C
 
 ## Getting Started
 
-Lib.AspNetCore.Mvc.Security is available on [NuGet](https://www.nuget.org/packages/Lib.AspNetCore.Mvc.Security/) (currently as prerelease).
+Lib.AspNetCore.Mvc.Security is available on [NuGet](https://www.nuget.org/packages/Lib.AspNetCore.Mvc.Security/).
 
 ```
-PM> Install-Package Lib.AspNetCore.Mvc.Security -Pre
-``
+PM>  Install-Package Lib.AspNetCore.Mvc.Security
+```
 
 ## Documentation
 
