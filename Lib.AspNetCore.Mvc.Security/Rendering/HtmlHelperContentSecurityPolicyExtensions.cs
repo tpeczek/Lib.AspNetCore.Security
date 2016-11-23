@@ -44,7 +44,7 @@ namespace Lib.AspNetCore.Mvc.Security.Rendering
                 throw new ArgumentNullException(nameof(htmlHelper));
             }
 
-            return new ContentSecurityPolicyInlineElement(htmlHelper.ViewContext, ContentSecurityPolicyInlineElement.ScriptTagName, htmlAttributes);
+            return new ContentSecurityPolicyInlineElement(htmlHelper.ViewContext, ContentSecurityPolicyHelper.ScriptTagName, htmlAttributes);
         }
 
         /// <summary>
@@ -76,7 +76,7 @@ namespace Lib.AspNetCore.Mvc.Security.Rendering
         /// <returns></returns>
         public static IDisposable BeginCspStyle(this IHtmlHelper htmlHelper, IDictionary<string, object> htmlAttributes)
         {
-            return new ContentSecurityPolicyInlineElement(htmlHelper.ViewContext, ContentSecurityPolicyInlineElement.StyleTagName, htmlAttributes);
+            return new ContentSecurityPolicyInlineElement(htmlHelper.ViewContext, ContentSecurityPolicyHelper.StyleTagName, htmlAttributes);
         }
     }
 }
