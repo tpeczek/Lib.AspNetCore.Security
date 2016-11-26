@@ -15,7 +15,7 @@ namespace Lib.AspNetCore.Mvc.Security.Rendering
         internal const string StyleTagName = "style";
         internal const string CspStyleTagName = "csp-style";
 
-        internal const string CspAttribute = "csp";
+        internal const string CspAttribute = "asp-csp";
         internal const string NonceAttribute = "nonce";
 
         private const string _sha256SourceFormat = " 'sha256-{0}'";
