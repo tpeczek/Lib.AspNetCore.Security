@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0-beta",
+  "version": "1.1.0",
   "description": "Lib.AspNetCore.Mvc.Security is a library which provides security features like Content Security Policy Level 2 and Strict Transport Security for ASP.NET Core",
   "authors": [ "Tomasz Pęczek" ],
   "copyright": "Copyright © 2016 Tomasz Pęczek",
@@ -16,12 +16,8 @@
     "xmlDoc": true
   },
   "frameworks": {
-    "net451": { },
-    "netstandard1.6": {
-      "imports": [
-        "portable-net451+win8"
-      ]
-    }
+    "net451": {},
+    "netstandard1.6": {}
   },
   "dependencies": {
     "Microsoft.AspNetCore.Mvc.Core": "1.1.0",
