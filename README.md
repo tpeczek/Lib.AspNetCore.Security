@@ -23,11 +23,6 @@ There are blog posts available describing key features of the library (some of t
 
 There is a demo project available [here](https://github.com/tpeczek/Demo.AspNetCore.ContentSecurityPolicy).
 
-## Donating
-Support this and my [other projects](https://github.com/tpeczek/) via [Gittip](https://www.gittip.com/tpeczek/).
-
-[![Support via Gittip](https://2.bp.blogspot.com/-hfTLKixXGvw/U-PmH5hGK4I/AAAAAAAAAf8/o94Go42VeZU/s1600/gittip.png)](https://www.gittip.com/tpeczek/)
-
 ## Copyright and License
 Copyright © 2016 - 2017 Tomasz Pęczek
 
