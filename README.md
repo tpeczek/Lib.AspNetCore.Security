@@ -15,9 +15,9 @@ PM>  Install-Package Lib.AspNetCore.Mvc.Security
 
 There are blog posts available describing key features of the library (some of them have been written in context of ASP.NET MVC 5 but the core idea haven't changed):
 
-- [Content Security Policy in ASP.NET MVC](http://tpeczek.blogspot.com/2015/06/content-security-policy-in-aspnet-mvc.html) (How ContentSecurityPolicyAttribute and ContentSecurityPolicyExtensions work)
-- [Content Security Policy in ASP.NET Core MVC - TagHelper](http://tpeczek.blogspot.com/2016/12/content-security-policy-in-aspnet-core.html) (How ContentSecurityPolicyTagHelper works)
-- [Strict Transport Security in ASP.NET MVC](http://tpeczek.blogspot.com/2015/07/strict-transport-security-in-aspnet-mvc.html) (How RequireHstsAttribute work)
+- [Content Security Policy in ASP.NET MVC](http://tpeczek.com/2015/06/content-security-policy-in-aspnet-mvc.html) (How ContentSecurityPolicyAttribute and ContentSecurityPolicyExtensions work)
+- [Content Security Policy in ASP.NET Core MVC - TagHelper](http://tpeczek.com/2016/12/content-security-policy-in-aspnet-core.html) (How ContentSecurityPolicyTagHelper works)
+- [Strict Transport Security in ASP.NET MVC](http://tpeczek.com/2015/07/strict-transport-security-in-aspnet-mvc.html) (How RequireHstsAttribute work)
 
 ## Demos
 
