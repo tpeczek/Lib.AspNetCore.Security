@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Lib.AspNetCore.Mvc.Security", "Lib.AspNetCore.Mvc.Security\Lib.AspNetCore.Mvc.Security.xproj", "{1198B831-93F7-45D1-A797-D4AF389E3D64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lib.AspNetCore.Mvc.Security", "Lib.AspNetCore.Mvc.Security\Lib.AspNetCore.Mvc.Security.csproj", "{1198B831-93F7-45D1-A797-D4AF389E3D64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
