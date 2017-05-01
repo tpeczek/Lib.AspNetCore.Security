@@ -71,7 +71,6 @@ namespace Lib.AspNetCore.Security.Http.Headers
         /// </summary>
         /// <param name="maxAge">The time (in seconds) that the browser should remember that this resource is only to be accessed using HTTPS.</param>
         public StrictTransportSecurityHeaderValue(uint maxAge)
-            : base()
         {
             _maxAge = maxAge;
             _includeSubDomains = false;

@@ -34,18 +34,16 @@ namespace Lib.AspNetCore.Security
         /// </summary>
         /// <param name="context">The context.</param>
         /// <returns>The task object representing the asynchronous operation.</returns>
-        public Task Invoke(HttpContext context)
+        public async Task Invoke(HttpContext context)
         {
-            Task result = Task.FromResult(true);
-
             if (!HandleNonHstsRequest(context))
             {
                 AppendResponseHeader(context, HeaderNames.StrictTransportSecurity, _policy.Hsts?.ToString());
 
-                result = _next(context);
-            }
+                await _next(context);
 
-            return result;
+                AppendResponseHeader(context, _policy.IsCspReportOnly ? HeaderNames.ContentSecurityPolicyReportOnly : HeaderNames.ContentSecurityPolicy, _policy.Csp?.ToString());
+            }
         }
 
         private void AppendResponseHeader(HttpContext context, string headerName, string headerValue)
