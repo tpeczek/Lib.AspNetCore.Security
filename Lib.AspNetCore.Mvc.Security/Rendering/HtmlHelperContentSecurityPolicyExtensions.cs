@@ -1,12 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.AspNetCore.Mvc.ViewFeatures;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
 namespace Lib.AspNetCore.Mvc.Security.Rendering
 {
     /// <summary>
-    /// Provides support for Content Security Policy Level 2 protected elements.
+    /// Provides support for Content Security Policy protected elements.
     /// </summary>
     public static class HtmlHelperContentSecurityPolicyExtensions
     {

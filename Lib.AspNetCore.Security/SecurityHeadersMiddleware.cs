@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Lib.AspNetCore.Security.Http.Headers;
+using Lib.AspNetCore.Security.Http.Features;
 
 namespace Lib.AspNetCore.Security
 {
@@ -38,19 +39,11 @@ namespace Lib.AspNetCore.Security
         {
             if (!HandleNonHstsRequest(context))
             {
+                HandleCsp(context);
+
                 AppendResponseHeader(context, HeaderNames.StrictTransportSecurity, _policy.Hsts?.ToString());
 
                 await _next(context);
-
-                AppendResponseHeader(context, _policy.IsCspReportOnly ? HeaderNames.ContentSecurityPolicyReportOnly : HeaderNames.ContentSecurityPolicy, _policy.Csp?.ToString());
-            }
-        }
-
-        private void AppendResponseHeader(HttpContext context, string headerName, string headerValue)
-        {
-            if (!String.IsNullOrWhiteSpace(headerValue))
-            {
-                context.Response.Headers.Append(headerName, headerValue);
             }
         }
 
@@ -79,6 +72,32 @@ namespace Lib.AspNetCore.Security
             }
 
             return handleNonHstsRequest;
+        }
+
+        private void HandleCsp(HttpContext context)
+        {
+            if (_policy.Csp != null)
+            {
+                context.Features.Set<IContentSecurityPolicyInlineExecutionFeature>(new ContentSecurityPolicyInlineExecutionFeature(_policy.Csp));
+
+                context.Response.OnStarting(() => {
+                    string headerName = _policy.IsCspReportOnly ? HeaderNames.ContentSecurityPolicyReportOnly : HeaderNames.ContentSecurityPolicy;
+
+                    IContentSecurityPolicyInlineExecutionFeature cspFeature = context.Features.Get<IContentSecurityPolicyInlineExecutionFeature>();
+
+                    AppendResponseHeader(context, headerName, _policy.Csp.ToString(cspFeature?.Nonce, cspFeature?.ScriptsHashes, cspFeature?.StylesHashes));
+
+                    return Task.FromResult<object>(null);
+                });
+            }
+        }
+
+        private void AppendResponseHeader(HttpContext context, string headerName, string headerValue)
+        {
+            if (!String.IsNullOrWhiteSpace(headerValue))
+            {
+                context.Response.Headers.Append(headerName, headerValue);
+            }
         }
         #endregion
     }

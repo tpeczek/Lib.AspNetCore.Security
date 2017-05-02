@@ -2,12 +2,12 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
-using Lib.AspNetCore.Mvc.Security.Filters;
+using Lib.AspNetCore.Security.Http.Headers;
 
 namespace Lib.AspNetCore.Mvc.Security.Rendering
 {
     /// <summary>
-    /// TagHelper which provides support for Content Security Policy Level 2 protected elements.
+    /// TagHelper which provides support for Content Security Policy protected elements.
     /// </summary>
     [HtmlTargetElement(ContentSecurityPolicyHelper.CspStyleTagName)]
     [HtmlTargetElement(ContentSecurityPolicyHelper.StyleTagName, Attributes = ContentSecurityPolicyHelper.CspAttribute)]
@@ -25,7 +25,7 @@ namespace Lib.AspNetCore.Mvc.Security.Rendering
 
         #region Methods
         /// <summary>
-        /// Asynchronously processes the TagHelper/
+        /// Asynchronously processes the TagHelper.
         /// </summary>
         /// <param name="context">The context.</param>
         /// <param name="output">The output.</param>
@@ -53,17 +53,20 @@ namespace Lib.AspNetCore.Mvc.Security.Rendering
 
         private async Task ApplyContentSecurityPolicy(TagHelperOutput output)
         {
-            ContentSecurityPolicyInlineExecution currentInlineExecutionPolicy = ContentSecurityPolicyHelper.GetCurrentInlineExecutionPolicy(ViewContext, output.TagName);
+            ContentSecurityPolicyHelper cspHelper = new ContentSecurityPolicyHelper(ViewContext);
 
-            if (currentInlineExecutionPolicy == ContentSecurityPolicyInlineExecution.Nonce)
+            ContentSecurityPolicyInlineExecution currentInlineExecution = cspHelper.GetCurrentInlineExecution(output.TagName);
+
+            if (currentInlineExecution == ContentSecurityPolicyInlineExecution.Nonce)
             {
-                output.Attributes.Add(ContentSecurityPolicyHelper.NonceAttribute, ContentSecurityPolicyHelper.GetCurrentNonce(ViewContext));
+                output.Attributes.Add(ContentSecurityPolicyHelper.NonceAttribute, cspHelper.GetCurrentNonce());
             }
-            else if (currentInlineExecutionPolicy == ContentSecurityPolicyInlineExecution.Hash)
+            else if (currentInlineExecution == ContentSecurityPolicyInlineExecution.Hash)
             {
                 string content = output.Content.IsModified ? output.Content.GetContent() : (await output.GetChildContentAsync()).GetContent();
                 string contentHash = ContentSecurityPolicyHelper.ComputeHash(content);
-                ContentSecurityPolicyHelper.AddHashToInlineExecutionPolicyList(ViewContext, output.TagName, contentHash);
+
+                cspHelper.AddHashToInlineExecutionSources(output.TagName, contentHash);
             }
         }
         #endregion

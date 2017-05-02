@@ -1,41 +1,44 @@
 ﻿using System;
-using System.Collections.Generic;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Lib.AspNetCore.Mvc.Security.Filters;
 using System.IO;
 using System.Text;
-using System.Security.Cryptography;
 using System.Text.Encodings.Web;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Lib.AspNetCore.Security.Http.Headers;
 
 namespace Lib.AspNetCore.Mvc.Security.Rendering
 {
     internal class ContentSecurityPolicyInlineElement : IDisposable
     {
         #region Fields
+        private readonly TagBuilder _elementTag;
+
         private readonly ViewContext _viewContext;
         private readonly TextWriter _viewContextWriter;
-        private readonly ContentSecurityPolicyInlineExecution _currentInlineExecutionPolicy;
-        private readonly TagBuilder _elementTag;
+
+        private readonly ContentSecurityPolicyHelper _cspHelper;
+        private readonly ContentSecurityPolicyInlineExecution _currentInlineExecution;
         #endregion
 
         #region Constructor
-        internal ContentSecurityPolicyInlineElement(ViewContext context, string elementTagName, IDictionary<string, object> htmlAttributes)
+        public ContentSecurityPolicyInlineElement(ViewContext context, string elementTagName, IDictionary<string, object> htmlAttributes)
         {
             _viewContext = context;
 
-            _currentInlineExecutionPolicy = ContentSecurityPolicyHelper.GetCurrentInlineExecutionPolicy(_viewContext, elementTagName);
+            _cspHelper = new ContentSecurityPolicyHelper(_viewContext);
+            _currentInlineExecution = _cspHelper.GetCurrentInlineExecution(elementTagName);
 
             _elementTag = new TagBuilder(elementTagName);
             _elementTag.MergeAttributes(htmlAttributes);
-            if (_currentInlineExecutionPolicy == ContentSecurityPolicyInlineExecution.Nonce)
+            if (_currentInlineExecution == ContentSecurityPolicyInlineExecution.Nonce)
             {
-                _elementTag.MergeAttribute(ContentSecurityPolicyHelper.NonceAttribute, ContentSecurityPolicyHelper.GetCurrentNonce(_viewContext));
+                _elementTag.MergeAttribute(ContentSecurityPolicyHelper.NonceAttribute, _cspHelper.GetCurrentNonce());
             }
 
             _elementTag.TagRenderMode = TagRenderMode.StartTag;
             _elementTag.WriteTo(_viewContext.Writer, HtmlEncoder.Default);
 
-            if (_currentInlineExecutionPolicy == ContentSecurityPolicyInlineExecution.Hash)
+            if (_currentInlineExecution == ContentSecurityPolicyInlineExecution.Hash)
             {
                 _viewContextWriter = _viewContext.Writer;
                 _viewContext.Writer = new StringWriter();
@@ -46,13 +49,13 @@ namespace Lib.AspNetCore.Mvc.Security.Rendering
         #region IDisposable Members
         public void Dispose()
         {
-            if (_currentInlineExecutionPolicy == ContentSecurityPolicyInlineExecution.Hash)
+            if (_currentInlineExecution == ContentSecurityPolicyInlineExecution.Hash)
             {
                 StringBuilder elementInnerHtmlBuilder = ((StringWriter)_viewContext.Writer).GetStringBuilder();
                 string elementInnerHtml = elementInnerHtmlBuilder.ToString();
-
                 string elementHash = ContentSecurityPolicyHelper.ComputeHash(elementInnerHtml);
-                ContentSecurityPolicyHelper.AddHashToInlineExecutionPolicyList(_viewContext, _elementTag.TagName, elementHash);
+
+                _cspHelper.AddHashToInlineExecutionSources(_elementTag.TagName, elementHash);
 
                 _viewContext.Writer.Dispose();
                 _viewContext.Writer = _viewContextWriter;

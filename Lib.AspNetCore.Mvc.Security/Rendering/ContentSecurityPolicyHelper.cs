@@ -1,62 +1,80 @@
 ﻿using System;
 using System.Text;
-using System.Collections.Generic;
 using System.Security.Cryptography;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Lib.AspNetCore.Mvc.Security.Filters;
+using Lib.AspNetCore.Security.Http.Features;
+using Lib.AspNetCore.Security.Http.Headers;
 
 namespace Lib.AspNetCore.Mvc.Security.Rendering
 {
     internal class ContentSecurityPolicyHelper
     {
         #region Constants
-        internal const string ScriptTagName = "script";
-        internal const string CspScriptTagName = "csp-script";
-        internal const string StyleTagName = "style";
-        internal const string CspStyleTagName = "csp-style";
+        public const string ScriptTagName = "script";
+        public const string CspScriptTagName = "csp-script";
+        public const string StyleTagName = "style";
+        public const string CspStyleTagName = "csp-style";
 
-        internal const string CspAttribute = "asp-csp";
-        internal const string NonceAttribute = "nonce";
-
-        private const string _sha256SourceFormat = " 'sha256-{0}'";
+        public const string CspAttribute = "asp-csp";
+        public const string NonceAttribute = "nonce";
         #endregion
 
         #region Fields
-        private static IDictionary<string, string> _inlineExecutionContextKeys = new Dictionary<string, string>
-        {
-            { ScriptTagName, ContentSecurityPolicyAttribute.InlineExecutionContextKeys[ContentSecurityPolicyAttribute.ScriptDirective] },
-            { StyleTagName, ContentSecurityPolicyAttribute.InlineExecutionContextKeys[ContentSecurityPolicyAttribute.StyleDirective] }
-        };
+        private readonly IContentSecurityPolicyInlineExecutionFeature _cspFeature;
+        #endregion
 
-        private static IDictionary<string, string> _hashListBuilderContextKeys = new Dictionary<string, string>
+        #region Constructor
+        public ContentSecurityPolicyHelper(ViewContext viewContext)
         {
-            { ScriptTagName, ContentSecurityPolicyAttribute.HashListBuilderContextKeys[ContentSecurityPolicyAttribute.ScriptDirective] },
-            { StyleTagName, ContentSecurityPolicyAttribute.HashListBuilderContextKeys[ContentSecurityPolicyAttribute.StyleDirective] }
-        };
+            _cspFeature = viewContext.HttpContext.Features.Get<IContentSecurityPolicyInlineExecutionFeature>();
+        }
         #endregion
 
         #region Methods
-        internal static ContentSecurityPolicyInlineExecution GetCurrentInlineExecutionPolicy(ViewContext viewContext, string elementTagName)
+        public ContentSecurityPolicyInlineExecution GetCurrentInlineExecution(string elementTagName)
         {
-            return (ContentSecurityPolicyInlineExecution)viewContext.HttpContext.Items[_inlineExecutionContextKeys[elementTagName]];
+            ContentSecurityPolicyInlineExecution inlineExecution = ContentSecurityPolicyInlineExecution.Unsafe;
+
+            if (_cspFeature != null)
+            {
+                switch (elementTagName)
+                {
+                    case ScriptTagName:
+                        inlineExecution = _cspFeature.ScriptInlineExecution;
+                        break;
+                    case StyleTagName:
+                        inlineExecution = _cspFeature.StyleInlineExecution;
+                        break;
+                }
+            }
+
+            return inlineExecution;
         }
 
-        internal static string GetCurrentNonce(ViewContext viewContext)
+        public string GetCurrentNonce()
         {
-            return (string)viewContext.HttpContext.Items[ContentSecurityPolicyAttribute.NonceRandomContextKey];
+            return _cspFeature?.Nonce;
         }
 
-        internal static string ComputeHash(string elementContent)
+        public void AddHashToInlineExecutionSources(string elementTagName, string elementHash)
+        {
+            switch (elementTagName)
+            {
+                case ScriptTagName:
+                    _cspFeature.ScriptsHashes.Add(elementHash);
+                    break;
+                case StyleTagName:
+                    _cspFeature.StylesHashes.Add(elementHash);
+                    break;
+            }
+        }
+
+        public static string ComputeHash(string elementContent)
         {
             elementContent = elementContent.Replace("\r\n", "\n");
             byte[] elementHashBytes = SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(elementContent));
 
             return Convert.ToBase64String(elementHashBytes);
-        }
-
-        internal static void AddHashToInlineExecutionPolicyList(ViewContext viewContext, string elementTagName, string elementHash)
-        {
-            ((StringBuilder)viewContext.HttpContext.Items[_hashListBuilderContextKeys[elementTagName]]).AppendFormat(_sha256SourceFormat, elementHash);
         }
         #endregion
     }

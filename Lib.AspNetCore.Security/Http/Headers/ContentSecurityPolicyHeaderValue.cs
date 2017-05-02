@@ -403,31 +403,38 @@ namespace Lib.AspNetCore.Security.Http.Headers
         /// <returns>The string representation of header value.</returns>
         public override string ToString()
         {
-            return ToStringInternal(null, null, null);
+            return ToString(null, null, null);
         }
 
         /// <summary>
         /// Gets the string representation of header value.
         /// </summary>
-        /// <param name="inlineNonce">The nonce to be used for inline execution source lists.</param>
+        /// <param name="nonce">The nonce to be used for inline execution source lists.</param>
         /// <returns>The string representation of header value.</returns>
-        public string ToString(string inlineNonce)
+        public string ToString(string nonce)
         {
-            return ToStringInternal(inlineNonce, null, null);
+            return ToString(nonce, null, null);
         }
 
         /// <summary>
         /// Gets the string representation of header value.
         /// </summary>
-        /// <param name="inlineScriptsHashes">The inline scripts hashes for inline execution source list.</param>
-        /// <param name="inlineStylesHashes">The inline styles hashes for inline execution source list.</param>
+        /// <param name="scriptsHashes">The inline scripts hashes for inline execution source list.</param>
+        /// <param name="stylesHashes">The inline styles hashes for inline execution source list.</param>
         /// <returns>The string representation of header value.</returns>
-        public string ToString(IEnumerable<string> inlineScriptsHashes, IEnumerable<string> inlineStylesHashes)
+        public string ToString(IEnumerable<string> scriptsHashes, IEnumerable<string> stylesHashes)
         {
-            return ToStringInternal(null, inlineScriptsHashes, inlineStylesHashes);
+            return ToString(null, scriptsHashes, stylesHashes);
         }
 
-        private string ToStringInternal(string inlineNonce, IEnumerable<string> inlineScriptsHashes, IEnumerable<string> inlineStylesHashes)
+        /// <summary>
+        /// Gets the string representation of header value.
+        /// </summary>
+        /// <param name="nonce">The nonce to be used for inline execution source lists.</param>
+        /// <param name="scriptsHashes">The inline scripts hashes for inline execution source list.</param>
+        /// <param name="stylesHashes">The inline styles hashes for inline execution source list.</param>
+        /// <returns>The string representation of header value.</returns>
+        public string ToString(string nonce, IEnumerable<string> scriptsHashes, IEnumerable<string> stylesHashes)
         {
             string headerValue = _headerValue;
 
@@ -448,8 +455,8 @@ namespace Lib.AspNetCore.Security.Http.Headers
                 AppendHeaderValueDirective(headerValueBuilder, _objectDirectiveFormat, _objectSources);
                 AppendHeaderValueDirective(headerValueBuilder, _reportDirectiveFormat, _reportUri);
                 AppendHeaderValueSandboxDirective(headerValueBuilder);
-                AppendHeaderValueDirectiveWithInlineExecution(headerValueBuilder, _scriptDirective, _scriptSources, _scriptInlineExecution, inlineNonce, inlineScriptsHashes);
-                AppendHeaderValueDirectiveWithInlineExecution(headerValueBuilder, _styleDirective, _styleSources, _styleInlineExecution, inlineNonce, inlineStylesHashes);
+                AppendHeaderValueDirectiveWithInlineExecution(headerValueBuilder, _scriptDirective, _scriptSources, _scriptInlineExecution, nonce, scriptsHashes);
+                AppendHeaderValueDirectiveWithInlineExecution(headerValueBuilder, _styleDirective, _styleSources, _styleInlineExecution, nonce, stylesHashes);
 
                 headerValue = headerValueBuilder.ToString();
 
@@ -507,7 +514,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
             }
         }
 
-        private void AppendHeaderValueDirectiveWithInlineExecution(StringBuilder headerValueBuilder, string directiveName, string directiveValue, ContentSecurityPolicyInlineExecution inlineExecution, string inlineNonce, IEnumerable<string> inlineHashes)
+        private void AppendHeaderValueDirectiveWithInlineExecution(StringBuilder headerValueBuilder, string directiveName, string directiveValue, ContentSecurityPolicyInlineExecution inlineExecution, string nonce, IEnumerable<string> hashes)
         {
             if (!String.IsNullOrWhiteSpace(directiveValue) || (inlineExecution != ContentSecurityPolicyInlineExecution.Refuse))
             {
@@ -524,17 +531,17 @@ namespace Lib.AspNetCore.Security.Http.Headers
                         headerValueBuilder.Append(_unsafeInlineSource);
                         break;
                     case ContentSecurityPolicyInlineExecution.Nonce:
-                        if (String.IsNullOrWhiteSpace(inlineNonce))
+                        if (String.IsNullOrWhiteSpace(nonce))
                         {
                             throw new InvalidOperationException("Nonce mode for Content Security Policy inline execution requires providing nonce value.");
                         }
 
-                        headerValueBuilder.AppendFormat(_nonceSourceFormat, inlineNonce);
+                        headerValueBuilder.AppendFormat(_nonceSourceFormat, nonce);
                         break;
                     case ContentSecurityPolicyInlineExecution.Hash:
-                        if (inlineHashes != null)
+                        if (hashes != null)
                         {
-                            foreach(string inlineHash in inlineHashes)
+                            foreach(string inlineHash in hashes)
                             {
                                 headerValueBuilder.AppendFormat(_sha256SourceFormat, inlineHash);
                             }
