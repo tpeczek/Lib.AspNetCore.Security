@@ -87,6 +87,34 @@ namespace Lib.AspNetCore.Security
         }
 
         /// <summary>
+        /// Adds the Expect-CT to the policy.
+        /// </summary>
+        /// <param name="maxAge">The number of seconds after the reception of the Expect-CT header field during which the client should regard the host from whom the message was received as a Known Expect-CT Host.</param>
+        /// <param name="enforce">The value indicating if compliance to the CT Policy should be enforced.</param>
+        /// <param name="reportUri">The absolute URI to which the client should report Expect-CT failures.</param>
+        /// <returns>The current policy builder.</returns>
+        public SecurityHeadersPolicyBuilder WithExpectCt(uint maxAge = ExpectCtHeaderValue.DefauMaxAge, bool enforce = false, string reportUri = null)
+        {
+            _policy.ExpectCt = new ExpectCtHeaderValue(maxAge)
+            {
+                Enforce = enforce,
+                ReportUri = reportUri
+            };
+
+            return this;
+        }
+
+        /// <summary>
+        /// Adds the report only Expect-CT to the policy.
+        /// </summary>
+        /// <param name="reportUri">The absolute URI to which the client should report Expect-CT failures.</param>
+        /// <returns>The current policy builder.</returns>
+        public SecurityHeadersPolicyBuilder WithReportOnlyExpectCt(string reportUri)
+        {
+            return WithExpectCt(ExpectCtHeaderValue.ReportOnlyMaxAge, false, reportUri);
+        }
+
+        /// <summary>
         /// Adds the HTTP Strict Transport Security to the policy.
         /// </summary>
         /// <param name="maxAge">The time (in seconds) that the browser should remember that this resource is only to be accessed using HTTPS.</param>

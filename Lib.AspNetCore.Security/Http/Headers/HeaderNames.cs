@@ -16,6 +16,11 @@
         public const string ContentSecurityPolicyReportOnly = "Content-Security-Policy-Report-Only";
 
         /// <summary>
+        /// The Expect-CT header.
+        /// </summary>
+        public const string ExpectCt = "Expect-CT";
+
+        /// <summary>
         /// The Strict-Transport-Security header.
         /// </summary>
         public const string StrictTransportSecurity = "Strict-Transport-Security";

@@ -14,6 +14,8 @@ namespace Lib.AspNetCore.Security
         #region Fields
         private readonly RequestDelegate _next;
         private readonly SecurityHeadersPolicy _policy;
+
+        private static Task _completedTask = Task.FromResult<object>(null);
         #endregion
 
         #region Constructor
@@ -35,16 +37,25 @@ namespace Lib.AspNetCore.Security
         /// </summary>
         /// <param name="context">The context.</param>
         /// <returns>The task object representing the asynchronous operation.</returns>
-        public async Task Invoke(HttpContext context)
+        public Task Invoke(HttpContext context)
         {
+            Task result = _completedTask;
+
             if (!HandleNonHstsRequest(context))
             {
                 HandleCsp(context);
 
                 AppendResponseHeader(context, HeaderNames.StrictTransportSecurity, _policy.Hsts?.ToString());
 
-                await _next(context);
+                if (context.Request.IsHttps)
+                {
+                    AppendResponseHeader(context, HeaderNames.ExpectCt, _policy.ExpectCt?.ToString());
+                }
+
+                result = _next(context);
             }
+
+            return result;
         }
 
         private bool HandleNonHstsRequest(HttpContext context)
@@ -87,7 +98,7 @@ namespace Lib.AspNetCore.Security
 
                     AppendResponseHeader(context, headerName, _policy.Csp.ToString(cspFeature?.Nonce, cspFeature?.ScriptsHashes, cspFeature?.StylesHashes));
 
-                    return Task.FromResult<object>(null);
+                    return _completedTask;
                 });
             }
         }

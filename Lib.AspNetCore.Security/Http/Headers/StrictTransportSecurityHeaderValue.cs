@@ -9,7 +9,10 @@ namespace Lib.AspNetCore.Security.Http.Headers
     public class StrictTransportSecurityHeaderValue
     {
         #region Fields
-        private const int _minimumPreloadMaxAge = 10886400;
+        /// <summary>
+        /// The minimum value for <see cref="MaxAge"/> when <see cref="Preload"/> is set to true.
+        /// </summary>
+        public const uint MinimumPreloadMaxAge = 10886400;
 
         private const string _maxAgeDirectiveFormat = "max-age={0}";
         private const string _includeSubDomainsDirective = "; includeSubDomains";
@@ -23,7 +26,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
 
         #region Properties
         /// <summary>
-        /// Gets the time (in seconds) that the browser should remember that this resource is only to be accessed using HTTPS.
+        /// Gets or sets the time (in seconds) that the browser should remember that this resource is only to be accessed using HTTPS.
         /// </summary>
         public uint MaxAge
         {
@@ -87,7 +90,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
         {
             if (_headerValue == null)
             {
-                if (_preload && (_maxAge < _minimumPreloadMaxAge))
+                if (_preload && (_maxAge < MinimumPreloadMaxAge))
                 {
                     throw new InvalidOperationException("HSTS preload list subscription requires expiry to be at least eighteen weeks (10886400 seconds).");
                 }
