@@ -24,5 +24,10 @@
         /// The Strict-Transport-Security header.
         /// </summary>
         public const string StrictTransportSecurity = "Strict-Transport-Security";
+
+        /// <summary>
+        /// The X-Frame-Options header.
+        /// </summary>
+        public const string XFrameOptions = "X-Frame-Options";
     }
 }

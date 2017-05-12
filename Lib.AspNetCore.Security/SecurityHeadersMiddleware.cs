@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Lib.AspNetCore.Security.Http.Headers;
 using Lib.AspNetCore.Security.Http.Features;
+using Lib.AspNetCore.Security.Http.Extensions;
 
 namespace Lib.AspNetCore.Security
 {
@@ -45,11 +46,12 @@ namespace Lib.AspNetCore.Security
             {
                 HandleCsp(context);
 
-                AppendResponseHeader(context, HeaderNames.StrictTransportSecurity, _policy.Hsts?.ToString());
+                context.Response.SetStrictTransportSecurity(_policy.Hsts);
+                context.Response.SetXFrameOptions(_policy.XFrameOptions);
 
                 if (context.Request.IsHttps)
                 {
-                    AppendResponseHeader(context, HeaderNames.ExpectCt, _policy.ExpectCt?.ToString());
+                    context.Response.SetExpectCt(_policy.ExpectCt);
                 }
 
                 result = _next(context);
@@ -96,18 +98,10 @@ namespace Lib.AspNetCore.Security
 
                     IContentSecurityPolicyInlineExecutionFeature cspFeature = context.Features.Get<IContentSecurityPolicyInlineExecutionFeature>();
 
-                    AppendResponseHeader(context, headerName, _policy.Csp.ToString(cspFeature?.Nonce, cspFeature?.ScriptsHashes, cspFeature?.StylesHashes));
+                    context.Response.SetResponseHeader(headerName, _policy.Csp.ToString(cspFeature?.Nonce, cspFeature?.ScriptsHashes, cspFeature?.StylesHashes));
 
                     return _completedTask;
                 });
-            }
-        }
-
-        private void AppendResponseHeader(HttpContext context, string headerName, string headerValue)
-        {
-            if (!String.IsNullOrWhiteSpace(headerValue))
-            {
-                context.Response.Headers.Append(headerName, headerValue);
             }
         }
         #endregion

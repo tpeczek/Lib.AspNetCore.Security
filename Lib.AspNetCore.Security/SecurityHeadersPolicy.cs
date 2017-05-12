@@ -32,6 +32,11 @@ namespace Lib.AspNetCore.Security
         /// Gets or sets the SSL port used by application.
         /// </summary>
         public int? SslPort { get; set; }
+
+        /// <summary>
+        /// Gets or sets the X-Frame-Options header value.
+        /// </summary>
+        public XFrameOptionsHeaderValue XFrameOptions { get; set; }
         #endregion
     }
 }

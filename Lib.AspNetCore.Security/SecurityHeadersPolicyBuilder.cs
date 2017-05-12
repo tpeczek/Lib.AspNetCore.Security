@@ -1,4 +1,5 @@
-﻿using Lib.AspNetCore.Security.Http.Headers;
+﻿using System;
+using Lib.AspNetCore.Security.Http.Headers;
 
 namespace Lib.AspNetCore.Security
 {
@@ -135,6 +136,39 @@ namespace Lib.AspNetCore.Security
         }
 
         /// <summary>
+        /// Adds the X-Frame-Options with <see cref="XFrameOptionsDirectives.Deny"/> directive.
+        /// </summary>
+        /// <returns>The current policy builder.</returns>
+        public SecurityHeadersPolicyBuilder WithDenyXFrameOptions()
+        {
+            return WithXFrameOptions(XFrameOptionsDirectives.Deny, null);
+        }
+
+        /// <summary>
+        /// Adds the X-Frame-Options with <see cref="XFrameOptionsDirectives.SameOrigin"/> directive.
+        /// </summary>
+        /// <returns>The current policy builder.</returns>
+        public SecurityHeadersPolicyBuilder WithSameOriginXFrameOptions()
+        {
+            return WithXFrameOptions(XFrameOptionsDirectives.SameOrigin, null);
+        }
+
+        /// <summary>
+        /// Adds the X-Frame-Options with <see cref="XFrameOptionsDirectives.AllowFrom"/> directive.
+        /// </summary>
+        /// <param name="origin">The serialized origin.</param>
+        /// <returns>The current policy builder.</returns>
+        public SecurityHeadersPolicyBuilder WithAllowFromXFrameOptions(string origin)
+        {
+            if (String.IsNullOrWhiteSpace(origin))
+            {
+                throw new ArgumentNullException(nameof(origin));
+            }
+
+            return WithXFrameOptions(XFrameOptionsDirectives.AllowFrom, origin);
+        }
+
+        /// <summary>
         /// Builds a new <see cref="SecurityHeadersPolicy"/> using the settings added.
         /// </summary>
         /// <returns>The constructed <see cref="SecurityHeadersPolicy"/>.</returns>
@@ -170,6 +204,16 @@ namespace Lib.AspNetCore.Security
                 StyleInlineExecution = styleInlineExecution
             };
             _policy.IsCspReportOnly = reportOnly;
+
+            return this;
+        }
+
+        private SecurityHeadersPolicyBuilder WithXFrameOptions(XFrameOptionsDirectives directive, string origin)
+        {
+            _policy.XFrameOptions = new XFrameOptionsHeaderValue(directive)
+            {
+                Origin = origin
+            };
 
             return this;
         }
