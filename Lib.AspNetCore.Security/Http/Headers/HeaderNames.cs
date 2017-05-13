@@ -29,5 +29,10 @@
         /// The X-Frame-Options header.
         /// </summary>
         public const string XFrameOptions = "X-Frame-Options";
+
+        /// <summary>
+        /// The X-XSS-Protection header.
+        /// </summary>
+        public const string XXssProtection = "X-XSS-Protection";
     }
 }

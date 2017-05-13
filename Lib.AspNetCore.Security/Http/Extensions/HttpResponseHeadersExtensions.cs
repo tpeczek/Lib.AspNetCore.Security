@@ -40,6 +40,16 @@ namespace Lib.AspNetCore.Security.Http.Extensions
             response.SetResponseHeader(HeaderNames.XFrameOptions, xFrameOptions?.ToString());
         }
 
+        /// <summary>
+        /// Sets the X-XSS-Protection header value.
+        /// </summary>
+        /// <param name="response">The response.</param>
+        /// <param name="xXssProtection">The X-XSS-Protection header value.</param>
+        public static void SetXXssProtection(this HttpResponse response, XXssProtectionHeaderValue xXssProtection)
+        {
+            response.SetResponseHeader(HeaderNames.XXssProtection, xXssProtection?.ToString());
+        }
+
         internal static void SetResponseHeader(this HttpResponse response, string headerName, string headerValue)
         {
             if (!String.IsNullOrWhiteSpace(headerValue))

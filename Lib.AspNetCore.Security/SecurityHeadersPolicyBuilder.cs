@@ -169,6 +169,33 @@ namespace Lib.AspNetCore.Security
         }
 
         /// <summary>
+        /// Adds the X-XSS-Protection with <see cref="XssFilteringModes.None"/> mode.
+        /// </summary>
+        /// <returns>The current policy builder.</returns>
+        public SecurityHeadersPolicyBuilder WithNoneXssFiltering()
+        {
+            return WithXssFiltering(XssFilteringModes.None);
+        }
+
+        /// <summary>
+        /// Adds the X-XSS-Protection with <see cref="XssFilteringModes.Sanitize"/> mode.
+        /// </summary>
+        /// <returns>The current policy builder.</returns>
+        public SecurityHeadersPolicyBuilder WithSanitizeXssFiltering()
+        {
+            return WithXssFiltering(XssFilteringModes.Sanitize);
+        }
+
+        /// <summary>
+        /// Adds the X-XSS-Protection with <see cref="XssFilteringModes.Block"/> mode.
+        /// </summary>
+        /// <returns>The current policy builder.</returns>
+        public SecurityHeadersPolicyBuilder WithBlockXssFiltering()
+        {
+            return WithXssFiltering(XssFilteringModes.Block);
+        }
+
+        /// <summary>
         /// Builds a new <see cref="SecurityHeadersPolicy"/> using the settings added.
         /// </summary>
         /// <returns>The constructed <see cref="SecurityHeadersPolicy"/>.</returns>
@@ -214,6 +241,13 @@ namespace Lib.AspNetCore.Security
             {
                 Origin = origin
             };
+
+            return this;
+        }
+
+        private SecurityHeadersPolicyBuilder WithXssFiltering(XssFilteringModes mode)
+        {
+            _policy.XXssProtection = new XXssProtectionHeaderValue(mode);
 
             return this;
         }

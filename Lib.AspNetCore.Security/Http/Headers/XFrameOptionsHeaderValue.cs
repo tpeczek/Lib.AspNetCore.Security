@@ -117,7 +117,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
                         _headerValue = String.Format(_allowFromDirectiveFormat, _origin);
                         break;
                     default:
-                        throw new NotSupportedException($"Not support directive: {_directive}");
+                        throw new NotSupportedException($"Not supported directive: {_directive}");
                 }
             }
 

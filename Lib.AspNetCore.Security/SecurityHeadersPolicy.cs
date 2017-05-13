@@ -37,6 +37,11 @@ namespace Lib.AspNetCore.Security
         /// Gets or sets the X-Frame-Options header value.
         /// </summary>
         public XFrameOptionsHeaderValue XFrameOptions { get; set; }
+
+        /// <summary>
+        /// Gets or sets the X-XSS-Protection header value.
+        /// </summary>
+        public XXssProtectionHeaderValue XXssProtection { get; set; }
         #endregion
     }
 }

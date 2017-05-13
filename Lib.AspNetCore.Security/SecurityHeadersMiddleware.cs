@@ -48,6 +48,7 @@ namespace Lib.AspNetCore.Security
 
                 context.Response.SetStrictTransportSecurity(_policy.Hsts);
                 context.Response.SetXFrameOptions(_policy.XFrameOptions);
+                context.Response.SetXXssProtection(_policy.XXssProtection);
 
                 if (context.Request.IsHttps)
                 {
