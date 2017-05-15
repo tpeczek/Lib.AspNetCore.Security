@@ -34,6 +34,11 @@ namespace Lib.AspNetCore.Security
         public int? SslPort { get; set; }
 
         /// <summary>
+        /// Gets or sets the value indicating if X-Content-Type-Options header should be set.
+        /// </summary>
+        public bool XContentTypeOptions { get; set; }
+
+        /// <summary>
         /// Gets or sets the X-Frame-Options header value.
         /// </summary>
         public XFrameOptionsHeaderValue XFrameOptions { get; set; }

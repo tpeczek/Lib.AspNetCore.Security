@@ -46,6 +46,8 @@ namespace Lib.AspNetCore.Security
             {
                 HandleCsp(context);
 
+                HandleSingleDirectiveHeader(context.Response.SetXContentTypeOptions, _policy.XContentTypeOptions);
+
                 context.Response.SetStrictTransportSecurity(_policy.Hsts);
                 context.Response.SetXFrameOptions(_policy.XFrameOptions);
                 context.Response.SetXXssProtection(_policy.XXssProtection);
@@ -103,6 +105,14 @@ namespace Lib.AspNetCore.Security
 
                     return _completedTask;
                 });
+            }
+        }
+
+        private static void HandleSingleDirectiveHeader(Action setHeaderAction, bool shouldSetHeader)
+        {
+            if (shouldSetHeader)
+            {
+                setHeaderAction();
             }
         }
         #endregion

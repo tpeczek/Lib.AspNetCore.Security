@@ -136,6 +136,17 @@ namespace Lib.AspNetCore.Security
         }
 
         /// <summary>
+        /// Adds the X-Content-Type-Options.
+        /// </summary>
+        /// <returns>The current policy builder.</returns>
+        public SecurityHeadersPolicyBuilder WithXContentTypeOptions()
+        {
+            _policy.XContentTypeOptions = true;
+
+            return this;
+        }
+
+        /// <summary>
         /// Adds the X-Frame-Options with <see cref="XFrameOptionsDirectives.Deny"/> directive.
         /// </summary>
         /// <returns>The current policy builder.</returns>

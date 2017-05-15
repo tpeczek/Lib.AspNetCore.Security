@@ -26,6 +26,11 @@
         public const string StrictTransportSecurity = "Strict-Transport-Security";
 
         /// <summary>
+        /// The X-Content-Type-Options header.
+        /// </summary>
+        public const string XContentTypeOptions = "X-Content-Type-Options";
+
+        /// <summary>
         /// The X-Frame-Options header.
         /// </summary>
         public const string XFrameOptions = "X-Frame-Options";

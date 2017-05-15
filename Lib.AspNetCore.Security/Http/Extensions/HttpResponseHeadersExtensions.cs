@@ -9,6 +9,10 @@ namespace Lib.AspNetCore.Security.Http.Extensions
     /// </summary>
     public static class HttpResponseHeadersExtensions
     {
+        #region Fields
+        private const string _xContentTypeOptionsNoSniffDirective = "nosniff";
+        #endregion
+
         #region Methods
         /// <summary>
         /// Sets the HTTP Strict Transport Security header value.
@@ -31,6 +35,15 @@ namespace Lib.AspNetCore.Security.Http.Extensions
         }
 
         /// <summary>
+        /// Sets the X-Content-Type-Options header.
+        /// </summary>
+        /// <param name="response">The response.</param>
+        public static void SetXContentTypeOptions(this HttpResponse response)
+        {
+            response.SetResponseHeader(HeaderNames.XContentTypeOptions, _xContentTypeOptionsNoSniffDirective);
+        }
+
+        /// <summary>
         /// Sets the X-Frame-Options header value.
         /// </summary>
         /// <param name="response">The response.</param>
@@ -38,6 +51,16 @@ namespace Lib.AspNetCore.Security.Http.Extensions
         public static void SetXFrameOptions(this HttpResponse response, XFrameOptionsHeaderValue xFrameOptions)
         {
             response.SetResponseHeader(HeaderNames.XFrameOptions, xFrameOptions?.ToString());
+        }
+
+        /// <summary>
+        /// Sets the X-XSS-Protection header value.
+        /// </summary>
+        /// <param name="response">The response.</param>
+        /// <param name="filteringMode">The filtering mode.</param>
+        public static void SetXXssProtection(this HttpResponse response, XssFilteringModes filteringMode)
+        {
+            response.SetXXssProtection(new XXssProtectionHeaderValue(filteringMode));
         }
 
         /// <summary>
