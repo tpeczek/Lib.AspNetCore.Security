@@ -31,6 +31,11 @@
         public const string XContentTypeOptions = "X-Content-Type-Options";
 
         /// <summary>
+        /// The X-Download-Options header.
+        /// </summary>
+        public const string XDownloadOptions = "X-Download-Options";
+
+        /// <summary>
         /// The X-Frame-Options header.
         /// </summary>
         public const string XFrameOptions = "X-Frame-Options";

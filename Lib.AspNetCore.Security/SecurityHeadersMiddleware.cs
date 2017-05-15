@@ -47,6 +47,7 @@ namespace Lib.AspNetCore.Security
                 HandleCsp(context);
 
                 HandleSingleDirectiveHeader(context.Response.SetXContentTypeOptions, _policy.XContentTypeOptions);
+                HandleSingleDirectiveHeader(context.Response.SetXDownloadOptions, _policy.XDownloadOptions);
 
                 context.Response.SetStrictTransportSecurity(_policy.Hsts);
                 context.Response.SetXFrameOptions(_policy.XFrameOptions);

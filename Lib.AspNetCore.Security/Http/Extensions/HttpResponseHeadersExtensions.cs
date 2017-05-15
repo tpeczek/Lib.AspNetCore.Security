@@ -11,6 +11,7 @@ namespace Lib.AspNetCore.Security.Http.Extensions
     {
         #region Fields
         private const string _xContentTypeOptionsNoSniffDirective = "nosniff";
+        private const string _xXDownloadOptionsNoOpenDirective = "noopen";
         #endregion
 
         #region Methods
@@ -41,6 +42,15 @@ namespace Lib.AspNetCore.Security.Http.Extensions
         public static void SetXContentTypeOptions(this HttpResponse response)
         {
             response.SetResponseHeader(HeaderNames.XContentTypeOptions, _xContentTypeOptionsNoSniffDirective);
+        }
+
+        /// <summary>
+        /// Sets the X-Download-Options header.
+        /// </summary>
+        /// <param name="response">The response.</param>
+        public static void SetXDownloadOptions(this HttpResponse response)
+        {
+            response.SetResponseHeader(HeaderNames.XDownloadOptions, _xXDownloadOptionsNoOpenDirective);
         }
 
         /// <summary>

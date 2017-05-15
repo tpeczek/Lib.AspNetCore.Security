@@ -39,6 +39,11 @@ namespace Lib.AspNetCore.Security
         public bool XContentTypeOptions { get; set; }
 
         /// <summary>
+        /// Gets or sets the value indicating if X-Download-Options header should be set.
+        /// </summary>
+        public bool XDownloadOptions { get; set; }
+
+        /// <summary>
         /// Gets or sets the X-Frame-Options header value.
         /// </summary>
         public XFrameOptionsHeaderValue XFrameOptions { get; set; }

@@ -147,6 +147,17 @@ namespace Lib.AspNetCore.Security
         }
 
         /// <summary>
+        /// Adds the X-Download-Options.
+        /// </summary>
+        /// <returns>The current policy builder.</returns>
+        public SecurityHeadersPolicyBuilder WithXDownloadOptions()
+        {
+            _policy.XDownloadOptions = true;
+
+            return this;
+        }
+
+        /// <summary>
         /// Adds the X-Frame-Options with <see cref="XFrameOptionsDirectives.Deny"/> directive.
         /// </summary>
         /// <returns>The current policy builder.</returns>
