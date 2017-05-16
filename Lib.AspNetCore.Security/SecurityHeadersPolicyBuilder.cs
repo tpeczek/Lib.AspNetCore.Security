@@ -136,6 +136,18 @@ namespace Lib.AspNetCore.Security
         }
 
         /// <summary>
+        /// Adds the Referrer-Policy.
+        /// </summary>
+        /// <param name="directive">The directive.</param>
+        /// <returns>The current policy builder.</returns>
+        public SecurityHeadersPolicyBuilder WithReferrerPolicy(ReferrerPolicyDirectives directive)
+        {
+            _policy.ReferrerPolicy = new ReferrerPolicyHeaderValue(directive);
+
+            return this;
+        }
+
+        /// <summary>
         /// Adds the X-Content-Type-Options.
         /// </summary>
         /// <returns>The current policy builder.</returns>

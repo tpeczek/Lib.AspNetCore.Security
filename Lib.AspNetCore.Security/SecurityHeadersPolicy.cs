@@ -29,6 +29,11 @@ namespace Lib.AspNetCore.Security
         public StrictTransportSecurityHeaderValue Hsts { get; set; }
 
         /// <summary>
+        /// Gets or sets the Referrer-Policy header value.
+        /// </summary>
+        public ReferrerPolicyHeaderValue ReferrerPolicy { get; set; }
+
+        /// <summary>
         /// Gets or sets the SSL port used by application.
         /// </summary>
         public int? SslPort { get; set; }

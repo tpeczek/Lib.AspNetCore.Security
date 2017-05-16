@@ -21,6 +21,11 @@
         public const string ExpectCt = "Expect-CT";
 
         /// <summary>
+        /// The Referrer-Policy header.
+        /// </summary>
+        public const string ReferrerPolicy = "Referrer-Policy";
+
+        /// <summary>
         /// The Strict-Transport-Security header.
         /// </summary>
         public const string StrictTransportSecurity = "Strict-Transport-Security";

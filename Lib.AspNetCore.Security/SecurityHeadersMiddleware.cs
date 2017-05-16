@@ -49,6 +49,7 @@ namespace Lib.AspNetCore.Security
                 HandleSingleDirectiveHeader(context.Response.SetXContentTypeOptions, _policy.XContentTypeOptions);
                 HandleSingleDirectiveHeader(context.Response.SetXDownloadOptions, _policy.XDownloadOptions);
 
+                context.Response.SetReferrerPolicy(_policy.ReferrerPolicy);
                 context.Response.SetStrictTransportSecurity(_policy.Hsts);
                 context.Response.SetXFrameOptions(_policy.XFrameOptions);
                 context.Response.SetXXssProtection(_policy.XXssProtection);

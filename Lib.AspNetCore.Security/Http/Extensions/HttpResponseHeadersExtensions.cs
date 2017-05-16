@@ -36,6 +36,26 @@ namespace Lib.AspNetCore.Security.Http.Extensions
         }
 
         /// <summary>
+        /// Sets the Referrer-Policy header value.
+        /// </summary>
+        /// <param name="response">The response.</param>
+        /// <param name="directive">The directive.</param>
+        public static void SetReferrerPolicy(this HttpResponse response, ReferrerPolicyDirectives directive)
+        {
+            response.SetReferrerPolicy(new ReferrerPolicyHeaderValue(directive));
+        }
+
+        /// <summary>
+        /// Sets the Referrer-Policy header value.
+        /// </summary>
+        /// <param name="response">The response.</param>
+        /// <param name="referrerPolicy">The Referrer-Policy header value.</param>
+        public static void SetReferrerPolicy(this HttpResponse response, ReferrerPolicyHeaderValue referrerPolicy)
+        {
+            response.SetResponseHeader(HeaderNames.ReferrerPolicy, referrerPolicy?.ToString());
+        }
+
+        /// <summary>
         /// Sets the X-Content-Type-Options header.
         /// </summary>
         /// <param name="response">The response.</param>
