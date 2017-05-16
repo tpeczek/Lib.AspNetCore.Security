@@ -1,11 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using Lib.AspNetCore.Security.Http.Headers;
+using System.Security.Cryptography;
 
 namespace Lib.AspNetCore.Security.Http.Features
 {
     internal class ContentSecurityPolicyInlineExecutionFeature : IContentSecurityPolicyInlineExecutionFeature
     {
+        #region Fields
+        private const int _nonceLength = 128 / 8;
+        #endregion
+
         #region Properties
         public ContentSecurityPolicyInlineExecution ScriptInlineExecution { get; }
 
@@ -31,7 +36,7 @@ namespace Lib.AspNetCore.Security.Http.Features
 
             if ((ScriptInlineExecution == ContentSecurityPolicyInlineExecution.Nonce) || (StyleInlineExecution == ContentSecurityPolicyInlineExecution.Nonce))
             {
-                Nonce = Guid.NewGuid().ToString("N");
+                Nonce = GenerateNonce();
             }
 
             if (ScriptInlineExecution == ContentSecurityPolicyInlineExecution.Hash)
@@ -43,6 +48,22 @@ namespace Lib.AspNetCore.Security.Http.Features
             {
                 StylesHashes = new List<string>();
             }
+        }
+        #endregion
+
+        #region Methods
+        private static string GenerateNonce()
+        {
+            string nonce = null;
+
+            using (RandomNumberGenerator nonceGenerator = RandomNumberGenerator.Create())
+            {
+                byte[] nonceBytes = new byte[_nonceLength];
+                nonceGenerator.GetBytes(nonceBytes);
+                nonce = Convert.ToBase64String(nonceBytes);
+            }
+
+            return nonce;
         }
         #endregion
     }
