@@ -95,6 +95,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
         private const string _sandboxDirective = "sandbox";
         private const string _scriptDirective = "script-src";
         private const string _styleDirective = "style-src";
+        private const string _upgradeInsecureRequestsDirective = "upgrade-insecure-requests;";
         private const string _directiveDelimiter = ";";
 
         private const string _allowFormsSandboxFlag = " allow-forms";
@@ -110,7 +111,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
 
         private string _baseUri, _childSources, _connectSources, _defaultSources, _fontSources, _formAction, _frameAncestorsSources;
         private string _imageSources, _manifestSources, _mediaSources, _objectSources, _reportUri, _scriptSources, _styleSources;
-        private bool _blockAllMixedContent, _sandbox;
+        private bool _blockAllMixedContent, _sandbox, _upgradeInsecureRequests;
         private ContentSecurityPolicySandboxFlags _sandboxFlags;
         private ContentSecurityPolicyInlineExecution _scriptInlineExecution, _styleInlineExecution;
 
@@ -387,6 +388,20 @@ namespace Lib.AspNetCore.Security.Http.Headers
             }
         }
 
+        /// <summary>
+        /// Gets or sets the value indicating if upgrade-insecure-requests directive should be included.
+        /// </summary>
+        public bool UpgradeInsecureRequests
+        {
+            get { return _upgradeInsecureRequests; }
+
+            set
+            {
+                _headerValue = null;
+                _upgradeInsecureRequests = value;
+            }
+        }
+
         private bool CanCacheHeaderValue
         {
             get
@@ -409,6 +424,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
             _sandboxFlags = ContentSecurityPolicySandboxFlags.None;
             _scriptInlineExecution = ContentSecurityPolicyInlineExecution.Refuse;
             _styleInlineExecution = ContentSecurityPolicyInlineExecution.Refuse;
+            _upgradeInsecureRequests = false;
         }
         #endregion
 
@@ -474,7 +490,11 @@ namespace Lib.AspNetCore.Security.Http.Headers
                 AppendHeaderValueDirectiveWithInlineExecution(headerValueBuilder, _scriptDirective, _scriptSources, _scriptInlineExecution, nonce, scriptsHashes);
                 AppendHeaderValueDirectiveWithInlineExecution(headerValueBuilder, _styleDirective, _styleSources, _styleInlineExecution, nonce, stylesHashes);
 
-                if (_blockAllMixedContent)
+                if (_upgradeInsecureRequests)
+                {
+                    headerValueBuilder.Append(_upgradeInsecureRequestsDirective);
+                }
+                else if (_blockAllMixedContent)
                 {
                     headerValueBuilder.Append(_blockAllMixedContentDirective);
                 }

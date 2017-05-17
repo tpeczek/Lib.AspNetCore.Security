@@ -43,17 +43,18 @@ namespace Lib.AspNetCore.Security
         /// <param name="styleSources">The source list for stylesheets.</param>
         /// <param name="styleInlineExecution">The inline execution mode for stylesheets.</param>
         /// <param name="blockAllMixedContent">The value indicating if block-all-mixed-content directive should be included.</param>
+        /// <param name="upgradeInsecureRequests">The value indicating if upgrade-insecure-requests directive should be included.</param>
         /// <returns>The current policy builder.</returns>
         public SecurityHeadersPolicyBuilder WithCsp(string baseUri = null, string childSources = null, string connectSources = null,
             string defaultSources = ContentSecurityPolicyHeaderValue.NoneSource, string fontSources = null, string formAction = null, string frameAncestorsSources = null, string imageSources = null,
             string manifestSources = null, string mediaSources = null, string objectSources = null, string reportUri = null,
             bool sandbox = false, ContentSecurityPolicySandboxFlags sandboxFlags = ContentSecurityPolicySandboxFlags.None,
             string scriptSources = null, ContentSecurityPolicyInlineExecution scriptInlineExecution = ContentSecurityPolicyInlineExecution.Refuse, string styleSources = null, ContentSecurityPolicyInlineExecution styleInlineExecution = ContentSecurityPolicyInlineExecution.Refuse,
-            bool blockAllMixedContent = false)
+            bool blockAllMixedContent = false, bool upgradeInsecureRequests = false)
         {
             return WithCsp(false, baseUri, blockAllMixedContent, childSources, connectSources, defaultSources, fontSources, formAction, frameAncestorsSources,
                 imageSources, manifestSources, mediaSources, objectSources, reportUri, sandbox, sandboxFlags,
-                scriptSources, scriptInlineExecution, styleSources, styleInlineExecution);
+                scriptSources, scriptInlineExecution, styleSources, styleInlineExecution, upgradeInsecureRequests);
         }
 
         /// <summary>
@@ -88,17 +89,18 @@ namespace Lib.AspNetCore.Security
         /// <param name="styleSources">The source list for stylesheets.</param>
         /// <param name="styleInlineExecution">The inline execution mode for stylesheets.</param>
         /// <param name="blockAllMixedContent">The value indicating if block-all-mixed-content directive should be included.</param>
+        /// <param name="upgradeInsecureRequests">The value indicating if upgrade-insecure-requests directive should be included.</param>
         /// <returns>The current policy builder.</returns>
         public SecurityHeadersPolicyBuilder WithReportOnlyCsp(string baseUri = null, string childSources = null, string connectSources = null,
             string defaultSources = ContentSecurityPolicyHeaderValue.NoneSource, string fontSources = null, string formAction = null, string frameAncestorsSources = null, string imageSources = null,
             string manifestSources = null, string mediaSources = null, string objectSources = null, string reportUri = null,
             bool sandbox = false, ContentSecurityPolicySandboxFlags sandboxFlags = ContentSecurityPolicySandboxFlags.None,
             string scriptSources = null, ContentSecurityPolicyInlineExecution scriptInlineExecution = ContentSecurityPolicyInlineExecution.Refuse, string styleSources = null, ContentSecurityPolicyInlineExecution styleInlineExecution = ContentSecurityPolicyInlineExecution.Refuse,
-            bool blockAllMixedContent = false)
+            bool blockAllMixedContent = false, bool upgradeInsecureRequests = false)
         {
             return WithCsp(true, baseUri, blockAllMixedContent, childSources, connectSources, defaultSources, fontSources, formAction, frameAncestorsSources,
                 imageSources, manifestSources, mediaSources, objectSources, reportUri, sandbox, sandboxFlags,
-                scriptSources, scriptInlineExecution, styleSources, styleInlineExecution);
+                scriptSources, scriptInlineExecution, styleSources, styleInlineExecution, upgradeInsecureRequests);
         }
 
         /// <summary>
@@ -265,7 +267,8 @@ namespace Lib.AspNetCore.Security
         private SecurityHeadersPolicyBuilder WithCsp(bool reportOnly, string baseUri, bool blockAllMixedContent, string childSources, string connectSources,
             string defaultSources, string fontSources, string formAction, string frameAncestorsSources, string imageSources,
             string manifestSources, string mediaSources, string objectSources, string reportUri, bool sandbox, ContentSecurityPolicySandboxFlags sandboxFlags,
-            string scriptSources, ContentSecurityPolicyInlineExecution scriptInlineExecution, string styleSources, ContentSecurityPolicyInlineExecution styleInlineExecution)
+            string scriptSources, ContentSecurityPolicyInlineExecution scriptInlineExecution, string styleSources, ContentSecurityPolicyInlineExecution styleInlineExecution,
+            bool upgradeInsecureRequests)
         {
             return WithCsp(reportOnly, new ContentSecurityPolicyHeaderValue
             {
@@ -287,7 +290,8 @@ namespace Lib.AspNetCore.Security
                 ScriptSources = scriptSources,
                 ScriptInlineExecution = scriptInlineExecution,
                 StyleSources = styleSources,
-                StyleInlineExecution = styleInlineExecution
+                StyleInlineExecution = styleInlineExecution,
+                UpgradeInsecureRequests = upgradeInsecureRequests
             });
         }
 
