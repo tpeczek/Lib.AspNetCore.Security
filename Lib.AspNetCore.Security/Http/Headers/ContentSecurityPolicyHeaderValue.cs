@@ -80,6 +80,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
         public const string SelfSource = "'self'";
 
         private const string _baseDirectiveFormat = "base-uri {0};";
+        private const string _blockAllMixedContentDirective = "block-all-mixed-content;";
         private const string _childDirectiveFormat = "child-src {0};";
         private const string _connectDirectiveFormat = "connect-src {0};";
         private const string _defaultDirectiveFormat = "default-src {0};";
@@ -109,7 +110,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
 
         private string _baseUri, _childSources, _connectSources, _defaultSources, _fontSources, _formAction, _frameAncestorsSources;
         private string _imageSources, _manifestSources, _mediaSources, _objectSources, _reportUri, _scriptSources, _styleSources;
-        private bool _sandbox;
+        private bool _blockAllMixedContent, _sandbox;
         private ContentSecurityPolicySandboxFlags _sandboxFlags;
         private ContentSecurityPolicyInlineExecution _scriptInlineExecution, _styleInlineExecution;
 
@@ -129,6 +130,20 @@ namespace Lib.AspNetCore.Security.Http.Headers
             {
                 _headerValue = null;
                 _baseUri = value;
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the value indicating if block-all-mixed-content directive should be included.
+        /// </summary>
+        public bool BlockAllMixedContent
+        {
+            get { return _blockAllMixedContent; }
+
+            set
+            {
+                _headerValue = null;
+                _blockAllMixedContent = value;
             }
         }
 
@@ -388,6 +403,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
         /// </summary>
         public ContentSecurityPolicyHeaderValue()
         {
+            _blockAllMixedContent = false;
             _defaultSources = NoneSource;
             _sandbox = false;
             _sandboxFlags = ContentSecurityPolicySandboxFlags.None;
@@ -457,6 +473,11 @@ namespace Lib.AspNetCore.Security.Http.Headers
                 AppendHeaderValueSandboxDirective(headerValueBuilder);
                 AppendHeaderValueDirectiveWithInlineExecution(headerValueBuilder, _scriptDirective, _scriptSources, _scriptInlineExecution, nonce, scriptsHashes);
                 AppendHeaderValueDirectiveWithInlineExecution(headerValueBuilder, _styleDirective, _styleSources, _styleInlineExecution, nonce, stylesHashes);
+
+                if (_blockAllMixedContent)
+                {
+                    headerValueBuilder.Append(_blockAllMixedContentDirective);
+                }
 
                 headerValue = headerValueBuilder.ToString();
 

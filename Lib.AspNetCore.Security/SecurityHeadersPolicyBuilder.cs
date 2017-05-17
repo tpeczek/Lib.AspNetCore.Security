@@ -42,16 +42,28 @@ namespace Lib.AspNetCore.Security
         /// <param name="scriptInlineExecution">The inline execution mode for scripts.</param>
         /// <param name="styleSources">The source list for stylesheets.</param>
         /// <param name="styleInlineExecution">The inline execution mode for stylesheets.</param>
+        /// <param name="blockAllMixedContent">The value indicating if block-all-mixed-content directive should be included.</param>
         /// <returns>The current policy builder.</returns>
         public SecurityHeadersPolicyBuilder WithCsp(string baseUri = null, string childSources = null, string connectSources = null,
             string defaultSources = ContentSecurityPolicyHeaderValue.NoneSource, string fontSources = null, string formAction = null, string frameAncestorsSources = null, string imageSources = null,
             string manifestSources = null, string mediaSources = null, string objectSources = null, string reportUri = null,
             bool sandbox = false, ContentSecurityPolicySandboxFlags sandboxFlags = ContentSecurityPolicySandboxFlags.None,
-            string scriptSources = null, ContentSecurityPolicyInlineExecution scriptInlineExecution = ContentSecurityPolicyInlineExecution.Refuse, string styleSources = null, ContentSecurityPolicyInlineExecution styleInlineExecution = ContentSecurityPolicyInlineExecution.Refuse)
+            string scriptSources = null, ContentSecurityPolicyInlineExecution scriptInlineExecution = ContentSecurityPolicyInlineExecution.Refuse, string styleSources = null, ContentSecurityPolicyInlineExecution styleInlineExecution = ContentSecurityPolicyInlineExecution.Refuse,
+            bool blockAllMixedContent = false)
         {
-            return WithCsp(false, baseUri, childSources, connectSources, defaultSources, fontSources, formAction, frameAncestorsSources,
+            return WithCsp(false, baseUri, blockAllMixedContent, childSources, connectSources, defaultSources, fontSources, formAction, frameAncestorsSources,
                 imageSources, manifestSources, mediaSources, objectSources, reportUri, sandbox, sandboxFlags,
                 scriptSources, scriptInlineExecution, styleSources, styleInlineExecution);
+        }
+
+        /// <summary>
+        /// Adds the Content Security Policy to the policy.
+        /// </summary>
+        /// <param name="csp">The Content Security Policy.</param>
+        /// <returns>The current policy builder.</returns>
+        public SecurityHeadersPolicyBuilder WithOnlyCsp(ContentSecurityPolicyHeaderValue csp)
+        {
+            return WithCsp(false, csp);
         }
 
         /// <summary>
@@ -75,16 +87,28 @@ namespace Lib.AspNetCore.Security
         /// <param name="scriptInlineExecution">The inline execution mode for scripts.</param>
         /// <param name="styleSources">The source list for stylesheets.</param>
         /// <param name="styleInlineExecution">The inline execution mode for stylesheets.</param>
+        /// <param name="blockAllMixedContent">The value indicating if block-all-mixed-content directive should be included.</param>
         /// <returns>The current policy builder.</returns>
         public SecurityHeadersPolicyBuilder WithReportOnlyCsp(string baseUri = null, string childSources = null, string connectSources = null,
             string defaultSources = ContentSecurityPolicyHeaderValue.NoneSource, string fontSources = null, string formAction = null, string frameAncestorsSources = null, string imageSources = null,
             string manifestSources = null, string mediaSources = null, string objectSources = null, string reportUri = null,
             bool sandbox = false, ContentSecurityPolicySandboxFlags sandboxFlags = ContentSecurityPolicySandboxFlags.None,
-            string scriptSources = null, ContentSecurityPolicyInlineExecution scriptInlineExecution = ContentSecurityPolicyInlineExecution.Refuse, string styleSources = null, ContentSecurityPolicyInlineExecution styleInlineExecution = ContentSecurityPolicyInlineExecution.Refuse)
+            string scriptSources = null, ContentSecurityPolicyInlineExecution scriptInlineExecution = ContentSecurityPolicyInlineExecution.Refuse, string styleSources = null, ContentSecurityPolicyInlineExecution styleInlineExecution = ContentSecurityPolicyInlineExecution.Refuse,
+            bool blockAllMixedContent = false)
         {
-            return WithCsp(true, baseUri, childSources, connectSources, defaultSources, fontSources, formAction, frameAncestorsSources,
+            return WithCsp(true, baseUri, blockAllMixedContent, childSources, connectSources, defaultSources, fontSources, formAction, frameAncestorsSources,
                 imageSources, manifestSources, mediaSources, objectSources, reportUri, sandbox, sandboxFlags,
                 scriptSources, scriptInlineExecution, styleSources, styleInlineExecution);
+        }
+
+        /// <summary>
+        /// Adds the report only Content Security Policy to the policy.
+        /// </summary>
+        /// <param name="csp">The Content Security Policy.</param>
+        /// <returns>The current policy builder.</returns>
+        public SecurityHeadersPolicyBuilder WithReportOnlyCsp(ContentSecurityPolicyHeaderValue csp)
+        {
+            return WithCsp(true, csp);
         }
 
         /// <summary>
@@ -238,14 +262,15 @@ namespace Lib.AspNetCore.Security
             return _policy;
         }
 
-        private SecurityHeadersPolicyBuilder WithCsp(bool reportOnly, string baseUri, string childSources, string connectSources,
+        private SecurityHeadersPolicyBuilder WithCsp(bool reportOnly, string baseUri, bool blockAllMixedContent, string childSources, string connectSources,
             string defaultSources, string fontSources, string formAction, string frameAncestorsSources, string imageSources,
             string manifestSources, string mediaSources, string objectSources, string reportUri, bool sandbox, ContentSecurityPolicySandboxFlags sandboxFlags,
             string scriptSources, ContentSecurityPolicyInlineExecution scriptInlineExecution, string styleSources, ContentSecurityPolicyInlineExecution styleInlineExecution)
         {
-            _policy.Csp = new ContentSecurityPolicyHeaderValue
+            return WithCsp(reportOnly, new ContentSecurityPolicyHeaderValue
             {
                 BaseUri = baseUri,
+                BlockAllMixedContent = blockAllMixedContent,
                 ChildSources = childSources,
                 ConnectSources = connectSources,
                 DefaultSources = defaultSources,
@@ -263,7 +288,12 @@ namespace Lib.AspNetCore.Security
                 ScriptInlineExecution = scriptInlineExecution,
                 StyleSources = styleSources,
                 StyleInlineExecution = styleInlineExecution
-            };
+            });
+        }
+
+        private SecurityHeadersPolicyBuilder WithCsp(bool reportOnly, ContentSecurityPolicyHeaderValue csp)
+        {
+            _policy.Csp = csp;
             _policy.IsCspReportOnly = reportOnly;
 
             return this;
