@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text;
+using System.Collections.Generic;
 
 namespace Lib.AspNetCore.Security.Http.Headers
 {
@@ -107,6 +107,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
         private const string _manifestDirectiveFormat = "manifest-src {0};";
         private const string _mediaDirectiveFormat = "media-src {0};";
         private const string _objectDirectiveFormat = "object-src {0};";
+        private const string _pluginTypesDirectiveFormat = "plugin-types {0};";
         private const string _reportDirectiveFormat = "report-uri {0};";
         private const string _requireSriForDirective = "require-sri-for";
         private const string _sandboxDirective = "sandbox";
@@ -127,7 +128,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
         private const string _sha256SourceFormat = " 'sha256-{0}'";
 
         private string _baseUri, _childSources, _connectSources, _defaultSources, _fontSources, _formAction, _frameAncestorsSources;
-        private string _imageSources, _manifestSources, _mediaSources, _objectSources, _reportUri, _scriptSources, _styleSources;
+        private string _imageSources, _manifestSources, _mediaSources, _objectSources, _pluginTypes, _reportUri, _scriptSources, _styleSources;
         private bool _blockAllMixedContent, _sandbox, _upgradeInsecureRequests;
         private ContentSecurityPolicyRequireSriFor? _requireSriFor;
         private ContentSecurityPolicySandboxFlags _sandboxFlags;
@@ -304,6 +305,20 @@ namespace Lib.AspNetCore.Security.Http.Headers
             {
                 _headerValue = null;
                 _objectSources = value;
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the types of plugins that can be embedded into a document.
+        /// </summary>
+        public string PluginTypes
+        {
+            get { return _pluginTypes; }
+
+            set
+            {
+                _headerValue = null;
+                _pluginTypes = value;
             }
         }
 
@@ -519,6 +534,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
                 AppendHeaderValueDirective(headerValueBuilder, _manifestDirectiveFormat, _manifestSources);
                 AppendHeaderValueDirective(headerValueBuilder, _mediaDirectiveFormat, _mediaSources);
                 AppendHeaderValueDirective(headerValueBuilder, _objectDirectiveFormat, _objectSources);
+                AppendHeaderValueDirective(headerValueBuilder, _pluginTypesDirectiveFormat, _pluginTypes);
                 AppendHeaderValueDirective(headerValueBuilder, _reportDirectiveFormat, _reportUri);
                 AppendHeaderValueRequireSriForDirective(headerValueBuilder);
                 AppendHeaderValueSandboxDirective(headerValueBuilder);
