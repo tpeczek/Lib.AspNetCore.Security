@@ -36,6 +36,7 @@ namespace Lib.AspNetCore.Security
         /// <param name="mediaSources">The source list for loading media using the audio and video elements.</param>
         /// <param name="objectSources">The source list for the object, embed, and applet elements.</param>
         /// <param name="reportUri">The URL to which the user agent should send reports about policy violations.</param>
+        /// <param name="requireSriFor">The value indicating if the use of Subresource Integrity is required for scripts or/and styles.</param>
         /// <param name="sandbox">The value indicating if sandbox policy should be applied.</param>
         /// <param name="sandboxFlags">The sandboxing flags (only used when Sandbox is true).</param>
         /// <param name="scriptSources">The source list for scripts.</param>
@@ -47,13 +48,13 @@ namespace Lib.AspNetCore.Security
         /// <returns>The current policy builder.</returns>
         public SecurityHeadersPolicyBuilder WithCsp(string baseUri = null, string childSources = null, string connectSources = null,
             string defaultSources = ContentSecurityPolicyHeaderValue.NoneSource, string fontSources = null, string formAction = null, string frameAncestorsSources = null, string imageSources = null,
-            string manifestSources = null, string mediaSources = null, string objectSources = null, string reportUri = null,
+            string manifestSources = null, string mediaSources = null, string objectSources = null, string reportUri = null, ContentSecurityPolicyRequireSriFor? requireSriFor = null,
             bool sandbox = false, ContentSecurityPolicySandboxFlags sandboxFlags = ContentSecurityPolicySandboxFlags.None,
             string scriptSources = null, ContentSecurityPolicyInlineExecution scriptInlineExecution = ContentSecurityPolicyInlineExecution.Refuse, string styleSources = null, ContentSecurityPolicyInlineExecution styleInlineExecution = ContentSecurityPolicyInlineExecution.Refuse,
             bool blockAllMixedContent = false, bool upgradeInsecureRequests = false)
         {
             return WithCsp(false, baseUri, blockAllMixedContent, childSources, connectSources, defaultSources, fontSources, formAction, frameAncestorsSources,
-                imageSources, manifestSources, mediaSources, objectSources, reportUri, sandbox, sandboxFlags,
+                imageSources, manifestSources, mediaSources, objectSources, reportUri, requireSriFor, sandbox, sandboxFlags,
                 scriptSources, scriptInlineExecution, styleSources, styleInlineExecution, upgradeInsecureRequests);
         }
 
@@ -82,6 +83,7 @@ namespace Lib.AspNetCore.Security
         /// <param name="mediaSources">The source list for loading media using the audio and video elements.</param>
         /// <param name="objectSources">The source list for the object, embed, and applet elements.</param>
         /// <param name="reportUri">The URL to which the user agent should send reports about policy violations.</param>
+        /// <param name="requireSriFor">The value indicating if the use of Subresource Integrity is required for scripts or/and styles.</param>
         /// <param name="sandbox">The value indicating if sandbox policy should be applied.</param>
         /// <param name="sandboxFlags">The sandboxing flags (only used when Sandbox is true).</param>
         /// <param name="scriptSources">The source list for scripts.</param>
@@ -96,10 +98,10 @@ namespace Lib.AspNetCore.Security
             string manifestSources = null, string mediaSources = null, string objectSources = null, string reportUri = null,
             bool sandbox = false, ContentSecurityPolicySandboxFlags sandboxFlags = ContentSecurityPolicySandboxFlags.None,
             string scriptSources = null, ContentSecurityPolicyInlineExecution scriptInlineExecution = ContentSecurityPolicyInlineExecution.Refuse, string styleSources = null, ContentSecurityPolicyInlineExecution styleInlineExecution = ContentSecurityPolicyInlineExecution.Refuse,
-            bool blockAllMixedContent = false, bool upgradeInsecureRequests = false)
+            bool blockAllMixedContent = false, bool upgradeInsecureRequests = false, ContentSecurityPolicyRequireSriFor? requireSriFor = null)
         {
             return WithCsp(true, baseUri, blockAllMixedContent, childSources, connectSources, defaultSources, fontSources, formAction, frameAncestorsSources,
-                imageSources, manifestSources, mediaSources, objectSources, reportUri, sandbox, sandboxFlags,
+                imageSources, manifestSources, mediaSources, objectSources, reportUri, requireSriFor, sandbox, sandboxFlags,
                 scriptSources, scriptInlineExecution, styleSources, styleInlineExecution, upgradeInsecureRequests);
         }
 
@@ -266,7 +268,7 @@ namespace Lib.AspNetCore.Security
 
         private SecurityHeadersPolicyBuilder WithCsp(bool reportOnly, string baseUri, bool blockAllMixedContent, string childSources, string connectSources,
             string defaultSources, string fontSources, string formAction, string frameAncestorsSources, string imageSources,
-            string manifestSources, string mediaSources, string objectSources, string reportUri, bool sandbox, ContentSecurityPolicySandboxFlags sandboxFlags,
+            string manifestSources, string mediaSources, string objectSources, string reportUri, ContentSecurityPolicyRequireSriFor? requireSriFor, bool sandbox, ContentSecurityPolicySandboxFlags sandboxFlags,
             string scriptSources, ContentSecurityPolicyInlineExecution scriptInlineExecution, string styleSources, ContentSecurityPolicyInlineExecution styleInlineExecution,
             bool upgradeInsecureRequests)
         {
@@ -285,6 +287,7 @@ namespace Lib.AspNetCore.Security
                 MediaSources = mediaSources,
                 ObjectSources = objectSources,
                 ReportUri = reportUri,
+                RequireSriFor = requireSriFor,
                 Sandbox = sandbox,
                 SandboxFlags = sandboxFlags,
                 ScriptSources = scriptSources,

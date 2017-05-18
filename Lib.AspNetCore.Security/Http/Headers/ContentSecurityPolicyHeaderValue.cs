@@ -5,6 +5,22 @@ using System.Text;
 namespace Lib.AspNetCore.Security.Http.Headers
 {
     /// <summary>
+    /// Content Security Policy require SRI options.
+    /// </summary>
+    [Flags]
+    public enum ContentSecurityPolicyRequireSriFor
+    {
+        /// <summary>
+        /// Requires SRI for scripts.
+        /// </summary>
+        Script = 0,
+        /// <summary>
+        /// Requires SRI for style sheets.
+        /// </summary>
+        Style = 1
+    }
+
+    /// <summary>
     /// Content Security Policy sandbox flags.
     /// </summary>
     [Flags]
@@ -92,6 +108,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
         private const string _mediaDirectiveFormat = "media-src {0};";
         private const string _objectDirectiveFormat = "object-src {0};";
         private const string _reportDirectiveFormat = "report-uri {0};";
+        private const string _requireSriForDirective = "require-sri-for";
         private const string _sandboxDirective = "sandbox";
         private const string _scriptDirective = "script-src";
         private const string _styleDirective = "style-src";
@@ -112,9 +129,11 @@ namespace Lib.AspNetCore.Security.Http.Headers
         private string _baseUri, _childSources, _connectSources, _defaultSources, _fontSources, _formAction, _frameAncestorsSources;
         private string _imageSources, _manifestSources, _mediaSources, _objectSources, _reportUri, _scriptSources, _styleSources;
         private bool _blockAllMixedContent, _sandbox, _upgradeInsecureRequests;
+        private ContentSecurityPolicyRequireSriFor? _requireSriFor;
         private ContentSecurityPolicySandboxFlags _sandboxFlags;
         private ContentSecurityPolicyInlineExecution _scriptInlineExecution, _styleInlineExecution;
 
+        private string _completeRequireSriForDirective = null;
         private string _completeSandboxDirective = null;
         private string _headerValue = null;
         #endregion
@@ -303,6 +322,21 @@ namespace Lib.AspNetCore.Security.Http.Headers
         }
 
         /// <summary>
+        /// Gets or sets the value indicating if the use of Subresource Integrity is required for scripts or/and styles.
+        /// </summary>
+        public ContentSecurityPolicyRequireSriFor? RequireSriFor
+        {
+            get { return _requireSriFor; }
+
+            set
+            {
+                _headerValue = null;
+                _completeRequireSriForDirective = null;
+                _requireSriFor = value;
+            }
+        }
+
+        /// <summary>
         /// Gets or sets the value indicating if sandbox policy should be applied.
         /// </summary>
         public bool Sandbox
@@ -486,6 +520,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
                 AppendHeaderValueDirective(headerValueBuilder, _mediaDirectiveFormat, _mediaSources);
                 AppendHeaderValueDirective(headerValueBuilder, _objectDirectiveFormat, _objectSources);
                 AppendHeaderValueDirective(headerValueBuilder, _reportDirectiveFormat, _reportUri);
+                AppendHeaderValueRequireSriForDirective(headerValueBuilder);
                 AppendHeaderValueSandboxDirective(headerValueBuilder);
                 AppendHeaderValueDirectiveWithInlineExecution(headerValueBuilder, _scriptDirective, _scriptSources, _scriptInlineExecution, nonce, scriptsHashes);
                 AppendHeaderValueDirectiveWithInlineExecution(headerValueBuilder, _styleDirective, _styleSources, _styleInlineExecution, nonce, stylesHashes);
@@ -515,6 +550,33 @@ namespace Lib.AspNetCore.Security.Http.Headers
             if (!String.IsNullOrWhiteSpace(directiveValue))
             {
                 headerValueBuilder.AppendFormat(directiveFormat, directiveValue);
+            }
+        }
+
+        private void AppendHeaderValueRequireSriForDirective(StringBuilder headerValueBuilder)
+        {
+            if (String.IsNullOrWhiteSpace(_completeRequireSriForDirective))
+            {
+                if (_requireSriFor.HasValue)
+                {
+                    int completeRequireSriForDirectiveStartIndex = headerValueBuilder.Length;
+                    headerValueBuilder.Append(_requireSriForDirective);
+
+                    foreach (ContentSecurityPolicyRequireSriFor requireSriFor in Enum.GetValues(typeof(ContentSecurityPolicyRequireSriFor)))
+                    {
+                        if (_requireSriFor.Value.HasFlag(requireSriFor))
+                        {
+                            headerValueBuilder.Append(" ").Append(requireSriFor.ToString().ToLowerInvariant());
+                        }
+                    }
+
+                    headerValueBuilder.Append(_directiveDelimiter);
+                    _completeRequireSriForDirective = headerValueBuilder.ToString(completeRequireSriForDirectiveStartIndex, headerValueBuilder.Length - completeRequireSriForDirectiveStartIndex);
+                }
+            }
+            else
+            {
+                headerValueBuilder.Append(_completeRequireSriForDirective);
             }
         }
 
