@@ -114,6 +114,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
         private const string _scriptDirective = "script-src";
         private const string _styleDirective = "style-src";
         private const string _upgradeInsecureRequestsDirective = "upgrade-insecure-requests;";
+        private const string _workerDirectiveFormat = "worker-src {0};";
         private const string _directiveDelimiter = ";";
 
         private const string _allowFormsSandboxFlag = " allow-forms";
@@ -128,7 +129,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
         private const string _sha256SourceFormat = " 'sha256-{0}'";
 
         private string _baseUri, _childSources, _connectSources, _defaultSources, _fontSources, _formAction, _frameAncestorsSources;
-        private string _imageSources, _manifestSources, _mediaSources, _objectSources, _pluginTypes, _reportUri, _scriptSources, _styleSources;
+        private string _imageSources, _manifestSources, _mediaSources, _objectSources, _pluginTypes, _reportUri, _scriptSources, _styleSources, _workerSources;
         private bool _blockAllMixedContent, _sandbox, _upgradeInsecureRequests;
         private ContentSecurityPolicyRequireSriFor? _requireSriFor;
         private ContentSecurityPolicySandboxFlags _sandboxFlags;
@@ -451,6 +452,20 @@ namespace Lib.AspNetCore.Security.Http.Headers
             }
         }
 
+        /// <summary>
+        /// Gets or sets the source list for Worker, SharedWorker, or ServiceWorker scripts.
+        /// </summary>
+        public string WorkerSources
+        {
+            get { return _workerSources; }
+
+            set
+            {
+                _headerValue = null;
+                _workerSources = value;
+            }
+        }
+
         private bool CanCacheHeaderValue
         {
             get
@@ -540,6 +555,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
                 AppendHeaderValueSandboxDirective(headerValueBuilder);
                 AppendHeaderValueDirectiveWithInlineExecution(headerValueBuilder, _scriptDirective, _scriptSources, _scriptInlineExecution, nonce, scriptsHashes);
                 AppendHeaderValueDirectiveWithInlineExecution(headerValueBuilder, _styleDirective, _styleSources, _styleInlineExecution, nonce, stylesHashes);
+                AppendHeaderValueDirective(headerValueBuilder, _workerDirectiveFormat, _workerSources);
 
                 if (_upgradeInsecureRequests)
                 {

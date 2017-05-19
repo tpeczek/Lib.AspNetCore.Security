@@ -46,17 +46,18 @@ namespace Lib.AspNetCore.Security
         /// <param name="blockAllMixedContent">The value indicating if block-all-mixed-content directive should be included.</param>
         /// <param name="upgradeInsecureRequests">The value indicating if upgrade-insecure-requests directive should be included.</param>
         /// <param name="pluginTypes">The types of plugins that can be embedded into a document.</param>
+        /// <param name="workerSources">The source list for Worker, SharedWorker, or ServiceWorker scripts.</param>
         /// <returns>The current policy builder.</returns>
         public SecurityHeadersPolicyBuilder WithCsp(string baseUri = null, string childSources = null, string connectSources = null,
             string defaultSources = ContentSecurityPolicyHeaderValue.NoneSource, string fontSources = null, string formAction = null, string frameAncestorsSources = null, string imageSources = null,
             string manifestSources = null, string mediaSources = null, string objectSources = null, string reportUri = null,
             bool sandbox = false, ContentSecurityPolicySandboxFlags sandboxFlags = ContentSecurityPolicySandboxFlags.None,
             string scriptSources = null, ContentSecurityPolicyInlineExecution scriptInlineExecution = ContentSecurityPolicyInlineExecution.Refuse, string styleSources = null, ContentSecurityPolicyInlineExecution styleInlineExecution = ContentSecurityPolicyInlineExecution.Refuse,
-            bool blockAllMixedContent = false, bool upgradeInsecureRequests = false, ContentSecurityPolicyRequireSriFor? requireSriFor = null, string pluginTypes = null)
+            bool blockAllMixedContent = false, bool upgradeInsecureRequests = false, ContentSecurityPolicyRequireSriFor? requireSriFor = null, string pluginTypes = null, string workerSources = null)
         {
             return WithCsp(false, baseUri, blockAllMixedContent, childSources, connectSources, defaultSources, fontSources, formAction, frameAncestorsSources,
                 imageSources, manifestSources, mediaSources, objectSources, pluginTypes, reportUri, requireSriFor, sandbox, sandboxFlags,
-                scriptSources, scriptInlineExecution, styleSources, styleInlineExecution, upgradeInsecureRequests);
+                scriptSources, scriptInlineExecution, styleSources, styleInlineExecution, upgradeInsecureRequests, workerSources);
         }
 
         /// <summary>
@@ -94,17 +95,18 @@ namespace Lib.AspNetCore.Security
         /// <param name="blockAllMixedContent">The value indicating if block-all-mixed-content directive should be included.</param>
         /// <param name="upgradeInsecureRequests">The value indicating if upgrade-insecure-requests directive should be included.</param>
         /// <param name="pluginTypes">The types of plugins that can be embedded into a document.</param>
+        /// <param name="workerSources">The source list for Worker, SharedWorker, or ServiceWorker scripts.</param>
         /// <returns>The current policy builder.</returns>
         public SecurityHeadersPolicyBuilder WithReportOnlyCsp(string baseUri = null, string childSources = null, string connectSources = null,
             string defaultSources = ContentSecurityPolicyHeaderValue.NoneSource, string fontSources = null, string formAction = null, string frameAncestorsSources = null, string imageSources = null,
             string manifestSources = null, string mediaSources = null, string objectSources = null, string reportUri = null,
             bool sandbox = false, ContentSecurityPolicySandboxFlags sandboxFlags = ContentSecurityPolicySandboxFlags.None,
             string scriptSources = null, ContentSecurityPolicyInlineExecution scriptInlineExecution = ContentSecurityPolicyInlineExecution.Refuse, string styleSources = null, ContentSecurityPolicyInlineExecution styleInlineExecution = ContentSecurityPolicyInlineExecution.Refuse,
-            bool blockAllMixedContent = false, bool upgradeInsecureRequests = false, ContentSecurityPolicyRequireSriFor? requireSriFor = null, string pluginTypes = null)
+            bool blockAllMixedContent = false, bool upgradeInsecureRequests = false, ContentSecurityPolicyRequireSriFor? requireSriFor = null, string pluginTypes = null, string workerSources = null)
         {
             return WithCsp(true, baseUri, blockAllMixedContent, childSources, connectSources, defaultSources, fontSources, formAction, frameAncestorsSources,
                 imageSources, manifestSources, mediaSources, objectSources, pluginTypes, reportUri, requireSriFor, sandbox, sandboxFlags,
-                scriptSources, scriptInlineExecution, styleSources, styleInlineExecution, upgradeInsecureRequests);
+                scriptSources, scriptInlineExecution, styleSources, styleInlineExecution, upgradeInsecureRequests, workerSources);
         }
 
         /// <summary>
@@ -273,7 +275,7 @@ namespace Lib.AspNetCore.Security
             string manifestSources, string mediaSources, string objectSources, string pluginTypes, string reportUri, ContentSecurityPolicyRequireSriFor? requireSriFor,
             bool sandbox, ContentSecurityPolicySandboxFlags sandboxFlags,
             string scriptSources, ContentSecurityPolicyInlineExecution scriptInlineExecution, string styleSources, ContentSecurityPolicyInlineExecution styleInlineExecution,
-            bool upgradeInsecureRequests)
+            bool upgradeInsecureRequests, string workerSources)
         {
             return WithCsp(reportOnly, new ContentSecurityPolicyHeaderValue
             {
@@ -298,7 +300,8 @@ namespace Lib.AspNetCore.Security
                 ScriptInlineExecution = scriptInlineExecution,
                 StyleSources = styleSources,
                 StyleInlineExecution = styleInlineExecution,
-                UpgradeInsecureRequests = upgradeInsecureRequests
+                UpgradeInsecureRequests = upgradeInsecureRequests,
+                WorkerSources = workerSources
             });
         }
 
