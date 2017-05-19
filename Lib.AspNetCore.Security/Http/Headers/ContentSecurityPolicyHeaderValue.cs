@@ -103,6 +103,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
         private const string _fontDirectiveFormat = "font-src {0};";
         private const string _formDirectiveFormat = "form-action {0};";
         private const string _frameAncestorsDirectiveFormat = "frame-ancestors {0};";
+        private const string _frameDirectiveFormat = "frame-src {0};";
         private const string _imageDirectiveFormat = "img-src {0};";
         private const string _manifestDirectiveFormat = "manifest-src {0};";
         private const string _mediaDirectiveFormat = "media-src {0};";
@@ -128,7 +129,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
         private const string _nonceSourceFormat = " 'nonce-{0}'";
         private const string _sha256SourceFormat = " 'sha256-{0}'";
 
-        private string _baseUri, _childSources, _connectSources, _defaultSources, _fontSources, _formAction, _frameAncestorsSources;
+        private string _baseUri, _childSources, _connectSources, _defaultSources, _fontSources, _formAction, _frameAncestorsSources, _frameSources;
         private string _imageSources, _manifestSources, _mediaSources, _objectSources, _pluginTypes, _reportUri, _scriptSources, _styleSources, _workerSources;
         private bool _blockAllMixedContent, _sandbox, _upgradeInsecureRequests;
         private ContentSecurityPolicyRequireSriFor? _requireSriFor;
@@ -250,6 +251,20 @@ namespace Lib.AspNetCore.Security.Http.Headers
             {
                 _headerValue = null;
                 _frameAncestorsSources = value;
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the source list for nested browsing contexts loading using elements such as frame and iframe.
+        /// </summary>
+        public string FrameSources
+        {
+            get { return _frameSources; }
+
+            set
+            {
+                _headerValue = null;
+                _frameSources = value;
             }
         }
 
@@ -545,6 +560,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
                 AppendHeaderValueDirective(headerValueBuilder, _fontDirectiveFormat, _fontSources);
                 AppendHeaderValueDirective(headerValueBuilder, _formDirectiveFormat, _formAction);
                 AppendHeaderValueDirective(headerValueBuilder, _frameAncestorsDirectiveFormat, _frameAncestorsSources);
+                AppendHeaderValueDirective(headerValueBuilder, _frameDirectiveFormat, _frameSources);
                 AppendHeaderValueDirective(headerValueBuilder, _imageDirectiveFormat, _imageSources);
                 AppendHeaderValueDirective(headerValueBuilder, _manifestDirectiveFormat, _manifestSources);
                 AppendHeaderValueDirective(headerValueBuilder, _mediaDirectiveFormat, _mediaSources);

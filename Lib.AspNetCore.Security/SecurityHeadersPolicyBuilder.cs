@@ -31,6 +31,7 @@ namespace Lib.AspNetCore.Security
         /// <param name="fontSources">The source list for fonts loaded using @font-face.</param>
         /// <param name="formAction">The valid endpoints for form submissions.</param>
         /// <param name="frameAncestorsSources">The valid parents that may embed a page using the frame and iframe elements.</param>
+        /// <param name="frameSources">The source list for nested browsing contexts loading using elements such as frame and iframe.</param>
         /// <param name="imageSources">The source list for of images and favicons.</param>
         /// <param name="manifestSources">The source list for manifest which can be applied to the resource.</param>
         /// <param name="mediaSources">The source list for loading media using the audio and video elements.</param>
@@ -53,9 +54,9 @@ namespace Lib.AspNetCore.Security
             string manifestSources = null, string mediaSources = null, string objectSources = null, string reportUri = null,
             bool sandbox = false, ContentSecurityPolicySandboxFlags sandboxFlags = ContentSecurityPolicySandboxFlags.None,
             string scriptSources = null, ContentSecurityPolicyInlineExecution scriptInlineExecution = ContentSecurityPolicyInlineExecution.Refuse, string styleSources = null, ContentSecurityPolicyInlineExecution styleInlineExecution = ContentSecurityPolicyInlineExecution.Refuse,
-            bool blockAllMixedContent = false, bool upgradeInsecureRequests = false, ContentSecurityPolicyRequireSriFor? requireSriFor = null, string pluginTypes = null, string workerSources = null)
+            bool blockAllMixedContent = false, bool upgradeInsecureRequests = false, ContentSecurityPolicyRequireSriFor? requireSriFor = null, string pluginTypes = null, string workerSources = null, string frameSources = null)
         {
-            return WithCsp(false, baseUri, blockAllMixedContent, childSources, connectSources, defaultSources, fontSources, formAction, frameAncestorsSources,
+            return WithCsp(false, baseUri, blockAllMixedContent, childSources, connectSources, defaultSources, fontSources, formAction, frameAncestorsSources, frameSources,
                 imageSources, manifestSources, mediaSources, objectSources, pluginTypes, reportUri, requireSriFor, sandbox, sandboxFlags,
                 scriptSources, scriptInlineExecution, styleSources, styleInlineExecution, upgradeInsecureRequests, workerSources);
         }
@@ -80,6 +81,7 @@ namespace Lib.AspNetCore.Security
         /// <param name="fontSources">The source list for fonts loaded using @font-face.</param>
         /// <param name="formAction">The valid endpoints for form submissions.</param>
         /// <param name="frameAncestorsSources">The valid parents that may embed a page using the frame and iframe elements.</param>
+        /// <param name="frameSources">The source list for nested browsing contexts loading using elements such as frame and iframe.</param>
         /// <param name="imageSources">The source list for of images and favicons.</param>
         /// <param name="manifestSources">The source list for manifest which can be applied to the resource.</param>
         /// <param name="mediaSources">The source list for loading media using the audio and video elements.</param>
@@ -102,9 +104,9 @@ namespace Lib.AspNetCore.Security
             string manifestSources = null, string mediaSources = null, string objectSources = null, string reportUri = null,
             bool sandbox = false, ContentSecurityPolicySandboxFlags sandboxFlags = ContentSecurityPolicySandboxFlags.None,
             string scriptSources = null, ContentSecurityPolicyInlineExecution scriptInlineExecution = ContentSecurityPolicyInlineExecution.Refuse, string styleSources = null, ContentSecurityPolicyInlineExecution styleInlineExecution = ContentSecurityPolicyInlineExecution.Refuse,
-            bool blockAllMixedContent = false, bool upgradeInsecureRequests = false, ContentSecurityPolicyRequireSriFor? requireSriFor = null, string pluginTypes = null, string workerSources = null)
+            bool blockAllMixedContent = false, bool upgradeInsecureRequests = false, ContentSecurityPolicyRequireSriFor? requireSriFor = null, string pluginTypes = null, string workerSources = null, string frameSources = null)
         {
-            return WithCsp(true, baseUri, blockAllMixedContent, childSources, connectSources, defaultSources, fontSources, formAction, frameAncestorsSources,
+            return WithCsp(true, baseUri, blockAllMixedContent, childSources, connectSources, defaultSources, fontSources, formAction, frameAncestorsSources, frameSources,
                 imageSources, manifestSources, mediaSources, objectSources, pluginTypes, reportUri, requireSriFor, sandbox, sandboxFlags,
                 scriptSources, scriptInlineExecution, styleSources, styleInlineExecution, upgradeInsecureRequests, workerSources);
         }
@@ -271,7 +273,7 @@ namespace Lib.AspNetCore.Security
         }
 
         private SecurityHeadersPolicyBuilder WithCsp(bool reportOnly, string baseUri, bool blockAllMixedContent, string childSources, string connectSources,
-            string defaultSources, string fontSources, string formAction, string frameAncestorsSources, string imageSources,
+            string defaultSources, string fontSources, string formAction, string frameAncestorsSources, string frameSources, string imageSources,
             string manifestSources, string mediaSources, string objectSources, string pluginTypes, string reportUri, ContentSecurityPolicyRequireSriFor? requireSriFor,
             bool sandbox, ContentSecurityPolicySandboxFlags sandboxFlags,
             string scriptSources, ContentSecurityPolicyInlineExecution scriptInlineExecution, string styleSources, ContentSecurityPolicyInlineExecution styleInlineExecution,
@@ -287,6 +289,7 @@ namespace Lib.AspNetCore.Security
                 FontSources = fontSources,
                 FormAction = formAction,
                 FrameAncestorsSources = frameAncestorsSources,
+                FrameSources = frameSources,
                 ImageSources = imageSources,
                 ManifestSources = manifestSources,
                 MediaSources = mediaSources,
