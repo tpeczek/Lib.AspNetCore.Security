@@ -11,6 +11,22 @@ namespace Microsoft.AspNetCore.Builder
     {
         #region Methods
         /// <summary>
+        /// Adds the middleware which provides support for Content-Security-Policy and Content-Security-Policy-Report-Only violation reports.
+        /// </summary>
+        /// <param name="app">The pipeline builder.</param>
+        /// <param name="pathMatch">The request path to match.</param>
+        /// <returns>The pipeline builder.</returns>
+        public static IApplicationBuilder MapContentSecurityPolicyReporting(this IApplicationBuilder app, PathString pathMatch)
+        {
+            if (app == null)
+            {
+                throw new ArgumentNullException(nameof(app));
+            }
+
+            return app.Map(pathMatch, branchedApp => branchedApp.UseMiddleware<ContentSecurityPolicyReportingMiddleware>());
+        }
+
+        /// <summary>
         /// Adds the middleware which provides support for Expect-CT violation reports.
         /// </summary>
         /// <param name="app">The pipeline builder.</param>
