@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using Lib.AspNetCore.Security.Http.Headers;
+using System.Collections.Concurrent;
 using System.Security.Cryptography;
+using Lib.AspNetCore.Security.Http.Headers;
 
 namespace Lib.AspNetCore.Security.Http.Features
 {
     internal class ContentSecurityPolicyInlineExecutionFeature : IContentSecurityPolicyInlineExecutionFeature
     {
         #region Fields
+        private readonly ConcurrentDictionary<string, string> _hashesCache;
+
         private const int _nonceLength = 128 / 8;
         #endregion
 
@@ -24,12 +27,13 @@ namespace Lib.AspNetCore.Security.Http.Features
         #endregion
 
         #region Constructor
-        public ContentSecurityPolicyInlineExecutionFeature(ContentSecurityPolicyHeaderValue csp)
+        public ContentSecurityPolicyInlineExecutionFeature(ContentSecurityPolicyHeaderValue csp, ConcurrentDictionary<string, string> hashesCache)
         {
             if (csp == null)
             {
                 throw new ArgumentNullException(nameof(csp));
             }
+            _hashesCache = hashesCache ?? throw new ArgumentNullException(nameof(hashesCache));
 
             ScriptInlineExecution = csp.ScriptInlineExecution;
             StyleInlineExecution = csp.StyleInlineExecution;
@@ -52,6 +56,20 @@ namespace Lib.AspNetCore.Security.Http.Features
         #endregion
 
         #region Methods
+        public string GetHashFromCache(string cacheKey)
+        {
+            string hash = null;
+
+            _hashesCache.TryGetValue(cacheKey, out hash);
+
+            return hash;
+        }
+
+        public void AddHashToCache(string cacheKey, string hash)
+        {
+            _hashesCache.TryAdd(cacheKey, hash);
+        }
+
         private static string GenerateNonce()
         {
             string nonce = null;

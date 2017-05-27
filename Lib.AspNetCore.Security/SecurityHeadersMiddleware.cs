@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Threading.Tasks;
+using System.Collections.Concurrent;
 using Microsoft.AspNetCore.Http;
 using Lib.AspNetCore.Security.Http.Headers;
 using Lib.AspNetCore.Security.Http.Features;
 using Lib.AspNetCore.Security.Http.Extensions;
+
 
 namespace Lib.AspNetCore.Security
 {
@@ -15,6 +17,7 @@ namespace Lib.AspNetCore.Security
         #region Fields
         private readonly RequestDelegate _next;
         private readonly SecurityHeadersPolicy _policy;
+        private readonly ConcurrentDictionary<string, string> _hashesCache;
 
         private static Task _completedTask = Task.FromResult<object>(null);
         #endregion
@@ -29,6 +32,7 @@ namespace Lib.AspNetCore.Security
         {
             _next = next ?? throw new ArgumentNullException(nameof(next));
             _policy = policy ?? throw new ArgumentNullException(nameof(policy));
+            _hashesCache = new ConcurrentDictionary<string, string>();
         }
         #endregion
 
@@ -96,7 +100,7 @@ namespace Lib.AspNetCore.Security
         {
             if (_policy.Csp != null)
             {
-                context.Features.Set<IContentSecurityPolicyInlineExecutionFeature>(new ContentSecurityPolicyInlineExecutionFeature(_policy.Csp));
+                context.Features.Set<IContentSecurityPolicyInlineExecutionFeature>(new ContentSecurityPolicyInlineExecutionFeature(_policy.Csp, _hashesCache));
 
                 context.Response.OnStarting(() => {
                     string headerName = _policy.IsCspReportOnly ? HeaderNames.ContentSecurityPolicyReportOnly : HeaderNames.ContentSecurityPolicy;

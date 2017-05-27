@@ -34,5 +34,21 @@ namespace Lib.AspNetCore.Security.Http.Features
         /// </summary>
         ICollection<string> StylesHashes { get; }
         #endregion
+
+        #region Methods
+        /// <summary>
+        /// Gets the hash from cache.
+        /// </summary>
+        /// <param name="cacheKey">The cache key.</param>
+        /// <returns>The hash.</returns>
+        string GetHashFromCache(string cacheKey);
+
+        /// <summary>
+        /// Adds the hash to cache.
+        /// </summary>
+        /// <param name="cacheKey">The cache key.</param>
+        /// <param name="hash">The hash.</param>
+        void AddHashToCache(string cacheKey, string hash);
+        #endregion
     }
 }

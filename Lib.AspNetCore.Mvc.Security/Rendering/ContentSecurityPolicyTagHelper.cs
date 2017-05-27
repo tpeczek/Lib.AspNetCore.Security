@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
@@ -34,9 +35,10 @@ namespace Lib.AspNetCore.Mvc.Security.Rendering
         {
             SetTagName(output);
 
+            string uniqueId = (output.Attributes[ContentSecurityPolicyHelper.CspAttribute]?.Value?.ToString().ToLowerInvariant() == ContentSecurityPolicyHelper.CspAttributeCacheValue) ? context.UniqueId : null;
             output.Attributes.RemoveAll(ContentSecurityPolicyHelper.CspAttribute);
 
-            await ApplyContentSecurityPolicy(output);
+            await ApplyContentSecurityPolicy(output, uniqueId);
         }
 
         private void SetTagName(TagHelperOutput output)
@@ -51,7 +53,7 @@ namespace Lib.AspNetCore.Mvc.Security.Rendering
             }
         }
 
-        private async Task ApplyContentSecurityPolicy(TagHelperOutput output)
+        private async Task ApplyContentSecurityPolicy(TagHelperOutput output, string uniqueId)
         {
             ContentSecurityPolicyHelper cspHelper = new ContentSecurityPolicyHelper(ViewContext);
 
@@ -63,13 +65,27 @@ namespace Lib.AspNetCore.Mvc.Security.Rendering
             }
             else if (currentInlineExecution == ContentSecurityPolicyInlineExecution.Hash)
             {
-                string content = output.Content.IsModified ? output.Content.GetContent() : (await output.GetChildContentAsync()).GetContent();
-                string contentHash = ContentSecurityPolicyHelper.ComputeHash(content);
+                string contentHash = null;
+
+                if (!String.IsNullOrEmpty(uniqueId))
+                {
+                    contentHash = cspHelper.GetHashFromCache(uniqueId);
+                }
+
+                if (contentHash == null)
+                {
+                    string content = output.Content.IsModified ? output.Content.GetContent() : (await output.GetChildContentAsync()).GetContent();
+                    contentHash = ContentSecurityPolicyHelper.ComputeHash(content);
+
+                    if (!String.IsNullOrEmpty(uniqueId))
+                    {
+                        cspHelper.AddHashToCache(uniqueId, contentHash);
+                    }
+                }
 
                 cspHelper.AddHashToInlineExecutionSources(output.TagName, contentHash);
             }
         }
         #endregion
     }
-
 }

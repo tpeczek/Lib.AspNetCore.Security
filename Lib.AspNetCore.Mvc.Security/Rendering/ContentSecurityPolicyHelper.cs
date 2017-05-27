@@ -10,13 +10,15 @@ namespace Lib.AspNetCore.Mvc.Security.Rendering
     internal class ContentSecurityPolicyHelper
     {
         #region Constants
-        public const string ScriptTagName = "script";
-        public const string CspScriptTagName = "csp-script";
-        public const string StyleTagName = "style";
-        public const string CspStyleTagName = "csp-style";
+        internal const string ScriptTagName = "script";
+        internal const string CspScriptTagName = "csp-script";
+        internal const string StyleTagName = "style";
+        internal const string CspStyleTagName = "csp-style";
 
-        public const string CspAttribute = "asp-csp";
-        public const string NonceAttribute = "nonce";
+        internal const string CspAttribute = "asp-csp";
+        internal const string CspAttributeCacheValue = "cache";
+
+        internal const string NonceAttribute = "nonce";
         #endregion
 
         #region Fields
@@ -24,14 +26,14 @@ namespace Lib.AspNetCore.Mvc.Security.Rendering
         #endregion
 
         #region Constructor
-        public ContentSecurityPolicyHelper(ViewContext viewContext)
+        internal ContentSecurityPolicyHelper(ViewContext viewContext)
         {
             _cspFeature = viewContext.HttpContext.Features.Get<IContentSecurityPolicyInlineExecutionFeature>();
         }
         #endregion
 
         #region Methods
-        public ContentSecurityPolicyInlineExecution GetCurrentInlineExecution(string elementTagName)
+        internal ContentSecurityPolicyInlineExecution GetCurrentInlineExecution(string elementTagName)
         {
             ContentSecurityPolicyInlineExecution inlineExecution = ContentSecurityPolicyInlineExecution.Unsafe;
 
@@ -51,12 +53,22 @@ namespace Lib.AspNetCore.Mvc.Security.Rendering
             return inlineExecution;
         }
 
-        public string GetCurrentNonce()
+        internal string GetCurrentNonce()
         {
             return _cspFeature?.Nonce;
         }
 
-        public void AddHashToInlineExecutionSources(string elementTagName, string elementHash)
+        internal string GetHashFromCache(string uniqueId)
+        {
+            return _cspFeature.GetHashFromCache(uniqueId);
+        }
+
+        internal void AddHashToCache(string uniqueId, string hash)
+        {
+            _cspFeature.AddHashToCache(uniqueId, hash);
+        }
+
+        internal void AddHashToInlineExecutionSources(string elementTagName, string elementHash)
         {
             switch (elementTagName)
             {
@@ -69,13 +81,13 @@ namespace Lib.AspNetCore.Mvc.Security.Rendering
             }
         }
 
-        public static string ComputeHash(string elementContent)
+        internal static string ComputeHash(string elementContent)
         {
             elementContent = elementContent.Replace("\r\n", "\n");
             byte[] elementHashBytes = SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(elementContent));
 
             return Convert.ToBase64String(elementHashBytes);
-        }
+        } 
         #endregion
     }
 }
