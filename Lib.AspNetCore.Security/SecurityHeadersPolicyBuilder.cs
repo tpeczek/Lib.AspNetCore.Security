@@ -66,7 +66,7 @@ namespace Lib.AspNetCore.Security
         /// </summary>
         /// <param name="csp">The Content Security Policy.</param>
         /// <returns>The current policy builder.</returns>
-        public SecurityHeadersPolicyBuilder WithOnlyCsp(ContentSecurityPolicyHeaderValue csp)
+        public SecurityHeadersPolicyBuilder WithCsp(ContentSecurityPolicyHeaderValue csp)
         {
             return WithCsp(false, csp);
         }
