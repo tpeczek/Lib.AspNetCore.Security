@@ -1,0 +1,52 @@
+﻿{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "Lib.AspNetCore.Security/Lib.AspNetCore.Security.csproj",
+            "Lib.AspNetCore.Mvc.Security/Lib.AspNetCore.Mvc.Security.csproj"
+          ],
+          "exclude": [ "**/bin/**", "**/obj/**" ],
+          "src": ".."
+        }
+      ],
+      "dest": "api",
+      "properties": {
+        "TargetFramework": "netstandard1.6"
+      }
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "api/*.yml",
+          "toc.md",
+          "index.md",
+          "articles/security-headers.md",
+          "articles/violation-reports.md",
+          "articles/csp-tag-helpers.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "resources/svg/logo.svg",
+          "resources/ico/favicon.ico"
+        ]
+      }
+    ],
+    "dest": "wwwroot",
+    "globalMetadata": {
+      "_appTitle": "Lib.AspNetCore.Security",
+      "_appFooter": "Copyright © 2017 Tomasz Pęczek",
+      "_appLogoPath": "resources/svg/logo.svg",
+      "_appFaviconPath": "resources/ico/favicon.ico",
+      "_disableBreadcrumb": true,
+      "_disableAffix": true,
+      "_disableContribution": true
+    }
+  }
+}
