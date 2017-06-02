@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class XFrameOptionsAttribute
+   | Lib.AspNetCore.Security </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class XFrameOptionsAttribute
+   | Lib.AspNetCore.Security ">
+    <meta name="generator" content="docfx 2.17.5.12">
+    
+    <link rel="shortcut icon" href="../resources/ico/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../resources/svg/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute">
+  
+  
+  <h1 id="Lib_AspNetCore_Mvc_Security_Filters_XFrameOptionsAttribute" data-uid="Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute">Class XFrameOptionsAttribute
+  </h1>
+  <div class="markdown level0 summary"><p>Action filter for setting X-Frame-Options header value.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.Attribute</span></div>
+    <div class="level2"><span class="xref">Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute</span></div>
+    <div class="level3"><span class="xref">XFrameOptionsAttribute</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute.OnActionExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext, Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute.OnResultExecuting(Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute.OnResultExecuted(Microsoft.AspNetCore.Mvc.Filters.ResultExecutedContext)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute.OnResultExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext, Microsoft.AspNetCore.Mvc.Filters.ResultExecutionDelegate)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute.Order</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>:Lib.AspNetCore.Mvc.Security.Filters</h6>
+  <h6><strong>Assembly</strong>:Lib.AspNetCore.Mvc.Security.dll</h6>
+  <h5 id="Lib_AspNetCore_Mvc_Security_Filters_XFrameOptionsAttribute_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
+public class XFrameOptionsAttribute : ActionFilterAttribute, IActionFilter, IAsyncActionFilter, IResultFilter, IAsyncResultFilter, IOrderedFilter, IFilterMetadata</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="Lib_AspNetCore_Mvc_Security_Filters_XFrameOptionsAttribute__ctor_" data-uid="Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.#ctor*"></a>
+  <h4 id="Lib_AspNetCore_Mvc_Security_Filters_XFrameOptionsAttribute__ctor_Lib_AspNetCore_Security_Http_Headers_XFrameOptionsDirectives_" data-uid="Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.#ctor(Lib.AspNetCore.Security.Http.Headers.XFrameOptionsDirectives)">XFrameOptionsAttribute(XFrameOptionsDirectives)</h4>
+  <div class="markdown level1 summary"><p>Instantiates a new <a class="xref" href="Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.html">XFrameOptionsAttribute</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XFrameOptionsAttribute(XFrameOptionsDirectives directive)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Lib.AspNetCore.Security.Http.Headers.XFrameOptionsDirectives.html">XFrameOptionsDirectives</a></td>
+        <td><span class="parametername">directive</span></td>
+        <td><p>The directive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Lib_AspNetCore_Mvc_Security_Filters_XFrameOptionsAttribute__ctor_" data-uid="Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.#ctor*"></a>
+  <h4 id="Lib_AspNetCore_Mvc_Security_Filters_XFrameOptionsAttribute__ctor_System_String_" data-uid="Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.#ctor(System.String)">XFrameOptionsAttribute(String)</h4>
+  <div class="markdown level1 summary"><p>Instantiates a new <a class="xref" href="Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.html">XFrameOptionsAttribute</a> with <a class="xref" href="Lib.AspNetCore.Security.Http.Headers.XFrameOptionsDirectives.html#Lib_AspNetCore_Security_Http_Headers_XFrameOptionsDirectives_AllowFrom">AllowFrom</a> directive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XFrameOptionsAttribute(string origin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">origin</span></td>
+        <td><p>The serialized origin.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Lib_AspNetCore_Mvc_Security_Filters_XFrameOptionsAttribute_Origin_" data-uid="Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.Origin*"></a>
+  <h4 id="Lib_AspNetCore_Mvc_Security_Filters_XFrameOptionsAttribute_Origin" data-uid="Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.Origin">Origin</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the serialized origin for <a class="xref" href="Lib.AspNetCore.Security.Http.Headers.XFrameOptionsDirectives.html#Lib_AspNetCore_Security_Http_Headers_XFrameOptionsDirectives_AllowFrom">AllowFrom</a> directive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Origin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Lib_AspNetCore_Mvc_Security_Filters_XFrameOptionsAttribute_OnActionExecuted_" data-uid="Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.OnActionExecuted*"></a>
+  <h4 id="Lib_AspNetCore_Mvc_Security_Filters_XFrameOptionsAttribute_OnActionExecuted_Microsoft_AspNetCore_Mvc_Filters_ActionExecutedContext_" data-uid="Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">OnActionExecuted(ActionExecutedContext)</h4>
+  <div class="markdown level1 summary"><p>Called after the action method executes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnActionExecuted(ActionExecutedContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)</span></div>
+</article>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2017 Tomasz Pęczek
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

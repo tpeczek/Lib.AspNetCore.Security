@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Violation Reports | Lib.AspNetCore.Security </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Violation Reports | Lib.AspNetCore.Security ">
+    <meta name="generator" content="docfx 2.17.5.12">
+    
+    <link rel="shortcut icon" href="../resources/ico/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../resources/svg/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="violation-reports">Violation Reports</h1>
+
+<p>Lib.AspNetCore.Security provides middlewares which can receive violation reports for following security headers:</p>
+<ul>
+<li>Content-Security-Policy (<a href="../api/Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.html"><code>ContentSecurityPolicyReportingMiddleware</code></a>)</li>
+<li>Expect-CT (<a href="../api/Lib.AspNetCore.Security.ExpectCtReportingMiddleware.html"><code>ExpectCtReportingMiddleware</code></a>)</li>
+</ul>
+<p>The middlewares can be added to the pipeline with <code>MapContentSecurityPolicyReporting</code> and <code>MapExpectCtReporting</code> extension methods.</p>
+<pre><code class="lang-cs">public void Configure(IApplicationBuilder app)
+{
+    ...
+
+    app.UseSecurityHeaders(builder =&gt;
+    {
+        builder.WithCsp(
+            ...
+            reportUri: &quot;/report-csp&quot;
+        )
+        .WithReportOnlyExpectCt(&quot;https://example.com/report-ct&quot;)
+        ...;
+    })
+    .MapContentSecurityPolicyReporting(&quot;/report-csp&quot;)
+    .MapExpectCtReporting(&quot;/report-ct&quot;);
+
+    ...
+}
+</code></pre><p>Underneath the covers the middlewares will look for <a href="../api/Lib.AspNetCore.Security.ISecurityHeadersReportingService.html"><code>ISecurityHeadersReportingService</code></a> service implementation, which might look like this:</p>
+<pre><code class="lang-cs">public class LoggerSecurityHeadersReportingService : ISecurityHeadersReportingService
+{
+    private readonly ILogger _logger;
+
+    public LoggerSecurityHeadersReportingService(ILogger&lt;ISecurityHeadersReportingService&gt; logger)
+    {
+        _logger = logger;
+    }
+
+    public Task OnContentSecurityPolicyViolationAsync(ContentSecurityPolicyViolationReport report)
+    {
+        _logger.LogWarning(&quot;Content Security Policy Violation: Document: {DocumentUri} | Resource: {BlockedUri} | Directive: {ViolatedDirective} | Disposition: {Disposition}&quot;,
+            report.DocumentUri,
+            report.BlockedUri,
+            report.ViolatedDirective,
+            report.Disposition);
+
+        return Task.FromResult(0);
+    }
+
+    public Task OnExpectCtViolationAsync(ExpectCtViolationReport report)
+    {
+        _logger.LogWarning(&quot;Expect-CT Violation: Failure Date: {FailureDate} UTC | Effective Expiration Date: {EffectiveExpirationDate} UTC | Host: {Host} | Port: {Port}&quot;,
+            report.FailureDate.ToUniversalTime(),
+            report.EffectiveExpirationDate.ToUniversalTime(),
+            report.Hostname,
+            report.Port);
+
+        return Task.FromResult(0);
+    }
+}
+</code></pre><p>Service must be registered in the services collection during configuration, for example:</p>
+<pre><code class="lang-cs">public void ConfigureServices(IServiceCollection services)
+{
+    services.AddTransient&lt;ISecurityHeadersReportingService, LoggerSecurityHeadersReportingService&gt;();
+    ...
+}
+</code></pre></article>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2017 Tomasz Pęczek
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
