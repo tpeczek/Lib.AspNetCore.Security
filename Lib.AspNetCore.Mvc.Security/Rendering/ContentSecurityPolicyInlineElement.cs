@@ -38,7 +38,7 @@ namespace Lib.AspNetCore.Mvc.Security.Rendering
             _elementTag.TagRenderMode = TagRenderMode.StartTag;
             _elementTag.WriteTo(_viewContext.Writer, HtmlEncoder.Default);
 
-            if (_currentInlineExecution == ContentSecurityPolicyInlineExecution.Hash)
+            if (_currentInlineExecution.IsHashBased())
             {
                 _viewContextWriter = _viewContext.Writer;
                 _viewContext.Writer = new StringWriter();
@@ -49,11 +49,11 @@ namespace Lib.AspNetCore.Mvc.Security.Rendering
         #region IDisposable Members
         public void Dispose()
         {
-            if (_currentInlineExecution == ContentSecurityPolicyInlineExecution.Hash)
+            if (_currentInlineExecution.IsHashBased())
             {
                 StringBuilder elementInnerHtmlBuilder = ((StringWriter)_viewContext.Writer).GetStringBuilder();
                 string elementInnerHtml = elementInnerHtmlBuilder.ToString();
-                string elementHash = ContentSecurityPolicyHelper.ComputeHash(elementInnerHtml);
+                string elementHash = ContentSecurityPolicyHelper.ComputeHash(_currentInlineExecution, elementInnerHtml);
 
                 _cspHelper.AddHashToInlineExecutionSources(_elementTag.TagName, elementHash);
 

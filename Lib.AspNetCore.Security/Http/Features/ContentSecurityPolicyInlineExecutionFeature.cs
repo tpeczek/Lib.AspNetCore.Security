@@ -43,12 +43,12 @@ namespace Lib.AspNetCore.Security.Http.Features
                 Nonce = GenerateNonce();
             }
 
-            if (ScriptInlineExecution == ContentSecurityPolicyInlineExecution.Hash)
+            if (ScriptInlineExecution.IsHashBased())
             {
                 ScriptsHashes = new List<string>();
             }
 
-            if (StyleInlineExecution == ContentSecurityPolicyInlineExecution.Hash)
+            if (StyleInlineExecution.IsHashBased())
             {
                 StylesHashes = new List<string>();
             }

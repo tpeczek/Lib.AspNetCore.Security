@@ -4,11 +4,27 @@ using System.Security.Cryptography;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Lib.AspNetCore.Security.Http.Features;
 using Lib.AspNetCore.Security.Http.Headers;
+using System.Collections.Generic;
 
 namespace Lib.AspNetCore.Mvc.Security.Rendering
 {
     internal class ContentSecurityPolicyHelper
     {
+        #region Structs
+        private struct HashAlgorithmInfo
+        {
+            public string SourcePrefix { get; }
+
+            public Func<HashAlgorithm> AlgorithmImplementationCreator { get; }
+
+            public HashAlgorithmInfo(string sourcePrefix, Func<HashAlgorithm> algorithmImplementationCreator)
+            {
+                SourcePrefix = sourcePrefix;
+                AlgorithmImplementationCreator = algorithmImplementationCreator;
+            }
+        }
+        #endregion
+
         #region Constants
         internal const string ScriptTagName = "script";
         internal const string CspScriptTagName = "csp-script";
@@ -23,6 +39,13 @@ namespace Lib.AspNetCore.Mvc.Security.Rendering
 
         #region Fields
         private readonly IContentSecurityPolicyInlineExecutionFeature _cspFeature;
+
+        private readonly static IReadOnlyDictionary<ContentSecurityPolicyInlineExecution, HashAlgorithmInfo> _hashAlgorithmsInfos = new Dictionary<ContentSecurityPolicyInlineExecution, HashAlgorithmInfo>
+        {
+            { ContentSecurityPolicyInlineExecution.Hash, new HashAlgorithmInfo("sha256-", SHA256.Create) },
+            { ContentSecurityPolicyInlineExecution.Hash384, new HashAlgorithmInfo("sha384-", SHA384.Create) },
+            { ContentSecurityPolicyInlineExecution.Hash512, new HashAlgorithmInfo("sha512-", SHA512.Create) }
+        };
         #endregion
 
         #region Constructor
@@ -81,12 +104,18 @@ namespace Lib.AspNetCore.Mvc.Security.Rendering
             }
         }
 
-        internal static string ComputeHash(string elementContent)
+        internal static string ComputeHash(ContentSecurityPolicyInlineExecution hashAlgorithm, string elementContent)
         {
-            elementContent = elementContent.Replace("\r\n", "\n");
-            byte[] elementHashBytes = SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(elementContent));
+            HashAlgorithmInfo hashAlgorithmInfo = _hashAlgorithmsInfos[hashAlgorithm];
+            byte[] elementHashBytes = null;
 
-            return Convert.ToBase64String(elementHashBytes);
+            using (HashAlgorithm hashAlgorithmImplementation = hashAlgorithmInfo.AlgorithmImplementationCreator())
+            {
+                elementContent = elementContent.Replace("\r\n", "\n");
+                elementHashBytes = hashAlgorithmImplementation.ComputeHash(Encoding.UTF8.GetBytes(elementContent));
+            }
+            
+            return hashAlgorithmInfo.SourcePrefix + Convert.ToBase64String(elementHashBytes);
         } 
         #endregion
     }

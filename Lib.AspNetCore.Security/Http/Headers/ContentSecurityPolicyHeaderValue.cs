@@ -74,9 +74,35 @@ namespace Lib.AspNetCore.Security.Http.Headers
         /// </summary>
         Nonce,
         /// <summary>
-        /// Use hash mechanism
+        /// Use hash mechanism (SHA-256)
         /// </summary>
-        Hash
+        Hash,
+        /// <summary>
+        /// Use hash mechanism (SHA-384)
+        /// </summary>
+        Hash384,
+        /// <summary>
+        /// Use hash mechanism (SHA-512)
+        /// </summary>
+        Hash512
+    }
+
+    /// <summary>
+    /// Extensions for <see cref="ContentSecurityPolicyInlineExecution"/>.
+    /// </summary>
+    public static class ContentSecurityPolicyInlineExecutionExtensions
+    {
+        /// <summary>
+        /// Returns value indicating if inline execution mode is one of hash based ones.
+        /// </summary>
+        /// <param name="inlineExecution">The inline execution mode.</param>
+        /// <returns>True if inline execution mode is hash based, otherwise false.</returns>
+        public static bool IsHashBased(this ContentSecurityPolicyInlineExecution inlineExecution)
+        {
+            return (inlineExecution == ContentSecurityPolicyInlineExecution.Hash)
+                || (inlineExecution == ContentSecurityPolicyInlineExecution.Hash384)
+                || (inlineExecution == ContentSecurityPolicyInlineExecution.Hash512);
+        }
     }
 
     /// <summary>
@@ -127,7 +153,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
 
         private const string _unsafeInlineSource = " 'unsafe-inline'";
         private const string _nonceSourceFormat = " 'nonce-{0}'";
-        private const string _sha256SourceFormat = " 'sha256-{0}'";
+        private const string _hashSourceFormat = " '{0}'";
 
         private string _baseUri, _childSources, _connectSources, _defaultSources, _fontSources, _formAction, _frameAncestorsSources, _frameSources;
         private string _imageSources, _manifestSources, _mediaSources, _objectSources, _pluginTypes, _reportUri, _scriptSources, _styleSources, _workerSources;
@@ -676,30 +702,25 @@ namespace Lib.AspNetCore.Security.Http.Headers
                     headerValueBuilder.AppendFormat(" {0}", directiveValue);
                 }
 
-                switch (inlineExecution)
+                if (inlineExecution == ContentSecurityPolicyInlineExecution.Unsafe)
                 {
-                    case ContentSecurityPolicyInlineExecution.Unsafe:
-                        headerValueBuilder.Append(_unsafeInlineSource);
-                        break;
-                    case ContentSecurityPolicyInlineExecution.Nonce:
-                        if (String.IsNullOrWhiteSpace(nonce))
-                        {
-                            throw new InvalidOperationException("Nonce mode for Content Security Policy inline execution requires providing nonce value.");
-                        }
+                    headerValueBuilder.Append(_unsafeInlineSource);
+                }
+                else if (inlineExecution == ContentSecurityPolicyInlineExecution.Nonce)
+                {
+                    if (String.IsNullOrWhiteSpace(nonce))
+                    {
+                        throw new InvalidOperationException("Nonce mode for Content Security Policy inline execution requires providing nonce value.");
+                    }
 
-                        headerValueBuilder.AppendFormat(_nonceSourceFormat, nonce);
-                        break;
-                    case ContentSecurityPolicyInlineExecution.Hash:
-                        if (hashes != null)
-                        {
-                            foreach(string inlineHash in hashes)
-                            {
-                                headerValueBuilder.AppendFormat(_sha256SourceFormat, inlineHash);
-                            }
-                        }
-                        break;
-                    default:
-                        break;
+                    headerValueBuilder.AppendFormat(_nonceSourceFormat, nonce);
+                }
+                else if (inlineExecution.IsHashBased() && (hashes != null))
+                {
+                    foreach (string inlineHash in hashes)
+                    {
+                        headerValueBuilder.AppendFormat(_hashSourceFormat, inlineHash);
+                    }
                 }
 
                 headerValueBuilder.Append(_directiveDelimiter);
