@@ -237,6 +237,42 @@ namespace Lib.AspNetCore.Security
         }
 
         /// <summary>
+        /// Adds the X-Permitted-Cross-Domain-Policies with <see cref="XPermittedCrossDomainPoliciesDirectives.None"/> directive.
+        /// </summary>
+        /// <returns>The current policy builder.</returns>
+        public SecurityHeadersPolicyBuilder WithNoneXPermittedCrossDomainPolicies()
+        {
+            return WithXPermittedCrossDomainPolicies(XPermittedCrossDomainPoliciesDirectives.None);
+        }
+
+        /// <summary>
+        /// Adds the X-Permitted-Cross-Domain-Policies with <see cref="XPermittedCrossDomainPoliciesDirectives.MasterOnly"/> directive.
+        /// </summary>
+        /// <returns>The current policy builder.</returns>
+        public SecurityHeadersPolicyBuilder WithMasterOnlyXPermittedCrossDomainPolicies()
+        {
+            return WithXPermittedCrossDomainPolicies(XPermittedCrossDomainPoliciesDirectives.MasterOnly);
+        }
+
+        /// <summary>
+        /// Adds the X-Permitted-Cross-Domain-Policies with <see cref="XPermittedCrossDomainPoliciesDirectives.ByContentType"/> directive.
+        /// </summary>
+        /// <returns>The current policy builder.</returns>
+        public SecurityHeadersPolicyBuilder WithByContentTypeXPermittedCrossDomainPolicies()
+        {
+            return WithXPermittedCrossDomainPolicies(XPermittedCrossDomainPoliciesDirectives.ByContentType);
+        }
+
+        /// <summary>
+        /// Adds the X-Permitted-Cross-Domain-Policies with <see cref="XPermittedCrossDomainPoliciesDirectives.All"/> directive.
+        /// </summary>
+        /// <returns>The current policy builder.</returns>
+        public SecurityHeadersPolicyBuilder WithAllXPermittedCrossDomainPolicies()
+        {
+            return WithXPermittedCrossDomainPolicies(XPermittedCrossDomainPoliciesDirectives.All);
+        }
+
+        /// <summary>
         /// Adds the X-XSS-Protection with <see cref="XssFilteringModes.None"/> mode.
         /// </summary>
         /// <returns>The current policy builder.</returns>
@@ -322,6 +358,13 @@ namespace Lib.AspNetCore.Security
             {
                 Origin = origin
             };
+
+            return this;
+        }
+ 
+        private SecurityHeadersPolicyBuilder WithXPermittedCrossDomainPolicies(XPermittedCrossDomainPoliciesDirectives directive)
+        {
+            _policy.XPermittedCrossDomainPolicies = new XPermittedCrossDomainPoliciesHeaderValue(directive);
 
             return this;
         }

@@ -84,6 +84,26 @@ namespace Lib.AspNetCore.Security.Http.Extensions
         }
 
         /// <summary>
+        /// Sets the X-Permitted-Cross-Domain-Policies header value.
+        /// </summary>
+        /// <param name="response">The response.</param>
+        /// <param name="directive">The directive.</param>
+        public static void SetXPermittedCrossDomainPolicies(this HttpResponse response, XPermittedCrossDomainPoliciesDirectives directive)
+        {
+            response.SetXPermittedCrossDomainPolicies(new XPermittedCrossDomainPoliciesHeaderValue(directive));
+        }
+
+        /// <summary>
+        /// Sets the X-Permitted-Cross-Domain-Policies header value.
+        /// </summary>
+        /// <param name="response">The response.</param>
+        /// <param name="permittedCrossDomainPolicies">The X-Permitted-Cross-Domain-Policies header value.</param>
+        public static void SetXPermittedCrossDomainPolicies(this HttpResponse response, XPermittedCrossDomainPoliciesHeaderValue permittedCrossDomainPolicies)
+        {
+            response.SetResponseHeader(HeaderNames.XPermittedCrossDomainPolicies, permittedCrossDomainPolicies?.ToString());
+        }
+
+        /// <summary>
         /// Sets the X-XSS-Protection header value.
         /// </summary>
         /// <param name="response">The response.</param>

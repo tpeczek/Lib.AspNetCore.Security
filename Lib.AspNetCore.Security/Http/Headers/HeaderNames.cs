@@ -46,6 +46,11 @@
         public const string XFrameOptions = "X-Frame-Options";
 
         /// <summary>
+        /// The X-Permitted-Cross-Domain-Policies header.
+        /// </summary>
+        public const string XPermittedCrossDomainPolicies = "X-Permitted-Cross-Domain-Policies";
+
+        /// <summary>
         /// The X-XSS-Protection header.
         /// </summary>
         public const string XXssProtection = "X-XSS-Protection";

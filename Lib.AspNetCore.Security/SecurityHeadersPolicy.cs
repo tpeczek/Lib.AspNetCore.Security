@@ -54,6 +54,11 @@ namespace Lib.AspNetCore.Security
         public XFrameOptionsHeaderValue XFrameOptions { get; set; }
 
         /// <summary>
+        /// Gets or sets the X-Permitted-Cross-Domain-Policies header value.
+        /// </summary>
+        public XPermittedCrossDomainPoliciesHeaderValue XPermittedCrossDomainPolicies { get; set; }
+
+        /// <summary>
         /// Gets or sets the X-XSS-Protection header value.
         /// </summary>
         public XXssProtectionHeaderValue XXssProtection { get; set; }

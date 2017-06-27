@@ -56,6 +56,7 @@ namespace Lib.AspNetCore.Security
                 context.Response.SetReferrerPolicy(_policy.ReferrerPolicy);
                 context.Response.SetStrictTransportSecurity(_policy.Hsts);
                 context.Response.SetXFrameOptions(_policy.XFrameOptions);
+                context.Response.SetXPermittedCrossDomainPolicies(_policy.XPermittedCrossDomainPolicies);
                 context.Response.SetXXssProtection(_policy.XXssProtection);
 
                 if (context.Request.IsHttps)
