@@ -121,6 +121,11 @@ namespace Lib.AspNetCore.Security.Http.Headers
         /// </summary>
         public const string SelfSource = "'self'";
 
+        /// <summary>
+        /// The source list keyword to allow the use of eval() and similar methods for creating code from strings.
+        /// </summary>
+        public const string UnsafeEvalSource = "'unsafe-eval'";
+
         private const string _baseDirectiveFormat = "base-uri {0};";
         private const string _blockAllMixedContentDirective = "block-all-mixed-content;";
         private const string _childDirectiveFormat = "child-src {0};";
