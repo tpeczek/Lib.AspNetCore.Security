@@ -17,7 +17,9 @@ Strict-Transport-Security | [Yes](../api/Lib.AspNetCore.Security.Http.Headers.St
 X-Content-Type-Options | No | Yes | Yes
 X-Download-Options | No | Yes | Yes
 X-Frame-Options | [Yes](../api/Lib.AspNetCore.Security.Http.Headers.XFrameOptionsHeaderValue.html) | Yes | Yes
+X-Permitted-Cross-Domain-Policies | [Yes](../api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.html) | Yes | Yes
 X-XSS-Protection | [Yes](../api/Lib.AspNetCore.Security.Http.Headers.XXssProtectionHeaderValue.html) | Yes | Yes
+
 
 ## Configuring security headers with middleware
 
@@ -35,16 +37,23 @@ public void Configure(IApplicationBuilder app)
         builder.WithCsp(
             fontSources: "fonts.gstatic.com",
             imageSources: ContentSecurityPolicyHeaderValue.SelfSource,
-            scriptSources: ContentSecurityPolicyHeaderValue.SelfSource + " cdnjs.cloudflare.com",
+            scriptSources: (new ContentSecurityPolicySourceListBuilder())
+				.WithSelfKeyword()
+				.WithUrls("cdnjs.cloudflare.com")
+				.Build(),
             scriptInlineExecution: ContentSecurityPolicyInlineExecution.Hash,
-            styleSources: ContentSecurityPolicyHeaderValue.SelfSource + " fonts.googleapis.com",
+            styleSources: (new ContentSecurityPolicySourceListBuilder())
+				.WithSelfKeyword()
+				.WithUrls("fonts.googleapis.com")
+				.Build(),
             styleInlineExecution: ContentSecurityPolicyInlineExecution.Hash
         )
         .WithDenyXFrameOptions()
         .WithBlockXssFiltering()
         .WithXContentTypeOptions()
         .WithXDownloadOptions()
-        .WithReferrerPolicy(ReferrerPolicyDirectives.NoReferrer);
+        .WithReferrerPolicy(ReferrerPolicyDirectives.NoReferrer)
+		.WithNoneXPermittedCrossDomainPolicies();
     });
 
     ...
