@@ -13,18 +13,18 @@ references:
   commentId: T:Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute
   fullName: Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute
   nameWithType: XFrameOptionsAttribute
-- uid: Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.#ctor(Lib.AspNetCore.Security.Http.Headers.XFrameOptionsDirectives)
-  name: XFrameOptionsAttribute(XFrameOptionsDirectives)
-  href: api/Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.html#Lib_AspNetCore_Mvc_Security_Filters_XFrameOptionsAttribute__ctor_Lib_AspNetCore_Security_Http_Headers_XFrameOptionsDirectives_
-  commentId: M:Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.#ctor(Lib.AspNetCore.Security.Http.Headers.XFrameOptionsDirectives)
-  fullName: Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.XFrameOptionsAttribute(Lib.AspNetCore.Security.Http.Headers.XFrameOptionsDirectives)
-  nameWithType: XFrameOptionsAttribute.XFrameOptionsAttribute(XFrameOptionsDirectives)
 - uid: Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.#ctor(System.String)
   name: XFrameOptionsAttribute(String)
   href: api/Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.html#Lib_AspNetCore_Mvc_Security_Filters_XFrameOptionsAttribute__ctor_System_String_
   commentId: M:Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.#ctor(System.String)
   fullName: Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.XFrameOptionsAttribute(System.String)
   nameWithType: XFrameOptionsAttribute.XFrameOptionsAttribute(String)
+- uid: Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.#ctor(XFrameOptionsDirectives)
+  name: XFrameOptionsAttribute(XFrameOptionsDirectives)
+  href: api/Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.html#Lib_AspNetCore_Mvc_Security_Filters_XFrameOptionsAttribute__ctor_XFrameOptionsDirectives_
+  commentId: M:Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.#ctor(XFrameOptionsDirectives)
+  fullName: Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.XFrameOptionsAttribute(XFrameOptionsDirectives)
+  nameWithType: XFrameOptionsAttribute.XFrameOptionsAttribute(XFrameOptionsDirectives)
 - uid: Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.#ctor*
   name: XFrameOptionsAttribute
   href: api/Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.html#Lib_AspNetCore_Mvc_Security_Filters_XFrameOptionsAttribute__ctor_
@@ -67,11 +67,11 @@ references:
   commentId: M:Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.#ctor
   fullName: Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.XXssProtectionAttribute()
   nameWithType: XXssProtectionAttribute.XXssProtectionAttribute()
-- uid: Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.#ctor(Lib.AspNetCore.Security.Http.Headers.XssFilteringModes)
+- uid: Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.#ctor(XssFilteringModes)
   name: XXssProtectionAttribute(XssFilteringModes)
-  href: api/Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.html#Lib_AspNetCore_Mvc_Security_Filters_XXssProtectionAttribute__ctor_Lib_AspNetCore_Security_Http_Headers_XssFilteringModes_
-  commentId: M:Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.#ctor(Lib.AspNetCore.Security.Http.Headers.XssFilteringModes)
-  fullName: Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.XXssProtectionAttribute(Lib.AspNetCore.Security.Http.Headers.XssFilteringModes)
+  href: api/Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.html#Lib_AspNetCore_Mvc_Security_Filters_XXssProtectionAttribute__ctor_XssFilteringModes_
+  commentId: M:Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.#ctor(XssFilteringModes)
+  fullName: Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.XXssProtectionAttribute(XssFilteringModes)
   nameWithType: XXssProtectionAttribute.XXssProtectionAttribute(XssFilteringModes)
 - uid: Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.#ctor*
   name: XXssProtectionAttribute
@@ -355,6 +355,24 @@ references:
   commentId: Overload:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXFrameOptions
   fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXFrameOptions
   nameWithType: HttpResponseHeadersExtensions.SetXFrameOptions
+- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives)
+  name: SetXPermittedCrossDomainPolicies(HttpResponse, XPermittedCrossDomainPoliciesDirectives)
+  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetXPermittedCrossDomainPolicies_Microsoft_AspNetCore_Http_HttpResponse_Lib_AspNetCore_Security_Http_Headers_XPermittedCrossDomainPoliciesDirectives_
+  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives)
+  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies(Microsoft.AspNetCore.Http.HttpResponse, Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives)
+  nameWithType: HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies(HttpResponse, XPermittedCrossDomainPoliciesDirectives)
+- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue)
+  name: SetXPermittedCrossDomainPolicies(HttpResponse, XPermittedCrossDomainPoliciesHeaderValue)
+  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetXPermittedCrossDomainPolicies_Microsoft_AspNetCore_Http_HttpResponse_Lib_AspNetCore_Security_Http_Headers_XPermittedCrossDomainPoliciesHeaderValue_
+  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue)
+  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies(Microsoft.AspNetCore.Http.HttpResponse, Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue)
+  nameWithType: HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies(HttpResponse, XPermittedCrossDomainPoliciesHeaderValue)
+- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies*
+  name: SetXPermittedCrossDomainPolicies
+  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetXPermittedCrossDomainPolicies_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies
+  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies
+  nameWithType: HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies
 - uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXXssProtection(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.XssFilteringModes)
   name: SetXXssProtection(HttpResponse, XssFilteringModes)
   href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetXXssProtection_Microsoft_AspNetCore_Http_HttpResponse_Lib_AspNetCore_Security_Http_Headers_XssFilteringModes_
@@ -805,6 +823,12 @@ references:
   commentId: Overload:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyHeaderValue.ToString
   fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyHeaderValue.ToString
   nameWithType: ContentSecurityPolicyHeaderValue.ToString
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyHeaderValue.UnsafeEvalSource
+  name: UnsafeEvalSource
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicyHeaderValue_UnsafeEvalSource
+  commentId: F:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyHeaderValue.UnsafeEvalSource
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyHeaderValue.UnsafeEvalSource
+  nameWithType: ContentSecurityPolicyHeaderValue.UnsafeEvalSource
 - uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyHeaderValue.UpgradeInsecureRequests
   name: UpgradeInsecureRequests
   href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicyHeaderValue_UpgradeInsecureRequests
@@ -841,6 +865,18 @@ references:
   commentId: F:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution.Hash
   fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution.Hash
   nameWithType: ContentSecurityPolicyInlineExecution.Hash
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution.Hash384
+  name: Hash384
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicyInlineExecution_Hash384
+  commentId: F:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution.Hash384
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution.Hash384
+  nameWithType: ContentSecurityPolicyInlineExecution.Hash384
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution.Hash512
+  name: Hash512
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicyInlineExecution_Hash512
+  commentId: F:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution.Hash512
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution.Hash512
+  nameWithType: ContentSecurityPolicyInlineExecution.Hash512
 - uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution.Nonce
   name: Nonce
   href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicyInlineExecution_Nonce
@@ -859,6 +895,24 @@ references:
   commentId: F:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution.Unsafe
   fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution.Unsafe
   nameWithType: ContentSecurityPolicyInlineExecution.Unsafe
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecutionExtensions
+  name: ContentSecurityPolicyInlineExecutionExtensions
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecutionExtensions.html
+  commentId: T:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecutionExtensions
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecutionExtensions
+  nameWithType: ContentSecurityPolicyInlineExecutionExtensions
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecutionExtensions.IsHashBased(Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution)
+  name: IsHashBased(ContentSecurityPolicyInlineExecution)
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecutionExtensions.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicyInlineExecutionExtensions_IsHashBased_Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicyInlineExecution_
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecutionExtensions.IsHashBased(Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution)
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecutionExtensions.IsHashBased(Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution)
+  nameWithType: ContentSecurityPolicyInlineExecutionExtensions.IsHashBased(ContentSecurityPolicyInlineExecution)
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecutionExtensions.IsHashBased*
+  name: IsHashBased
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecutionExtensions.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicyInlineExecutionExtensions_IsHashBased_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecutionExtensions.IsHashBased
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecutionExtensions.IsHashBased
+  nameWithType: ContentSecurityPolicyInlineExecutionExtensions.IsHashBased
 - uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyRequireSriFor
   name: ContentSecurityPolicyRequireSriFor
   href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyRequireSriFor.html
@@ -925,6 +979,174 @@ references:
   commentId: F:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySandboxFlags.None
   fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySandboxFlags.None
   nameWithType: ContentSecurityPolicySandboxFlags.None
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder
+  name: ContentSecurityPolicySourceListBuilder
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html
+  commentId: T:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder
+  nameWithType: ContentSecurityPolicySourceListBuilder
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.Build
+  name: Build()
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_Build
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.Build
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.Build()
+  nameWithType: ContentSecurityPolicySourceListBuilder.Build()
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.Build*
+  name: Build
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_Build_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.Build
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.Build
+  nameWithType: ContentSecurityPolicySourceListBuilder.Build
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithBlobSchema
+  name: WithBlobSchema()
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithBlobSchema
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithBlobSchema
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithBlobSchema()
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithBlobSchema()
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithBlobSchema*
+  name: WithBlobSchema
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithBlobSchema_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithBlobSchema
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithBlobSchema
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithBlobSchema
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithDataSchema
+  name: WithDataSchema()
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithDataSchema
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithDataSchema
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithDataSchema()
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithDataSchema()
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithDataSchema*
+  name: WithDataSchema
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithDataSchema_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithDataSchema
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithDataSchema
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithDataSchema
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithFilesystemSchema
+  name: WithFilesystemSchema()
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithFilesystemSchema
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithFilesystemSchema
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithFilesystemSchema()
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithFilesystemSchema()
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithFilesystemSchema*
+  name: WithFilesystemSchema
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithFilesystemSchema_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithFilesystemSchema
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithFilesystemSchema
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithFilesystemSchema
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithHttpSchema
+  name: WithHttpSchema()
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithHttpSchema
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithHttpSchema
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithHttpSchema()
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithHttpSchema()
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithHttpSchema*
+  name: WithHttpSchema
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithHttpSchema_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithHttpSchema
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithHttpSchema
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithHttpSchema
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithHttpsSchema
+  name: WithHttpsSchema()
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithHttpsSchema
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithHttpsSchema
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithHttpsSchema()
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithHttpsSchema()
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithHttpsSchema*
+  name: WithHttpsSchema
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithHttpsSchema_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithHttpsSchema
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithHttpsSchema
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithHttpsSchema
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithMediastreamSchema
+  name: WithMediastreamSchema()
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithMediastreamSchema
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithMediastreamSchema
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithMediastreamSchema()
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithMediastreamSchema()
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithMediastreamSchema*
+  name: WithMediastreamSchema
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithMediastreamSchema_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithMediastreamSchema
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithMediastreamSchema
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithMediastreamSchema
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithSchemas(System.String[])
+  name: WithSchemas(String[])
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithSchemas_System_String___
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithSchemas(System.String[])
+  name.vb: WithSchemas(String())
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithSchemas(System.String[])
+  fullName.vb: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithSchemas(System.String())
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithSchemas(String[])
+  nameWithType.vb: ContentSecurityPolicySourceListBuilder.WithSchemas(String())
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithSchemas*
+  name: WithSchemas
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithSchemas_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithSchemas
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithSchemas
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithSchemas
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithSelfKeyword
+  name: WithSelfKeyword()
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithSelfKeyword
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithSelfKeyword
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithSelfKeyword()
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithSelfKeyword()
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithSelfKeyword*
+  name: WithSelfKeyword
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithSelfKeyword_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithSelfKeyword
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithSelfKeyword
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithSelfKeyword
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithStrictDynamicKeyword
+  name: WithStrictDynamicKeyword()
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithStrictDynamicKeyword
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithStrictDynamicKeyword
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithStrictDynamicKeyword()
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithStrictDynamicKeyword()
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithStrictDynamicKeyword*
+  name: WithStrictDynamicKeyword
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithStrictDynamicKeyword_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithStrictDynamicKeyword
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithStrictDynamicKeyword
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithStrictDynamicKeyword
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithUnsafeEvalKeyword
+  name: WithUnsafeEvalKeyword()
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithUnsafeEvalKeyword
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithUnsafeEvalKeyword
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithUnsafeEvalKeyword()
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithUnsafeEvalKeyword()
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithUnsafeEvalKeyword*
+  name: WithUnsafeEvalKeyword
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithUnsafeEvalKeyword_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithUnsafeEvalKeyword
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithUnsafeEvalKeyword
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithUnsafeEvalKeyword
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithUnsafeInlineKeyword
+  name: WithUnsafeInlineKeyword()
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithUnsafeInlineKeyword
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithUnsafeInlineKeyword
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithUnsafeInlineKeyword()
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithUnsafeInlineKeyword()
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithUnsafeInlineKeyword*
+  name: WithUnsafeInlineKeyword
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithUnsafeInlineKeyword_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithUnsafeInlineKeyword
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithUnsafeInlineKeyword
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithUnsafeInlineKeyword
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithUrls(System.String[])
+  name: WithUrls(String[])
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithUrls_System_String___
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithUrls(System.String[])
+  name.vb: WithUrls(String())
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithUrls(System.String[])
+  fullName.vb: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithUrls(System.String())
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithUrls(String[])
+  nameWithType.vb: ContentSecurityPolicySourceListBuilder.WithUrls(String())
+- uid: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithUrls*
+  name: WithUrls
+  href: api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html#Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicySourceListBuilder_WithUrls_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithUrls
+  fullName: Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.WithUrls
+  nameWithType: ContentSecurityPolicySourceListBuilder.WithUrls
 - uid: Lib.AspNetCore.Security.Http.Headers.ExpectCtHeaderValue
   name: ExpectCtHeaderValue
   href: api/Lib.AspNetCore.Security.Http.Headers.ExpectCtHeaderValue.html
@@ -1063,6 +1285,12 @@ references:
   commentId: F:Lib.AspNetCore.Security.Http.Headers.HeaderNames.XFrameOptions
   fullName: Lib.AspNetCore.Security.Http.Headers.HeaderNames.XFrameOptions
   nameWithType: HeaderNames.XFrameOptions
+- uid: Lib.AspNetCore.Security.Http.Headers.HeaderNames.XPermittedCrossDomainPolicies
+  name: XPermittedCrossDomainPolicies
+  href: api/Lib.AspNetCore.Security.Http.Headers.HeaderNames.html#Lib_AspNetCore_Security_Http_Headers_HeaderNames_XPermittedCrossDomainPolicies
+  commentId: F:Lib.AspNetCore.Security.Http.Headers.HeaderNames.XPermittedCrossDomainPolicies
+  fullName: Lib.AspNetCore.Security.Http.Headers.HeaderNames.XPermittedCrossDomainPolicies
+  nameWithType: HeaderNames.XPermittedCrossDomainPolicies
 - uid: Lib.AspNetCore.Security.Http.Headers.HeaderNames.XXssProtection
   name: XXssProtection
   href: api/Lib.AspNetCore.Security.Http.Headers.HeaderNames.html#Lib_AspNetCore_Security_Http_Headers_HeaderNames_XXssProtection
@@ -1321,6 +1549,78 @@ references:
   commentId: Overload:Lib.AspNetCore.Security.Http.Headers.XFrameOptionsHeaderValue.ToString
   fullName: Lib.AspNetCore.Security.Http.Headers.XFrameOptionsHeaderValue.ToString
   nameWithType: XFrameOptionsHeaderValue.ToString
+- uid: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives
+  name: XPermittedCrossDomainPoliciesDirectives
+  href: api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.html
+  commentId: T:Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives
+  fullName: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives
+  nameWithType: XPermittedCrossDomainPoliciesDirectives
+- uid: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.All
+  name: All
+  href: api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.html#Lib_AspNetCore_Security_Http_Headers_XPermittedCrossDomainPoliciesDirectives_All
+  commentId: F:Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.All
+  fullName: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.All
+  nameWithType: XPermittedCrossDomainPoliciesDirectives.All
+- uid: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.ByContentType
+  name: ByContentType
+  href: api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.html#Lib_AspNetCore_Security_Http_Headers_XPermittedCrossDomainPoliciesDirectives_ByContentType
+  commentId: F:Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.ByContentType
+  fullName: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.ByContentType
+  nameWithType: XPermittedCrossDomainPoliciesDirectives.ByContentType
+- uid: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.MasterOnly
+  name: MasterOnly
+  href: api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.html#Lib_AspNetCore_Security_Http_Headers_XPermittedCrossDomainPoliciesDirectives_MasterOnly
+  commentId: F:Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.MasterOnly
+  fullName: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.MasterOnly
+  nameWithType: XPermittedCrossDomainPoliciesDirectives.MasterOnly
+- uid: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.None
+  name: None
+  href: api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.html#Lib_AspNetCore_Security_Http_Headers_XPermittedCrossDomainPoliciesDirectives_None
+  commentId: F:Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.None
+  fullName: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.None
+  nameWithType: XPermittedCrossDomainPoliciesDirectives.None
+- uid: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue
+  name: XPermittedCrossDomainPoliciesHeaderValue
+  href: api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.html
+  commentId: T:Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue
+  fullName: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue
+  nameWithType: XPermittedCrossDomainPoliciesHeaderValue
+- uid: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.#ctor(Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives)
+  name: XPermittedCrossDomainPoliciesHeaderValue(XPermittedCrossDomainPoliciesDirectives)
+  href: api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_XPermittedCrossDomainPoliciesHeaderValue__ctor_Lib_AspNetCore_Security_Http_Headers_XPermittedCrossDomainPoliciesDirectives_
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.#ctor(Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives)
+  fullName: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.XPermittedCrossDomainPoliciesHeaderValue(Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives)
+  nameWithType: XPermittedCrossDomainPoliciesHeaderValue.XPermittedCrossDomainPoliciesHeaderValue(XPermittedCrossDomainPoliciesDirectives)
+- uid: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.#ctor*
+  name: XPermittedCrossDomainPoliciesHeaderValue
+  href: api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_XPermittedCrossDomainPoliciesHeaderValue__ctor_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.#ctor
+  fullName: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.XPermittedCrossDomainPoliciesHeaderValue
+  nameWithType: XPermittedCrossDomainPoliciesHeaderValue.XPermittedCrossDomainPoliciesHeaderValue
+- uid: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.Directive
+  name: Directive
+  href: api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_XPermittedCrossDomainPoliciesHeaderValue_Directive
+  commentId: P:Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.Directive
+  fullName: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.Directive
+  nameWithType: XPermittedCrossDomainPoliciesHeaderValue.Directive
+- uid: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.Directive*
+  name: Directive
+  href: api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_XPermittedCrossDomainPoliciesHeaderValue_Directive_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.Directive
+  fullName: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.Directive
+  nameWithType: XPermittedCrossDomainPoliciesHeaderValue.Directive
+- uid: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.ToString
+  name: ToString()
+  href: api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_XPermittedCrossDomainPoliciesHeaderValue_ToString
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.ToString
+  fullName: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.ToString()
+  nameWithType: XPermittedCrossDomainPoliciesHeaderValue.ToString()
+- uid: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.ToString*
+  name: ToString
+  href: api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_XPermittedCrossDomainPoliciesHeaderValue_ToString_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.ToString
+  fullName: Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.ToString
+  nameWithType: XPermittedCrossDomainPoliciesHeaderValue.ToString
 - uid: Lib.AspNetCore.Security.Http.Headers.XssFilteringModes
   name: XssFilteringModes
   href: api/Lib.AspNetCore.Security.Http.Headers.XssFilteringModes.html
@@ -1795,6 +2095,18 @@ references:
   commentId: Overload:Lib.AspNetCore.Security.SecurityHeadersPolicy.XFrameOptions
   fullName: Lib.AspNetCore.Security.SecurityHeadersPolicy.XFrameOptions
   nameWithType: SecurityHeadersPolicy.XFrameOptions
+- uid: Lib.AspNetCore.Security.SecurityHeadersPolicy.XPermittedCrossDomainPolicies
+  name: XPermittedCrossDomainPolicies
+  href: api/Lib.AspNetCore.Security.SecurityHeadersPolicy.html#Lib_AspNetCore_Security_SecurityHeadersPolicy_XPermittedCrossDomainPolicies
+  commentId: P:Lib.AspNetCore.Security.SecurityHeadersPolicy.XPermittedCrossDomainPolicies
+  fullName: Lib.AspNetCore.Security.SecurityHeadersPolicy.XPermittedCrossDomainPolicies
+  nameWithType: SecurityHeadersPolicy.XPermittedCrossDomainPolicies
+- uid: Lib.AspNetCore.Security.SecurityHeadersPolicy.XPermittedCrossDomainPolicies*
+  name: XPermittedCrossDomainPolicies
+  href: api/Lib.AspNetCore.Security.SecurityHeadersPolicy.html#Lib_AspNetCore_Security_SecurityHeadersPolicy_XPermittedCrossDomainPolicies_
+  commentId: Overload:Lib.AspNetCore.Security.SecurityHeadersPolicy.XPermittedCrossDomainPolicies
+  fullName: Lib.AspNetCore.Security.SecurityHeadersPolicy.XPermittedCrossDomainPolicies
+  nameWithType: SecurityHeadersPolicy.XPermittedCrossDomainPolicies
 - uid: Lib.AspNetCore.Security.SecurityHeadersPolicy.XXssProtection
   name: XXssProtection
   href: api/Lib.AspNetCore.Security.SecurityHeadersPolicy.html#Lib_AspNetCore_Security_SecurityHeadersPolicy_XXssProtection
@@ -1849,6 +2161,18 @@ references:
   commentId: Overload:Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithAllowFromXFrameOptions
   fullName: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithAllowFromXFrameOptions
   nameWithType: SecurityHeadersPolicyBuilder.WithAllowFromXFrameOptions
+- uid: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithAllXPermittedCrossDomainPolicies
+  name: WithAllXPermittedCrossDomainPolicies()
+  href: api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html#Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder_WithAllXPermittedCrossDomainPolicies
+  commentId: M:Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithAllXPermittedCrossDomainPolicies
+  fullName: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithAllXPermittedCrossDomainPolicies()
+  nameWithType: SecurityHeadersPolicyBuilder.WithAllXPermittedCrossDomainPolicies()
+- uid: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithAllXPermittedCrossDomainPolicies*
+  name: WithAllXPermittedCrossDomainPolicies
+  href: api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html#Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder_WithAllXPermittedCrossDomainPolicies_
+  commentId: Overload:Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithAllXPermittedCrossDomainPolicies
+  fullName: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithAllXPermittedCrossDomainPolicies
+  nameWithType: SecurityHeadersPolicyBuilder.WithAllXPermittedCrossDomainPolicies
 - uid: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithBlockXssFiltering
   name: WithBlockXssFiltering()
   href: api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html#Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder_WithBlockXssFiltering
@@ -1861,6 +2185,18 @@ references:
   commentId: Overload:Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithBlockXssFiltering
   fullName: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithBlockXssFiltering
   nameWithType: SecurityHeadersPolicyBuilder.WithBlockXssFiltering
+- uid: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithByContentTypeXPermittedCrossDomainPolicies
+  name: WithByContentTypeXPermittedCrossDomainPolicies()
+  href: api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html#Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder_WithByContentTypeXPermittedCrossDomainPolicies
+  commentId: M:Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithByContentTypeXPermittedCrossDomainPolicies
+  fullName: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithByContentTypeXPermittedCrossDomainPolicies()
+  nameWithType: SecurityHeadersPolicyBuilder.WithByContentTypeXPermittedCrossDomainPolicies()
+- uid: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithByContentTypeXPermittedCrossDomainPolicies*
+  name: WithByContentTypeXPermittedCrossDomainPolicies
+  href: api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html#Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder_WithByContentTypeXPermittedCrossDomainPolicies_
+  commentId: Overload:Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithByContentTypeXPermittedCrossDomainPolicies
+  fullName: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithByContentTypeXPermittedCrossDomainPolicies
+  nameWithType: SecurityHeadersPolicyBuilder.WithByContentTypeXPermittedCrossDomainPolicies
 - uid: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithCsp(Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyHeaderValue)
   name: WithCsp(ContentSecurityPolicyHeaderValue)
   href: api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html#Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder_WithCsp_Lib_AspNetCore_Security_Http_Headers_ContentSecurityPolicyHeaderValue_
@@ -1921,6 +2257,30 @@ references:
   commentId: Overload:Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithHsts
   fullName: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithHsts
   nameWithType: SecurityHeadersPolicyBuilder.WithHsts
+- uid: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithMasterOnlyXPermittedCrossDomainPolicies
+  name: WithMasterOnlyXPermittedCrossDomainPolicies()
+  href: api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html#Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder_WithMasterOnlyXPermittedCrossDomainPolicies
+  commentId: M:Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithMasterOnlyXPermittedCrossDomainPolicies
+  fullName: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithMasterOnlyXPermittedCrossDomainPolicies()
+  nameWithType: SecurityHeadersPolicyBuilder.WithMasterOnlyXPermittedCrossDomainPolicies()
+- uid: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithMasterOnlyXPermittedCrossDomainPolicies*
+  name: WithMasterOnlyXPermittedCrossDomainPolicies
+  href: api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html#Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder_WithMasterOnlyXPermittedCrossDomainPolicies_
+  commentId: Overload:Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithMasterOnlyXPermittedCrossDomainPolicies
+  fullName: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithMasterOnlyXPermittedCrossDomainPolicies
+  nameWithType: SecurityHeadersPolicyBuilder.WithMasterOnlyXPermittedCrossDomainPolicies
+- uid: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithNoneXPermittedCrossDomainPolicies
+  name: WithNoneXPermittedCrossDomainPolicies()
+  href: api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html#Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder_WithNoneXPermittedCrossDomainPolicies
+  commentId: M:Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithNoneXPermittedCrossDomainPolicies
+  fullName: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithNoneXPermittedCrossDomainPolicies()
+  nameWithType: SecurityHeadersPolicyBuilder.WithNoneXPermittedCrossDomainPolicies()
+- uid: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithNoneXPermittedCrossDomainPolicies*
+  name: WithNoneXPermittedCrossDomainPolicies
+  href: api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html#Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder_WithNoneXPermittedCrossDomainPolicies_
+  commentId: Overload:Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithNoneXPermittedCrossDomainPolicies
+  fullName: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithNoneXPermittedCrossDomainPolicies
+  nameWithType: SecurityHeadersPolicyBuilder.WithNoneXPermittedCrossDomainPolicies
 - uid: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithNoneXssFiltering
   name: WithNoneXssFiltering()
   href: api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html#Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder_WithNoneXssFiltering

@@ -113,6 +113,12 @@
 <td>Yes</td>
 </tr>
 <tr>
+<td>X-Permitted-Cross-Domain-Policies</td>
+<td><a href="../api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.html">Yes</a></td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
 <td>X-XSS-Protection</td>
 <td><a href="../api/Lib.AspNetCore.Security.Http.Headers.XXssProtectionHeaderValue.html">Yes</a></td>
 <td>Yes</td>
@@ -132,16 +138,23 @@
         builder.WithCsp(
             fontSources: &quot;fonts.gstatic.com&quot;,
             imageSources: ContentSecurityPolicyHeaderValue.SelfSource,
-            scriptSources: ContentSecurityPolicyHeaderValue.SelfSource + &quot; cdnjs.cloudflare.com&quot;,
+            scriptSources: (new ContentSecurityPolicySourceListBuilder())
+                .WithSelfKeyword()
+                .WithUrls(&quot;cdnjs.cloudflare.com&quot;)
+                .Build(),
             scriptInlineExecution: ContentSecurityPolicyInlineExecution.Hash,
-            styleSources: ContentSecurityPolicyHeaderValue.SelfSource + &quot; fonts.googleapis.com&quot;,
+            styleSources: (new ContentSecurityPolicySourceListBuilder())
+                .WithSelfKeyword()
+                .WithUrls(&quot;fonts.googleapis.com&quot;)
+                .Build(),
             styleInlineExecution: ContentSecurityPolicyInlineExecution.Hash
         )
         .WithDenyXFrameOptions()
         .WithBlockXssFiltering()
         .WithXContentTypeOptions()
         .WithXDownloadOptions()
-        .WithReferrerPolicy(ReferrerPolicyDirectives.NoReferrer);
+        .WithReferrerPolicy(ReferrerPolicyDirectives.NoReferrer)
+        .WithNoneXPermittedCrossDomainPolicies();
     });
 
     ...
