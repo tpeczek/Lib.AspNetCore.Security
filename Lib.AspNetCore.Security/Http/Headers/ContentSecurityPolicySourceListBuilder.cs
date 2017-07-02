@@ -1,8 +1,5 @@
-﻿using System;
+﻿using System.Text;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lib.AspNetCore.Security.Http.Headers
 {
@@ -23,6 +20,8 @@ namespace Lib.AspNetCore.Security.Http.Headers
         private bool _withFilesystemSchema = false;
         private bool _withSelfKeyword = false;
         private bool _withUnsafeEvalKeyword = false;
+        private bool _withUnsafeInlineKeyword = false;
+        private bool _withStrictDynamicKeyword = false;
 
         private const string _sourceSeparator = " ";
         private const string _httpSource = "http" + _sourceSeparator;
@@ -33,6 +32,8 @@ namespace Lib.AspNetCore.Security.Http.Headers
         private const string _filesystemSource = "filesystem" + _sourceSeparator;
         private const string _selfSource = ContentSecurityPolicyHeaderValue.SelfSource + _sourceSeparator;
         private const string _unsafeEvalSource = ContentSecurityPolicyHeaderValue.UnsafeEvalSource + _sourceSeparator;
+        private const string _unsafeInlineSource = "'unsafe-inline'" + _sourceSeparator;
+        private const string _strictDynamicSource = "'strict-dynamic'" + _sourceSeparator;
         #endregion
 
         #region Methods
@@ -148,6 +149,28 @@ namespace Lib.AspNetCore.Security.Http.Headers
         }
 
         /// <summary>
+        /// Adds the keyword to allow the use of inline resources.
+        /// </summary>
+        /// <returns>The current source list builder.</returns>
+        public ContentSecurityPolicySourceListBuilder WithUnsafeInlineKeyword()
+        {
+            _withUnsafeInlineKeyword = true;
+
+            return this;
+        }
+
+        /// <summary>
+        /// Adds the keyword which specifies that the trust explicitly given to a resource present in the markup, by accompanying it with a nonce or a hash, shall be propagated to all the recources loaded by that root resource. At the same time, any whitelist or source expressions such as 'self' or 'unsafe-inline' will be ignored.
+        /// </summary>
+        /// <returns>The current source list builder.</returns>
+        public ContentSecurityPolicySourceListBuilder WithStrictDynamicKeyword()
+        {
+            _withStrictDynamicKeyword = true;
+
+            return this;
+        }
+
+        /// <summary>
         /// Builds a new source list using the settings added.
         /// </summary>
         /// <returns>The constructed source list.</returns>
@@ -165,6 +188,8 @@ namespace Lib.AspNetCore.Security.Http.Headers
             AppendSource(sourceListBuilder, _filesystemSource, _withFilesystemSchema);
             AppendSource(sourceListBuilder, _selfSource, _withSelfKeyword);
             AppendSource(sourceListBuilder, _unsafeEvalSource, _withUnsafeEvalKeyword);
+            AppendSource(sourceListBuilder, _unsafeInlineSource, _withUnsafeInlineKeyword);
+            AppendSource(sourceListBuilder, _strictDynamicSource, _withStrictDynamicKeyword);
 
             if (sourceListBuilder.Length > 0)
             {
