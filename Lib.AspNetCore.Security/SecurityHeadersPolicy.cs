@@ -24,6 +24,11 @@ namespace Lib.AspNetCore.Security
         public ExpectCtHeaderValue ExpectCt { get; set; }
 
         /// <summary>
+        /// Gets or sets the Feature-Policy header value.
+        /// </summary>
+        public FeaturePolicyHeaderValue FeaturePolicy { get; set; }
+
+        /// <summary>
         /// Gets or sets the HTTP Strict Transport Security header value.
         /// </summary>
         public StrictTransportSecurityHeaderValue Hsts { get; set; }

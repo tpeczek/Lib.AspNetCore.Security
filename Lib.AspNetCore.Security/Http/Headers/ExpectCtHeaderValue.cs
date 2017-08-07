@@ -73,7 +73,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
         }
         #endregion
 
-        #region Constructor
+        #region Constructors
         /// <summary>
         /// Instantiates a new <see cref="ExpectCtHeaderValue"/> with default <see cref="MaxAge"/>.
         /// </summary>

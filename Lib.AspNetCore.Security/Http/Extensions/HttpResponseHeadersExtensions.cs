@@ -36,6 +36,16 @@ namespace Lib.AspNetCore.Security.Http.Extensions
         }
 
         /// <summary>
+        /// Sets the Feature-Policy header value.
+        /// </summary>
+        /// <param name="response">The response.</param>
+        /// <param name="featurePolicy">The Feature-Policy header value.</param>
+        public static void SetFeaturePolicy(this HttpResponse response, FeaturePolicyHeaderValue featurePolicy)
+        {
+            response.SetResponseHeader(HeaderNames.FeaturePolicy, featurePolicy?.ToString());
+        }
+
+        /// <summary>
         /// Sets the Referrer-Policy header value.
         /// </summary>
         /// <param name="response">The response.</param>

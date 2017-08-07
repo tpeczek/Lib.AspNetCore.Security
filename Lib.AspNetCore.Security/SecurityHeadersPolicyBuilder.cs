@@ -140,6 +140,30 @@ namespace Lib.AspNetCore.Security
         }
 
         /// <summary>
+        /// Adds the Feature-Policy.
+        /// </summary>
+        /// <param name="policy">The feature policy.</param>
+        /// <returns>The current policy builder.</returns>
+        public SecurityHeadersPolicyBuilder WithFeaturePolicy(FeaturePolicy policy)
+        {
+            _policy.FeaturePolicy = new SingleFeaturePolicyHeaderValue(policy);
+
+            return this;
+        }
+
+        /// <summary>
+        /// Adds the Feature-Policy.
+        /// </summary>
+        /// <param name="policies">The feature policies.</param>
+        /// <returns>The current policy builder.</returns>
+        public SecurityHeadersPolicyBuilder WithFeaturePolicy(params FeaturePolicy[] policies)
+        {
+            _policy.FeaturePolicy = new MultipleFeaturePolicyHeaderValue(policies);
+
+            return this;
+        }
+
+        /// <summary>
         /// Adds the report only Expect-CT to the policy.
         /// </summary>
         /// <param name="reportUri">The absolute URI to which the client should report Expect-CT failures.</param>
