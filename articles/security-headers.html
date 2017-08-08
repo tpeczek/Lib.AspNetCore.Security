@@ -83,6 +83,12 @@
 <td>Yes</td>
 </tr>
 <tr>
+<td>Feature-Policy</td>
+<td><a href="../api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue.html">Yes</a></td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
 <td>Referrer-Policy</td>
 <td><a href="../api/Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyHeaderValue.html">Yes</a></td>
 <td>Yes</td>
@@ -128,7 +134,7 @@
 </table>
 <h2 id="configuring-security-headers-with-middleware">Configuring security headers with middleware</h2>
 <p>To configure security headers for entire application add the <a href="../api/Lib.AspNetCore.Security.SecurityHeadersMiddleware.html">middleware</a> to request pipeline using the <code>UseSecurityHeaders</code> extension method. Note that the middleware must precede any defined endpoints in application that are supposed to be protected (for example before call to <code>UseMvc</code>).</p>
-<p>The security headers can be confgiured when adding the middleware using the <a href="../api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html"><code>SecurityHeadersPolicyBuilder</code></a> class by calling <code>UseSecurityHeaders</code> with a lambda which takes a <a href="../api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html"><code>SecurityHeadersPolicyBuilder</code></a> as parameter.</p>
+<p>The security headers can be configured when adding the middleware using the <a href="../api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html"><code>SecurityHeadersPolicyBuilder</code></a> class by calling <code>UseSecurityHeaders</code> with a lambda which takes a <a href="../api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html"><code>SecurityHeadersPolicyBuilder</code></a> as parameter.</p>
 <pre><code class="lang-cs">public void Configure(IApplicationBuilder app)
 {
     ...
@@ -154,7 +160,12 @@
         .WithXContentTypeOptions()
         .WithXDownloadOptions()
         .WithReferrerPolicy(ReferrerPolicyDirectives.NoReferrer)
-        .WithNoneXPermittedCrossDomainPolicies();
+        .WithNoneXPermittedCrossDomainPolicies()
+        .WithFeaturePolicy(new FeaturePolicy
+        {
+            Camera = new[] { &quot;https://other.com&quot; },
+            Microphone = new [] { &quot;https://other.com&quot; }
+        });
     });
 
     ...

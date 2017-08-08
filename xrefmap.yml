@@ -13,18 +13,18 @@ references:
   commentId: T:Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute
   fullName: Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute
   nameWithType: XFrameOptionsAttribute
+- uid: Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.#ctor(Lib.AspNetCore.Security.Http.Headers.XFrameOptionsDirectives)
+  name: XFrameOptionsAttribute(XFrameOptionsDirectives)
+  href: api/Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.html#Lib_AspNetCore_Mvc_Security_Filters_XFrameOptionsAttribute__ctor_Lib_AspNetCore_Security_Http_Headers_XFrameOptionsDirectives_
+  commentId: M:Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.#ctor(Lib.AspNetCore.Security.Http.Headers.XFrameOptionsDirectives)
+  fullName: Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.XFrameOptionsAttribute(Lib.AspNetCore.Security.Http.Headers.XFrameOptionsDirectives)
+  nameWithType: XFrameOptionsAttribute.XFrameOptionsAttribute(XFrameOptionsDirectives)
 - uid: Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.#ctor(System.String)
   name: XFrameOptionsAttribute(String)
   href: api/Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.html#Lib_AspNetCore_Mvc_Security_Filters_XFrameOptionsAttribute__ctor_System_String_
   commentId: M:Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.#ctor(System.String)
   fullName: Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.XFrameOptionsAttribute(System.String)
   nameWithType: XFrameOptionsAttribute.XFrameOptionsAttribute(String)
-- uid: Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.#ctor(XFrameOptionsDirectives)
-  name: XFrameOptionsAttribute(XFrameOptionsDirectives)
-  href: api/Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.html#Lib_AspNetCore_Mvc_Security_Filters_XFrameOptionsAttribute__ctor_XFrameOptionsDirectives_
-  commentId: M:Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.#ctor(XFrameOptionsDirectives)
-  fullName: Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.XFrameOptionsAttribute(XFrameOptionsDirectives)
-  nameWithType: XFrameOptionsAttribute.XFrameOptionsAttribute(XFrameOptionsDirectives)
 - uid: Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.#ctor*
   name: XFrameOptionsAttribute
   href: api/Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.html#Lib_AspNetCore_Mvc_Security_Filters_XFrameOptionsAttribute__ctor_
@@ -67,11 +67,11 @@ references:
   commentId: M:Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.#ctor
   fullName: Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.XXssProtectionAttribute()
   nameWithType: XXssProtectionAttribute.XXssProtectionAttribute()
-- uid: Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.#ctor(XssFilteringModes)
+- uid: Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.#ctor(Lib.AspNetCore.Security.Http.Headers.XssFilteringModes)
   name: XXssProtectionAttribute(XssFilteringModes)
-  href: api/Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.html#Lib_AspNetCore_Mvc_Security_Filters_XXssProtectionAttribute__ctor_XssFilteringModes_
-  commentId: M:Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.#ctor(XssFilteringModes)
-  fullName: Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.XXssProtectionAttribute(XssFilteringModes)
+  href: api/Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.html#Lib_AspNetCore_Mvc_Security_Filters_XXssProtectionAttribute__ctor_Lib_AspNetCore_Security_Http_Headers_XssFilteringModes_
+  commentId: M:Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.#ctor(Lib.AspNetCore.Security.Http.Headers.XssFilteringModes)
+  fullName: Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.XXssProtectionAttribute(Lib.AspNetCore.Security.Http.Headers.XssFilteringModes)
   nameWithType: XXssProtectionAttribute.XXssProtectionAttribute(XssFilteringModes)
 - uid: Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.#ctor*
   name: XXssProtectionAttribute
@@ -289,6 +289,18 @@ references:
   commentId: Overload:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetExpectCt
   fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetExpectCt
   nameWithType: HttpResponseHeadersExtensions.SetExpectCt
+- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetFeaturePolicy(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue)
+  name: SetFeaturePolicy(HttpResponse, FeaturePolicyHeaderValue)
+  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetFeaturePolicy_Microsoft_AspNetCore_Http_HttpResponse_Lib_AspNetCore_Security_Http_Headers_FeaturePolicyHeaderValue_
+  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetFeaturePolicy(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue)
+  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetFeaturePolicy(Microsoft.AspNetCore.Http.HttpResponse, Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue)
+  nameWithType: HttpResponseHeadersExtensions.SetFeaturePolicy(HttpResponse, FeaturePolicyHeaderValue)
+- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetFeaturePolicy*
+  name: SetFeaturePolicy
+  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetFeaturePolicy_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetFeaturePolicy
+  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetFeaturePolicy
+  nameWithType: HttpResponseHeadersExtensions.SetFeaturePolicy
 - uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetReferrerPolicy(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyDirectives)
   name: SetReferrerPolicy(HttpResponse, ReferrerPolicyDirectives)
   href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetReferrerPolicy_Microsoft_AspNetCore_Http_HttpResponse_Lib_AspNetCore_Security_Http_Headers_ReferrerPolicyDirectives_
@@ -1231,6 +1243,165 @@ references:
   commentId: Overload:Lib.AspNetCore.Security.Http.Headers.ExpectCtHeaderValue.ToString
   fullName: Lib.AspNetCore.Security.Http.Headers.ExpectCtHeaderValue.ToString
   nameWithType: ExpectCtHeaderValue.ToString
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy
+  name: FeaturePolicy
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html
+  commentId: T:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy
+  nameWithType: FeaturePolicy
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Camera
+  name: Camera
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_Camera
+  commentId: P:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Camera
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Camera
+  nameWithType: FeaturePolicy.Camera
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Camera*
+  name: Camera
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_Camera_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Camera
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Camera
+  nameWithType: FeaturePolicy.Camera
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.EncryptedMedia
+  name: EncryptedMedia
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_EncryptedMedia
+  commentId: P:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.EncryptedMedia
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.EncryptedMedia
+  nameWithType: FeaturePolicy.EncryptedMedia
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.EncryptedMedia*
+  name: EncryptedMedia
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_EncryptedMedia_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.EncryptedMedia
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.EncryptedMedia
+  nameWithType: FeaturePolicy.EncryptedMedia
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Fullscreen
+  name: Fullscreen
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_Fullscreen
+  commentId: P:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Fullscreen
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Fullscreen
+  nameWithType: FeaturePolicy.Fullscreen
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Fullscreen*
+  name: Fullscreen
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_Fullscreen_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Fullscreen
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Fullscreen
+  nameWithType: FeaturePolicy.Fullscreen
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Geolocation
+  name: Geolocation
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_Geolocation
+  commentId: P:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Geolocation
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Geolocation
+  nameWithType: FeaturePolicy.Geolocation
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Geolocation*
+  name: Geolocation
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_Geolocation_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Geolocation
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Geolocation
+  nameWithType: FeaturePolicy.Geolocation
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.GetFeatureAllowList(System.String)
+  name: GetFeatureAllowList(String)
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_GetFeatureAllowList_System_String_
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.GetFeatureAllowList(System.String)
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.GetFeatureAllowList(System.String)
+  nameWithType: FeaturePolicy.GetFeatureAllowList(String)
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.GetFeatureAllowList*
+  name: GetFeatureAllowList
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_GetFeatureAllowList_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.GetFeatureAllowList
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.GetFeatureAllowList
+  nameWithType: FeaturePolicy.GetFeatureAllowList
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Microphone
+  name: Microphone
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_Microphone
+  commentId: P:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Microphone
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Microphone
+  nameWithType: FeaturePolicy.Microphone
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Microphone*
+  name: Microphone
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_Microphone_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Microphone
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Microphone
+  nameWithType: FeaturePolicy.Microphone
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Midi
+  name: Midi
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_Midi
+  commentId: P:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Midi
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Midi
+  nameWithType: FeaturePolicy.Midi
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Midi*
+  name: Midi
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_Midi_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Midi
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Midi
+  nameWithType: FeaturePolicy.Midi
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Payment
+  name: Payment
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_Payment
+  commentId: P:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Payment
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Payment
+  nameWithType: FeaturePolicy.Payment
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Payment*
+  name: Payment
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_Payment_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Payment
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Payment
+  nameWithType: FeaturePolicy.Payment
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.SetFeatureAllowList(System.String,System.String[])
+  name: SetFeatureAllowList(String, String[])
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_SetFeatureAllowList_System_String_System_String___
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.SetFeatureAllowList(System.String,System.String[])
+  name.vb: SetFeatureAllowList(String, String())
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.SetFeatureAllowList(System.String, System.String[])
+  fullName.vb: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.SetFeatureAllowList(System.String, System.String())
+  nameWithType: FeaturePolicy.SetFeatureAllowList(String, String[])
+  nameWithType.vb: FeaturePolicy.SetFeatureAllowList(String, String())
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.SetFeatureAllowList*
+  name: SetFeatureAllowList
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_SetFeatureAllowList_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.SetFeatureAllowList
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.SetFeatureAllowList
+  nameWithType: FeaturePolicy.SetFeatureAllowList
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Speaker
+  name: Speaker
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_Speaker
+  commentId: P:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Speaker
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Speaker
+  nameWithType: FeaturePolicy.Speaker
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Speaker*
+  name: Speaker
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_Speaker_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Speaker
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Speaker
+  nameWithType: FeaturePolicy.Speaker
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.ToPolicyDirectiveJson(System.Boolean)
+  name: ToPolicyDirectiveJson(Boolean)
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_ToPolicyDirectiveJson_System_Boolean_
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.ToPolicyDirectiveJson(System.Boolean)
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.ToPolicyDirectiveJson(System.Boolean)
+  nameWithType: FeaturePolicy.ToPolicyDirectiveJson(Boolean)
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.ToPolicyDirectiveJson*
+  name: ToPolicyDirectiveJson
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_ToPolicyDirectiveJson_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.ToPolicyDirectiveJson
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.ToPolicyDirectiveJson
+  nameWithType: FeaturePolicy.ToPolicyDirectiveJson
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Vibrate
+  name: Vibrate
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_Vibrate
+  commentId: P:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Vibrate
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Vibrate
+  nameWithType: FeaturePolicy.Vibrate
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Vibrate*
+  name: Vibrate
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html#Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_Vibrate_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Vibrate
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.Vibrate
+  nameWithType: FeaturePolicy.Vibrate
+- uid: Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue
+  name: FeaturePolicyHeaderValue
+  href: api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue.html
+  commentId: T:Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue
+  fullName: Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue
+  nameWithType: FeaturePolicyHeaderValue
 - uid: Lib.AspNetCore.Security.Http.Headers.HeaderNames
   name: HeaderNames
   href: api/Lib.AspNetCore.Security.Http.Headers.HeaderNames.html
@@ -1255,6 +1426,12 @@ references:
   commentId: F:Lib.AspNetCore.Security.Http.Headers.HeaderNames.ExpectCt
   fullName: Lib.AspNetCore.Security.Http.Headers.HeaderNames.ExpectCt
   nameWithType: HeaderNames.ExpectCt
+- uid: Lib.AspNetCore.Security.Http.Headers.HeaderNames.FeaturePolicy
+  name: FeaturePolicy
+  href: api/Lib.AspNetCore.Security.Http.Headers.HeaderNames.html#Lib_AspNetCore_Security_Http_Headers_HeaderNames_FeaturePolicy
+  commentId: F:Lib.AspNetCore.Security.Http.Headers.HeaderNames.FeaturePolicy
+  fullName: Lib.AspNetCore.Security.Http.Headers.HeaderNames.FeaturePolicy
+  nameWithType: HeaderNames.FeaturePolicy
 - uid: Lib.AspNetCore.Security.Http.Headers.HeaderNames.ReferrerPolicy
   name: ReferrerPolicy
   href: api/Lib.AspNetCore.Security.Http.Headers.HeaderNames.html#Lib_AspNetCore_Security_Http_Headers_HeaderNames_ReferrerPolicy
@@ -1297,6 +1474,57 @@ references:
   commentId: F:Lib.AspNetCore.Security.Http.Headers.HeaderNames.XXssProtection
   fullName: Lib.AspNetCore.Security.Http.Headers.HeaderNames.XXssProtection
   nameWithType: HeaderNames.XXssProtection
+- uid: Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue
+  name: MultipleFeaturePolicyHeaderValue
+  href: api/Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.html
+  commentId: T:Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue
+  fullName: Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue
+  nameWithType: MultipleFeaturePolicyHeaderValue
+- uid: Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.#ctor
+  name: MultipleFeaturePolicyHeaderValue()
+  href: api/Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_MultipleFeaturePolicyHeaderValue__ctor
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.#ctor
+  fullName: Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.MultipleFeaturePolicyHeaderValue()
+  nameWithType: MultipleFeaturePolicyHeaderValue.MultipleFeaturePolicyHeaderValue()
+- uid: Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.#ctor(Lib.AspNetCore.Security.Http.Headers.FeaturePolicy[])
+  name: MultipleFeaturePolicyHeaderValue(FeaturePolicy[])
+  href: api/Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_MultipleFeaturePolicyHeaderValue__ctor_Lib_AspNetCore_Security_Http_Headers_FeaturePolicy___
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.#ctor(Lib.AspNetCore.Security.Http.Headers.FeaturePolicy[])
+  name.vb: MultipleFeaturePolicyHeaderValue(FeaturePolicy())
+  fullName: Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.MultipleFeaturePolicyHeaderValue(Lib.AspNetCore.Security.Http.Headers.FeaturePolicy[])
+  fullName.vb: Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.MultipleFeaturePolicyHeaderValue(Lib.AspNetCore.Security.Http.Headers.FeaturePolicy())
+  nameWithType: MultipleFeaturePolicyHeaderValue.MultipleFeaturePolicyHeaderValue(FeaturePolicy[])
+  nameWithType.vb: MultipleFeaturePolicyHeaderValue.MultipleFeaturePolicyHeaderValue(FeaturePolicy())
+- uid: Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.#ctor*
+  name: MultipleFeaturePolicyHeaderValue
+  href: api/Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_MultipleFeaturePolicyHeaderValue__ctor_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.#ctor
+  fullName: Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.MultipleFeaturePolicyHeaderValue
+  nameWithType: MultipleFeaturePolicyHeaderValue.MultipleFeaturePolicyHeaderValue
+- uid: Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.Policies
+  name: Policies
+  href: api/Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_MultipleFeaturePolicyHeaderValue_Policies
+  commentId: P:Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.Policies
+  fullName: Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.Policies
+  nameWithType: MultipleFeaturePolicyHeaderValue.Policies
+- uid: Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.Policies*
+  name: Policies
+  href: api/Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_MultipleFeaturePolicyHeaderValue_Policies_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.Policies
+  fullName: Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.Policies
+  nameWithType: MultipleFeaturePolicyHeaderValue.Policies
+- uid: Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.ToString
+  name: ToString()
+  href: api/Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_MultipleFeaturePolicyHeaderValue_ToString
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.ToString
+  fullName: Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.ToString()
+  nameWithType: MultipleFeaturePolicyHeaderValue.ToString()
+- uid: Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.ToString*
+  name: ToString
+  href: api/Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_MultipleFeaturePolicyHeaderValue_ToString_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.ToString
+  fullName: Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.ToString
+  nameWithType: MultipleFeaturePolicyHeaderValue.ToString
 - uid: Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyDirectives
   name: ReferrerPolicyDirectives
   href: api/Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyDirectives.html
@@ -1393,6 +1621,54 @@ references:
   commentId: Overload:Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyHeaderValue.ToString
   fullName: Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyHeaderValue.ToString
   nameWithType: ReferrerPolicyHeaderValue.ToString
+- uid: Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue
+  name: SingleFeaturePolicyHeaderValue
+  href: api/Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.html
+  commentId: T:Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue
+  fullName: Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue
+  nameWithType: SingleFeaturePolicyHeaderValue
+- uid: Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.#ctor
+  name: SingleFeaturePolicyHeaderValue()
+  href: api/Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_SingleFeaturePolicyHeaderValue__ctor
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.#ctor
+  fullName: Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.SingleFeaturePolicyHeaderValue()
+  nameWithType: SingleFeaturePolicyHeaderValue.SingleFeaturePolicyHeaderValue()
+- uid: Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.#ctor(Lib.AspNetCore.Security.Http.Headers.FeaturePolicy)
+  name: SingleFeaturePolicyHeaderValue(FeaturePolicy)
+  href: api/Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_SingleFeaturePolicyHeaderValue__ctor_Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.#ctor(Lib.AspNetCore.Security.Http.Headers.FeaturePolicy)
+  fullName: Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.SingleFeaturePolicyHeaderValue(Lib.AspNetCore.Security.Http.Headers.FeaturePolicy)
+  nameWithType: SingleFeaturePolicyHeaderValue.SingleFeaturePolicyHeaderValue(FeaturePolicy)
+- uid: Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.#ctor*
+  name: SingleFeaturePolicyHeaderValue
+  href: api/Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_SingleFeaturePolicyHeaderValue__ctor_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.#ctor
+  fullName: Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.SingleFeaturePolicyHeaderValue
+  nameWithType: SingleFeaturePolicyHeaderValue.SingleFeaturePolicyHeaderValue
+- uid: Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.Policy
+  name: Policy
+  href: api/Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_SingleFeaturePolicyHeaderValue_Policy
+  commentId: P:Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.Policy
+  fullName: Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.Policy
+  nameWithType: SingleFeaturePolicyHeaderValue.Policy
+- uid: Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.Policy*
+  name: Policy
+  href: api/Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_SingleFeaturePolicyHeaderValue_Policy_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.Policy
+  fullName: Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.Policy
+  nameWithType: SingleFeaturePolicyHeaderValue.Policy
+- uid: Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.ToString
+  name: ToString()
+  href: api/Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_SingleFeaturePolicyHeaderValue_ToString
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.ToString
+  fullName: Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.ToString()
+  nameWithType: SingleFeaturePolicyHeaderValue.ToString()
+- uid: Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.ToString*
+  name: ToString
+  href: api/Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_SingleFeaturePolicyHeaderValue_ToString_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.ToString
+  fullName: Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.ToString
+  nameWithType: SingleFeaturePolicyHeaderValue.ToString
 - uid: Lib.AspNetCore.Security.Http.Headers.StrictTransportSecurityHeaderValue
   name: StrictTransportSecurityHeaderValue
   href: api/Lib.AspNetCore.Security.Http.Headers.StrictTransportSecurityHeaderValue.html
@@ -2011,6 +2287,18 @@ references:
   commentId: Overload:Lib.AspNetCore.Security.SecurityHeadersPolicy.ExpectCt
   fullName: Lib.AspNetCore.Security.SecurityHeadersPolicy.ExpectCt
   nameWithType: SecurityHeadersPolicy.ExpectCt
+- uid: Lib.AspNetCore.Security.SecurityHeadersPolicy.FeaturePolicy
+  name: FeaturePolicy
+  href: api/Lib.AspNetCore.Security.SecurityHeadersPolicy.html#Lib_AspNetCore_Security_SecurityHeadersPolicy_FeaturePolicy
+  commentId: P:Lib.AspNetCore.Security.SecurityHeadersPolicy.FeaturePolicy
+  fullName: Lib.AspNetCore.Security.SecurityHeadersPolicy.FeaturePolicy
+  nameWithType: SecurityHeadersPolicy.FeaturePolicy
+- uid: Lib.AspNetCore.Security.SecurityHeadersPolicy.FeaturePolicy*
+  name: FeaturePolicy
+  href: api/Lib.AspNetCore.Security.SecurityHeadersPolicy.html#Lib_AspNetCore_Security_SecurityHeadersPolicy_FeaturePolicy_
+  commentId: Overload:Lib.AspNetCore.Security.SecurityHeadersPolicy.FeaturePolicy
+  fullName: Lib.AspNetCore.Security.SecurityHeadersPolicy.FeaturePolicy
+  nameWithType: SecurityHeadersPolicy.FeaturePolicy
 - uid: Lib.AspNetCore.Security.SecurityHeadersPolicy.Hsts
   name: Hsts
   href: api/Lib.AspNetCore.Security.SecurityHeadersPolicy.html#Lib_AspNetCore_Security_SecurityHeadersPolicy_Hsts
@@ -2242,6 +2530,27 @@ references:
   commentId: Overload:Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithExpectCt
   fullName: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithExpectCt
   nameWithType: SecurityHeadersPolicyBuilder.WithExpectCt
+- uid: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithFeaturePolicy(Lib.AspNetCore.Security.Http.Headers.FeaturePolicy)
+  name: WithFeaturePolicy(FeaturePolicy)
+  href: api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html#Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder_WithFeaturePolicy_Lib_AspNetCore_Security_Http_Headers_FeaturePolicy_
+  commentId: M:Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithFeaturePolicy(Lib.AspNetCore.Security.Http.Headers.FeaturePolicy)
+  fullName: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithFeaturePolicy(Lib.AspNetCore.Security.Http.Headers.FeaturePolicy)
+  nameWithType: SecurityHeadersPolicyBuilder.WithFeaturePolicy(FeaturePolicy)
+- uid: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithFeaturePolicy(Lib.AspNetCore.Security.Http.Headers.FeaturePolicy[])
+  name: WithFeaturePolicy(FeaturePolicy[])
+  href: api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html#Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder_WithFeaturePolicy_Lib_AspNetCore_Security_Http_Headers_FeaturePolicy___
+  commentId: M:Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithFeaturePolicy(Lib.AspNetCore.Security.Http.Headers.FeaturePolicy[])
+  name.vb: WithFeaturePolicy(FeaturePolicy())
+  fullName: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithFeaturePolicy(Lib.AspNetCore.Security.Http.Headers.FeaturePolicy[])
+  fullName.vb: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithFeaturePolicy(Lib.AspNetCore.Security.Http.Headers.FeaturePolicy())
+  nameWithType: SecurityHeadersPolicyBuilder.WithFeaturePolicy(FeaturePolicy[])
+  nameWithType.vb: SecurityHeadersPolicyBuilder.WithFeaturePolicy(FeaturePolicy())
+- uid: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithFeaturePolicy*
+  name: WithFeaturePolicy
+  href: api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html#Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder_WithFeaturePolicy_
+  commentId: Overload:Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithFeaturePolicy
+  fullName: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithFeaturePolicy
+  nameWithType: SecurityHeadersPolicyBuilder.WithFeaturePolicy
 - uid: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithHsts(System.UInt32,System.Boolean,System.Boolean,System.Nullable{System.Int32})
   name: WithHsts(UInt32, Boolean, Boolean, Nullable<Int32>)
   href: api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html#Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder_WithHsts_System_UInt32_System_Boolean_System_Boolean_System_Nullable_System_Int32__
