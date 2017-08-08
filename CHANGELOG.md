@@ -1,8 +1,12 @@
+## Lib.AspNetCore.Security 2.3.0
+### Additions and Changes
+- Added support for Feature-Policy through `SecurityHeadersMiddleware`, `SingleFeaturePolicyHeaderValue` and `MultipleFeaturePolicyHeaderValue`
+
 ## Lib.AspNetCore.Security 2.2.0 and Lib.AspNetCore.Mvc.Security 2.2.0
 ### Additions and Changes
-- Added support for X-Permitted-Cross-Domain-Policies through `SecurityHeadersMiddleware` and `XPermittedCrossDomainPoliciesHeaderValue `
+- Added support for X-Permitted-Cross-Domain-Policies through `SecurityHeadersMiddleware` and `XPermittedCrossDomainPoliciesHeaderValue`
 - Added support for SHA-384 and SHA-512 hashes in Content Security Policy
-- Added ContentSecurityPolicySourceListBuilder which provides methods for building CSP source list
+- Added `ContentSecurityPolicySourceListBuilder` which provides methods for building Content Security Policy source list
 
 ## Lib.AspNetCore.Security 2.1.0 and Lib.AspNetCore.Mvc.Security 2.1.0
 ### Bug Fixes
