@@ -1,1 +1,696 @@
-{"homepages":[],"source_base_path":"D:/GitHub/Lib.AspNetCore.Security/DocFx.AspNetCore.Security","xrefmap":"xrefmap.yml","files":[{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.html","hash":"85ty+3vtbm1aGGiIY181FA=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Extensions.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Extensions.html","hash":"Ep/YazMJiU5fAZdBuOEFtg=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecutionExtensions.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecutionExtensions.html","hash":"6uEm/gpA+mVeFPb2WD9GKA=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Headers.XFrameOptionsHeaderValue.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Headers.XFrameOptionsHeaderValue.html","hash":"ole2NPQ8i/SAIDgrFtT5Ig=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Reports.ExpectCtViolationReport.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Reports.ExpectCtViolationReport.html","hash":"rgev6HcxAjl3M7YPfWt9TA=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Microsoft.AspNetCore.Builder.yml","output":{".html":{"relative_path":"api/Microsoft.AspNetCore.Builder.html","hash":"nT4dO2Sw7BnNrl3Lm9/GQQ=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Features.IContentSecurityPolicyInlineExecutionFeature.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Features.IContentSecurityPolicyInlineExecutionFeature.html","hash":"SchhiQ1MzZ+QLmv2Uuf38Q=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySandboxFlags.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySandboxFlags.html","hash":"Hg8qmNfbKqZwlr0DH+JSsA=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Headers.XFrameOptionsDirectives.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Headers.XFrameOptionsDirectives.html","hash":"B18PCZW9vrMgZCNWpIrVog=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Headers.XXssProtectionHeaderValue.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Headers.XXssProtectionHeaderValue.html","hash":"7PIt3L7DlAyyxeyd1+AejA=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.ExpectCtReportingMiddleware.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.ExpectCtReportingMiddleware.html","hash":"434cF/uSzqzhu74NJUkWsA=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue.html","hash":"5YHV218y2nmiBiL3I5UUMw=="}},"is_incremental":false,"version":""},{"type":"Toc","source_relative_path":"toc.md","output":{".html":{"relative_path":"toc.html","hash":"289jbQbJdZ7773hHd/4RaQ=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.html","hash":"rzs2evCe7RGQCAs7VXSDcw=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution.html","hash":"gx9bLrA3M+9lzwq5QhIOlQ=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Headers.HeaderNames.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Headers.HeaderNames.html","hash":"1go8qxu+Lom+T0ztUtvMhQ=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Headers.XssFilteringModes.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Headers.XssFilteringModes.html","hash":"ssjN02V7TiEJjkG36Il04A=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.ISecurityHeadersReportingService.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.ISecurityHeadersReportingService.html","hash":"qQbD+nvlF55Tids942O1HQ=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Mvc.Security.Rendering.ContentSecurityPolicyTagHelper.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Mvc.Security.Rendering.ContentSecurityPolicyTagHelper.html","hash":"xVabX2qR4HrfQIHGCrAaXQ=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.yml","output":{".html":{"relative_path":"api/Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.html","hash":"FcPHyqZpWxT7lqSrxlOW8w=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html","hash":"t4Ey7u/MSC3uZ71CwjQR7Q=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyRequireSriFor.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyRequireSriFor.html","hash":"sTJ2KxX0H8bGAls7a7ltUw=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.html","hash":"5evuuhWO4oZ1uEzDW5dT6g=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.html","hash":"G1Z0D84TDAIss+f5Sjc6bw=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.SecurityHeadersMiddleware.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.SecurityHeadersMiddleware.html","hash":"1TjGD8sUctbROasHqVSavw=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Mvc.Security.Rendering.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Mvc.Security.Rendering.html","hash":"PyvOQDA9zosAsg2TkUogjA=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.html","hash":"4NoLzuKaiI0MOi4X66Vvwg=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html","hash":"rUFSe1/F1E4lKcbqKFYuJw=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Headers.StrictTransportSecurityHeaderValue.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Headers.StrictTransportSecurityHeaderValue.html","hash":"9GaEQV0RRCwuMriFc6lCcA=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Reports.ContentSecurityPolicyViolationReport.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Reports.ContentSecurityPolicyViolationReport.html","hash":"q1l55sbbYzOYFqJtEsV0rQ=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html","hash":"WvYsGKW52KCHaggemmViOg=="}},"is_incremental":false,"version":""},{"type":"Toc","source_relative_path":"api/toc.yml","output":{".html":{"relative_path":"api/toc.html","hash":"ozKhw1YCkISVzcquRxAxrg=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Mvc.Security.Filters.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Mvc.Security.Filters.html","hash":"VkV0Vd918hc6z4A93kX79w=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyHeaderValue.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyHeaderValue.html","hash":"dFN6/br7OsP1iienqh3CPg=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Headers.ExpectCtHeaderValue.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Headers.ExpectCtHeaderValue.html","hash":"QdNrIpqm+dfFvymYInChvg=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyDirectives.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyDirectives.html","hash":"o1CfxjzPNcJxocQ3wtHv4g=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.html","hash":"Ni/sqEV5PBTm9zD6R332HQ=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Reports.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Reports.html","hash":"fSRa4U8oAyEtJu4a1BYsBA=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.html","hash":"ZyTaQsI9/6q+vyCYIt7nwA=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Features.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Features.html","hash":"bHFBCNXnuJ7oHXzl/OH5nA=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html","hash":"d84B+sgV4BpQ3/A6b/m8tw=="}},"is_incremental":false,"version":""},{"type":"Resource","source_relative_path":"resources/svg/logo.svg","output":{"resource":{"relative_path":"resources/svg/logo.svg"}},"is_incremental":false,"version":""},{"type":"Resource","source_relative_path":"resources/ico/favicon.ico","output":{"resource":{"relative_path":"resources/ico/favicon.ico"}},"is_incremental":false,"version":""},{"type":"Conceptual","source_relative_path":"articles/csp-tag-helpers.md","output":{".html":{"relative_path":"articles/csp-tag-helpers.html","hash":"+/oehNQMVVmn/fE2vbBT7A=="}},"is_incremental":false,"version":""},{"type":"Conceptual","source_relative_path":"articles/security-headers.md","output":{".html":{"relative_path":"articles/security-headers.html","hash":"pGBPRIh1/ygyvMmBm9OOsg=="}},"is_incremental":false,"version":""},{"type":"Conceptual","source_relative_path":"index.md","output":{".html":{"relative_path":"index.html","hash":"YHBARUJqB48RGxibcqXqsg=="}},"is_incremental":false,"version":""},{"type":"Conceptual","source_relative_path":"articles/violation-reports.md","output":{".html":{"relative_path":"articles/violation-reports.html","hash":"XlMjyziG5jPh4f8fSvDqpg=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyHeaderValue.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyHeaderValue.html","hash":"58BFOb4eqHnGSxVqb+YUCA=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Reports.ContentSecurityPolicyDisposition.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Reports.ContentSecurityPolicyDisposition.html","hash":"hVzeOWoVdYJjkiP2zD54Vg=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.html","hash":"lXAAcA2OZVDNCA3p/BGbJg=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.html","hash":"T3x+nmZcw9OqAE3vyBdY+w=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.Http.Headers.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.Http.Headers.html","hash":"P8pXwoqqsj/wAYO2mT51PA=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/Lib.AspNetCore.Security.SecurityHeadersPolicy.yml","output":{".html":{"relative_path":"api/Lib.AspNetCore.Security.SecurityHeadersPolicy.html","hash":"xTESriU85JjmoWAwT5Katg=="}},"is_incremental":false,"version":""}],"version_info":{}}
+{
+  "homepages": [],
+  "source_base_path": "D:/GitHub/Lib.AspNetCore.Security/DocFx.AspNetCore.Security",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.html",
+          "hash": "eTJ0/24Otom15IIYfT49pw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.html",
+          "hash": "axJikFwsouVm0dHws+tnVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Mvc.Security.Filters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Mvc.Security.Filters.html",
+          "hash": "keln1QxuaSdMmhbxZvNmsg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Mvc.Security.Rendering.ContentSecurityPolicyTagHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Mvc.Security.Rendering.ContentSecurityPolicyTagHelper.html",
+          "hash": "NYOsKIhyHaTJl6J+IJasKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.html",
+          "hash": "fPCkqAM9Mh/k5ezcKSqr2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Mvc.Security.Rendering.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Mvc.Security.Rendering.html",
+          "hash": "lntqHI6Z4+fwhaJSR6QF7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.html",
+          "hash": "cO9MWr1Ow/m+H0FQVsScpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.ExpectCtReportingMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.ExpectCtReportingMiddleware.html",
+          "hash": "CW+/kKyZAIknkqqeY4iz7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html",
+          "hash": "rRC5oILVE1YNU1o8Ry5SKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Extensions.html",
+          "hash": "znThEpQxTD1gdazrEv1RUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Features.IContentSecurityPolicyInlineExecutionFeature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Features.IContentSecurityPolicyInlineExecutionFeature.html",
+          "hash": "FWVBRC+Ne0kAyIjk2ap7rg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Features.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Features.html",
+          "hash": "9aGQFzmckfnd5KlYVxfszw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyHeaderValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyHeaderValue.html",
+          "hash": "vkmUq0KIoz8MoL8ZFWTdMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution.html",
+          "hash": "JNTUXa5CoorTGanmOOY2nQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecutionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecutionExtensions.html",
+          "hash": "d1NGcSZI6CE8tmffreGV0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyRequireSriFor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyRequireSriFor.html",
+          "hash": "n2ZAyrDkvCEqcMo2EtT57A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySandboxFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySandboxFlags.html",
+          "hash": "7QcgC9aW42mij3Rg/RokqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html",
+          "hash": "gxcfC3HkbPKx/6zTJmQZlQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ExpectCtHeaderValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ExpectCtHeaderValue.html",
+          "hash": "9lN73rfam83eERwWWgLrsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html",
+          "hash": "ANrdcXQCnWnxLPuMpMIiMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue.html",
+          "hash": "7G8ACuLhxPA0Vk5BvgEVXg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Headers.HeaderNames.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.HeaderNames.html",
+          "hash": "KCXQVlF7wemlcWpFXd0cxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.html",
+          "hash": "x9HyWi77vrDgOPug/C9xPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyDirectives.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyDirectives.html",
+          "hash": "xfNPjXjOiufaTmPH0l81ig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyHeaderValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyHeaderValue.html",
+          "hash": "H24ll2tOiwMNp9JiwckvcA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.html",
+          "hash": "vT50EvTPCohil8xqUj/BRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Headers.StrictTransportSecurityHeaderValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.StrictTransportSecurityHeaderValue.html",
+          "hash": "HXuGU3L81SHCHzsuE7AV2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Headers.XFrameOptionsDirectives.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.XFrameOptionsDirectives.html",
+          "hash": "bMXEbgmxBQRoKz8d2xAObg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Headers.XFrameOptionsHeaderValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.XFrameOptionsHeaderValue.html",
+          "hash": "bJChvHQwV2MKkKIwiw6AzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.html",
+          "hash": "vTs1pGlcmLzTNtVkJV0FDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.html",
+          "hash": "ZaFNkqu01swneHxWwc2w0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Headers.XXssProtectionHeaderValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.XXssProtectionHeaderValue.html",
+          "hash": "wGizSDHeQP0ImZ03kKBjAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Headers.XssFilteringModes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.XssFilteringModes.html",
+          "hash": "XsKt6jVS0YvBmhflTCHdDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Headers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.html",
+          "hash": "+j5JJ5DKg0Dtegw9Wj15qQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Reports.ContentSecurityPolicyDisposition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Reports.ContentSecurityPolicyDisposition.html",
+          "hash": "K+ME/V+0KFlLpB9E9Kfl5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Reports.ContentSecurityPolicyViolationReport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Reports.ContentSecurityPolicyViolationReport.html",
+          "hash": "MacO5phyI8IUzaPUGiYO0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Reports.ExpectCtViolationReport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Reports.ExpectCtViolationReport.html",
+          "hash": "19VVIPH5V6tDYCJw1LDPjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.Http.Reports.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.Http.Reports.html",
+          "hash": "5q67WVIkQwjM94sm/gNM4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.ISecurityHeadersReportingService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.ISecurityHeadersReportingService.html",
+          "hash": "3kgoYC0DJlm5lmMEkF2V6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.SecurityHeadersMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.SecurityHeadersMiddleware.html",
+          "hash": "PLmQIeeB+99J2pU/TQa9eA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.SecurityHeadersPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.SecurityHeadersPolicy.html",
+          "hash": "yCUhHBN73mX7ykW64rV8Hw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html",
+          "hash": "9+OFr5y2ZiDkPRUTg+O37g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lib.AspNetCore.Security.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lib.AspNetCore.Security.html",
+          "hash": "+vVVUS/1pGqUHVLh72Cj6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.html",
+          "hash": "1xrYTIXCQYt7VaVe0GJ1dw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Builder.html",
+          "hash": "R3XFj9QqlC+RM5vNKJj2Gg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "H397Q6TlMoUApqvjWgJ1hQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/csp-tag-helpers.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/csp-tag-helpers.html",
+          "hash": "eNOzsJtAkxoAyl/C7h9OGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/security-headers.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/security-headers.html",
+          "hash": "4ofTb1u2BQJf+fdrJdpURg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/violation-reports.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/violation-reports.html",
+          "hash": "fgO3Jih2KR8zI28BIaOBig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "DZkg3yEyzPrloge2Xj/O4A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/ico/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "resources/ico/favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/svg/logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/svg/logo.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
+      "source_relative_path": "toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "H6VUbfZ9EfvThv2FLuq9TA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
