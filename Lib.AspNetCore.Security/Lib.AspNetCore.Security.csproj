@@ -4,7 +4,7 @@
     <Copyright>Copyright © 2017 Tomasz Pęczek</Copyright>
     <VersionPrefix>2.3.0</VersionPrefix>
     <Authors>Tomasz Pęczek</Authors>
-    <TargetFrameworks>net451;netstandard1.6</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <AssemblyTitle>Lib.AspNetCore.Security</AssemblyTitle>
     <AssemblyName>Lib.AspNetCore.Security</AssemblyName>
     <PackageId>Lib.AspNetCore.Security</PackageId>
@@ -21,7 +21,8 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Http" Version="1.1.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Core" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
   </ItemGroup>
 </Project>
