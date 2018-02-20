@@ -6,6 +6,11 @@
     public static class HeaderNames
     {
         /// <summary>
+        /// The Clear-Site-Data header.
+        /// </summary>
+        public const string ClearSiteData = "Clear-Site-Data";
+
+        /// <summary>
         /// The Content-Security-Policy header.
         /// </summary>
         public const string ContentSecurityPolicy = "Content-Security-Policy";

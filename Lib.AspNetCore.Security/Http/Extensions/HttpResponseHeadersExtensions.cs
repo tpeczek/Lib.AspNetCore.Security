@@ -16,6 +16,25 @@ namespace Lib.AspNetCore.Security.Http.Extensions
 
         #region Methods
         /// <summary>
+        /// Sets the Clear-Site-Data header value.
+        /// </summary>
+        /// <param name="response">The response.</param>
+        /// <param name="clearSiteData">The Clear-Site-Data header value.</param>
+        public static void SetClearSiteData(this HttpResponse response, ClearSiteDataHeaderValue clearSiteData)
+        {
+            response.SetResponseHeader(HeaderNames.ClearSiteData, clearSiteData?.ToString());
+        }
+
+        /// <summary>
+        /// Sets the Clear-Site-Data header value with wildcard pseudotype which indicates that all data types supported by header should be cleared (this is forward-compatible).
+        /// </summary>
+        /// <param name="response">The response.</param>
+        public static void SetWildcardClearSiteData(this HttpResponse response)
+        {
+            response.SetResponseHeader(HeaderNames.ClearSiteData, ClearSiteDataHeaderValue.WildcardPseudotype);
+        }
+
+        /// <summary>
         /// Sets the HTTP Strict Transport Security header value.
         /// </summary>
         /// <param name="response">The response.</param>
