@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Options;
 using Lib.AspNetCore.Security;
 
 namespace Microsoft.AspNetCore.Builder
@@ -40,6 +41,44 @@ namespace Microsoft.AspNetCore.Builder
             }
 
             return app.Map(pathMatch, branchedApp => branchedApp.UseMiddleware<ExpectCtReportingMiddleware>());
+        }
+
+        /// <summary>
+        /// Adds the middleware which provides support for targeted site data clearing.
+        /// </summary>
+        /// <param name="app">The pipeline builder.</param>
+        /// <param name="pathMatch">The request path to match.</param>
+        /// <returns>The pipeline builder.</returns>
+        public static IApplicationBuilder MapTargetedSiteDataClearing(this IApplicationBuilder app, PathString pathMatch)
+        {
+            if (app == null)
+            {
+                throw new ArgumentNullException(nameof(app));
+            }
+
+            return app.Map(pathMatch, branchedApp => branchedApp.UseMiddleware<TargetedSiteDataClearingMiddleware>());
+        }
+
+        /// <summary>
+        /// Adds the middleware which provides support for targeted site data clearing.
+        /// </summary>
+        /// <param name="app">The pipeline builder.</param>
+        /// <param name="pathMatch">The request path to match.</param>
+        /// <param name="options">An instance of the <see cref="TargetedSiteDataClearingOptions"/> to configure the middleware.</param>
+        /// <returns>The pipeline builder.</returns>
+        public static IApplicationBuilder MapTargetedSiteDataClearing(this IApplicationBuilder app, PathString pathMatch, TargetedSiteDataClearingOptions options)
+        {
+            if (app == null)
+            {
+                throw new ArgumentNullException(nameof(app));
+            }
+
+            if (options == null)
+            {
+                throw new ArgumentNullException(nameof(options));
+            }
+
+            return app.Map(pathMatch, branchedApp => branchedApp.UseMiddleware<TargetedSiteDataClearingMiddleware>(Options.Create(options)));
         }
 
         /// <summary>
