@@ -26,7 +26,8 @@
           "index.md",
           "articles/security-headers.md",
           "articles/violation-reports.md",
-          "articles/csp-tag-helpers.md"
+          "articles/csp-tag-helpers.md",
+          "articles/clear-site-data.md"
         ]
       }
     ],

@@ -4,11 +4,12 @@ Lib.AspNetCore.Security is a library which provides security features like Conte
 
 ## Functionality
 
-The functionality of Lib.AspNetCore.Security  can be divided into three main areas:
+The functionality of Lib.AspNetCore.Security  can be divided into four main areas:
 
 - [Security Headers](articles/security-headers.md)
 - [Violation Reports](articles/violation-reports.md)
 - [Content Security Policy Tag Helpers](articles/csp-tag-helpers.md)
+- [Clear Site Data](articles/clear-site-data.md)
 
 ## Getting Started
 

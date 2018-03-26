@@ -6,4 +6,6 @@
 
 # [Content Security Policy Tag Helpers](articles/csp-tag-helpers.md)
 
+# [Clear Site Data](articles/clear-site-data.md)
+
 # [API Reference](api/Lib.AspNetCore.Security.html)

@@ -21,10 +21,9 @@ The documentation is available [here](https://tpeczek.github.io/Lib.AspNetCore.S
 
 There are also blog posts available describing key features of the library (some of them have been written in context of ASP.NET MVC or previous versions of this library but the core idea haven't changed):
 
-- [Preparing for Chrome's Certificate Transparency policy - Expect-CT with reporting in ASP.​NET Core](https://www.tpeczek.com/2017/05/preparing-for-chromes-certificate.html)
 - [Content Security Policy in ASP.NET Core MVC - TagHelper](https://www.tpeczek.com/2016/12/content-security-policy-in-aspnet-core.html)
-- [Content Security Policy in ASP.NET MVC](https://www.tpeczek.com/2015/06/content-security-policy-in-aspnet-mvc.html)
-- [Strict Transport Security in ASP.NET MVC](https://www.tpeczek.com/2015/07/strict-transport-security-in-aspnet-mvc.html)
+- [Clearing site data upon sign out in ASP.NET Core](https://www.tpeczek.com/2018/02/clearing-site-data-upon-sign-out-in.html)
+- [Preparing for Chrome's Certificate Transparency policy - Expect-CT with reporting in ASP.​NET Core](https://www.tpeczek.com/2017/05/preparing-for-chromes-certificate.html)
 
 ## Demos
 

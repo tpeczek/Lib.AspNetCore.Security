@@ -1,3 +1,7 @@
+## Lib.AspNetCore.Security 3.0.0 and Lib.AspNetCore.Mvc.Security 3.0.0
+### Additions and Changes
+- Added support for Clear Site Data through `IServiceCollection.AddClearSiteDataAuthentication`, `TargetedSiteDataClearingMiddleware` and `ClearSiteDataHeaderValue`
+
 ## Lib.AspNetCore.Security 2.3.0
 ### Additions and Changes
 - Added support for Feature-Policy through `SecurityHeadersMiddleware`, `SingleFeaturePolicyHeaderValue` and `MultipleFeaturePolicyHeaderValue`
