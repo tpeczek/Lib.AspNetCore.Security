@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class HttpResponseHeadersExtensions
    | Lib.AspNetCore.Security ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.33.0.0">
     
     <link rel="shortcut icon" href="../resources/ico/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -105,6 +105,39 @@
   </div>
   <h3 id="methods">Methods
   </h3>
+  <a id="Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetClearSiteData_" data-uid="Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetClearSiteData*"></a>
+  <h4 id="Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetClearSiteData_Microsoft_AspNetCore_Http_HttpResponse_Lib_AspNetCore_Security_Http_Headers_ClearSiteDataHeaderValue_" data-uid="Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetClearSiteData(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.ClearSiteDataHeaderValue)">SetClearSiteData(HttpResponse, ClearSiteDataHeaderValue)</h4>
+  <div class="markdown level1 summary"><p>Sets the Clear-Site-Data header value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetClearSiteData(this HttpResponse response, ClearSiteDataHeaderValue clearSiteData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Http.HttpResponse</span></td>
+        <td><span class="parametername">response</span></td>
+        <td><p>The response.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Lib.AspNetCore.Security.Http.Headers.ClearSiteDataHeaderValue.html">ClearSiteDataHeaderValue</a></td>
+        <td><span class="parametername">clearSiteData</span></td>
+        <td><p>The Clear-Site-Data header value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetExpectCt_" data-uid="Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetExpectCt*"></a>
   <h4 id="Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetExpectCt_Microsoft_AspNetCore_Http_HttpResponse_Lib_AspNetCore_Security_Http_Headers_ExpectCtHeaderValue_" data-uid="Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetExpectCt(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.ExpectCtHeaderValue)">SetExpectCt(HttpResponse, ExpectCtHeaderValue)</h4>
   <div class="markdown level1 summary"><p>Sets the Expect-CT header value.</p>
@@ -266,6 +299,33 @@
         <td><a class="xref" href="Lib.AspNetCore.Security.Http.Headers.StrictTransportSecurityHeaderValue.html">StrictTransportSecurityHeaderValue</a></td>
         <td><span class="parametername">hsts</span></td>
         <td><p>The HTTP Strict Transport Security header value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetWildcardClearSiteData_" data-uid="Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetWildcardClearSiteData*"></a>
+  <h4 id="Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetWildcardClearSiteData_Microsoft_AspNetCore_Http_HttpResponse_" data-uid="Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetWildcardClearSiteData(Microsoft.AspNetCore.Http.HttpResponse)">SetWildcardClearSiteData(HttpResponse)</h4>
+  <div class="markdown level1 summary"><p>Sets the Clear-Site-Data header value with wildcard pseudotype which indicates that all data types supported by header should be cleared (this is forward-compatible).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetWildcardClearSiteData(this HttpResponse response)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Http.HttpResponse</span></td>
+        <td><span class="parametername">response</span></td>
+        <td><p>The response.</p>
 </td>
       </tr>
     </tbody>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SecurityHeadersMiddlewareExtensions
    | Lib.AspNetCore.Security ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.33.0.0">
     
     <link rel="shortcut icon" href="../resources/ico/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -183,6 +183,110 @@
         <td><span class="xref">Microsoft.AspNetCore.Http.PathString</span></td>
         <td><span class="parametername">pathMatch</span></td>
         <td><p>The request path to match.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Builder.IApplicationBuilder</span></td>
+        <td><p>The pipeline builder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Microsoft_AspNetCore_Builder_SecurityHeadersMiddlewareExtensions_MapTargetedSiteDataClearing_" data-uid="Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapTargetedSiteDataClearing*"></a>
+  <h4 id="Microsoft_AspNetCore_Builder_SecurityHeadersMiddlewareExtensions_MapTargetedSiteDataClearing_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Http_PathString_" data-uid="Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapTargetedSiteDataClearing(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.PathString)">MapTargetedSiteDataClearing(IApplicationBuilder, PathString)</h4>
+  <div class="markdown level1 summary"><p>Adds the middleware which provides support for targeted site data clearing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IApplicationBuilder MapTargetedSiteDataClearing(this IApplicationBuilder app, PathString pathMatch)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Builder.IApplicationBuilder</span></td>
+        <td><span class="parametername">app</span></td>
+        <td><p>The pipeline builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Http.PathString</span></td>
+        <td><span class="parametername">pathMatch</span></td>
+        <td><p>The request path to match.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Builder.IApplicationBuilder</span></td>
+        <td><p>The pipeline builder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Microsoft_AspNetCore_Builder_SecurityHeadersMiddlewareExtensions_MapTargetedSiteDataClearing_" data-uid="Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapTargetedSiteDataClearing*"></a>
+  <h4 id="Microsoft_AspNetCore_Builder_SecurityHeadersMiddlewareExtensions_MapTargetedSiteDataClearing_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Http_PathString_Lib_AspNetCore_Security_TargetedSiteDataClearingOptions_" data-uid="Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapTargetedSiteDataClearing(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.PathString,Lib.AspNetCore.Security.TargetedSiteDataClearingOptions)">MapTargetedSiteDataClearing(IApplicationBuilder, PathString, TargetedSiteDataClearingOptions)</h4>
+  <div class="markdown level1 summary"><p>Adds the middleware which provides support for targeted site data clearing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IApplicationBuilder MapTargetedSiteDataClearing(this IApplicationBuilder app, PathString pathMatch, TargetedSiteDataClearingOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Builder.IApplicationBuilder</span></td>
+        <td><span class="parametername">app</span></td>
+        <td><p>The pipeline builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Http.PathString</span></td>
+        <td><span class="parametername">pathMatch</span></td>
+        <td><p>The request path to match.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Lib.AspNetCore.Security.TargetedSiteDataClearingOptions.html">TargetedSiteDataClearingOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>An instance of the <a class="xref" href="Lib.AspNetCore.Security.TargetedSiteDataClearingOptions.html">TargetedSiteDataClearingOptions</a> to configure the middleware.</p>
 </td>
       </tr>
     </tbody>

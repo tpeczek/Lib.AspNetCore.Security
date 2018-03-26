@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class SecurityHeadersMiddleware
+    <title>Class ClearSiteDataAuthenticationServiceCollectionExtensions
    | Lib.AspNetCore.Security </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class SecurityHeadersMiddleware
+    <meta name="title" content="Class ClearSiteDataAuthenticationServiceCollectionExtensions
    | Lib.AspNetCore.Security ">
     <meta name="generator" content="docfx 2.33.0.0">
     
@@ -60,18 +60,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-12">
-            <article class="content wrap" id="_content" data-uid="Lib.AspNetCore.Security.SecurityHeadersMiddleware">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Extensions.DependencyInjection.ClearSiteDataAuthenticationServiceCollectionExtensions">
   
   
-  <h1 id="Lib_AspNetCore_Security_SecurityHeadersMiddleware" data-uid="Lib.AspNetCore.Security.SecurityHeadersMiddleware" class="text-break">Class SecurityHeadersMiddleware
+  <h1 id="Microsoft_Extensions_DependencyInjection_ClearSiteDataAuthenticationServiceCollectionExtensions" data-uid="Microsoft.Extensions.DependencyInjection.ClearSiteDataAuthenticationServiceCollectionExtensions" class="text-break">Class ClearSiteDataAuthenticationServiceCollectionExtensions
   </h1>
-  <div class="markdown level0 summary"><p>Middleware for handling security headers.</p>
+  <div class="markdown level0 summary"><p>Extension methods for setting up authentication service which supports Clear-Site-Data header.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">SecurityHeadersMiddleware</span></div>
+    <div class="level1"><span class="xref">ClearSiteDataAuthenticationServiceCollectionExtensions</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -97,57 +97,22 @@
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Lib.AspNetCore.Security.html">Lib.AspNetCore.Security</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Extensions.DependencyInjection.html">Microsoft.Extensions.DependencyInjection</a></h6>
   <h6><strong>Assembly</strong>: Lib.AspNetCore.Security.dll</h6>
-  <h5 id="Lib_AspNetCore_Security_SecurityHeadersMiddleware_syntax">Syntax</h5>
+  <h5 id="Microsoft_Extensions_DependencyInjection_ClearSiteDataAuthenticationServiceCollectionExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SecurityHeadersMiddleware</code></pre>
+    <pre><code class="lang-csharp hljs">public static class ClearSiteDataAuthenticationServiceCollectionExtensions</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  <a id="Lib_AspNetCore_Security_SecurityHeadersMiddleware__ctor_" data-uid="Lib.AspNetCore.Security.SecurityHeadersMiddleware.#ctor*"></a>
-  <h4 id="Lib_AspNetCore_Security_SecurityHeadersMiddleware__ctor_Microsoft_AspNetCore_Http_RequestDelegate_Lib_AspNetCore_Security_SecurityHeadersPolicy_" data-uid="Lib.AspNetCore.Security.SecurityHeadersMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Lib.AspNetCore.Security.SecurityHeadersPolicy)">SecurityHeadersMiddleware(RequestDelegate, SecurityHeadersPolicy)</h4>
-  <div class="markdown level1 summary"><p>Instantiates a new <a class="xref" href="Lib.AspNetCore.Security.SecurityHeadersMiddleware.html">SecurityHeadersMiddleware</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SecurityHeadersMiddleware(RequestDelegate next, SecurityHeadersPolicy policy)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Microsoft.AspNetCore.Http.RequestDelegate</span></td>
-        <td><span class="parametername">next</span></td>
-        <td><p>The next middleware in the pipeline.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Lib.AspNetCore.Security.SecurityHeadersPolicy.html">SecurityHeadersPolicy</a></td>
-        <td><span class="parametername">policy</span></td>
-        <td><p>An instance of the <a class="xref" href="Lib.AspNetCore.Security.SecurityHeadersPolicy.html">SecurityHeadersPolicy</a> to be applied.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
-  <a id="Lib_AspNetCore_Security_SecurityHeadersMiddleware_Invoke_" data-uid="Lib.AspNetCore.Security.SecurityHeadersMiddleware.Invoke*"></a>
-  <h4 id="Lib_AspNetCore_Security_SecurityHeadersMiddleware_Invoke_Microsoft_AspNetCore_Http_HttpContext_" data-uid="Lib.AspNetCore.Security.SecurityHeadersMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">Invoke(HttpContext)</h4>
-  <div class="markdown level1 summary"><p>Process an individual request.</p>
+  <a id="Microsoft_Extensions_DependencyInjection_ClearSiteDataAuthenticationServiceCollectionExtensions_AddClearSiteDataAuthentication_" data-uid="Microsoft.Extensions.DependencyInjection.ClearSiteDataAuthenticationServiceCollectionExtensions.AddClearSiteDataAuthentication*"></a>
+  <h4 id="Microsoft_Extensions_DependencyInjection_ClearSiteDataAuthenticationServiceCollectionExtensions_AddClearSiteDataAuthentication_Microsoft_Extensions_DependencyInjection_IServiceCollection_Lib_AspNetCore_Security_Http_Headers_ClearSiteDataHeaderValue_" data-uid="Microsoft.Extensions.DependencyInjection.ClearSiteDataAuthenticationServiceCollectionExtensions.AddClearSiteDataAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection,Lib.AspNetCore.Security.Http.Headers.ClearSiteDataHeaderValue)">AddClearSiteDataAuthentication(IServiceCollection, ClearSiteDataHeaderValue)</h4>
+  <div class="markdown level1 summary"><p>Add authentication service which supports Clear-Site-Data header.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task Invoke(HttpContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IServiceCollection AddClearSiteDataAuthentication(this IServiceCollection services, ClearSiteDataHeaderValue clearSiteDataHeaderValue)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -160,9 +125,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.AspNetCore.Http.HttpContext</span></td>
-        <td><span class="parametername">context</span></td>
-        <td><p>The context.</p>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
+        <td><span class="parametername">services</span></td>
+        <td><p>The service collection.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Lib.AspNetCore.Security.Http.Headers.ClearSiteDataHeaderValue.html">ClearSiteDataHeaderValue</a></td>
+        <td><span class="parametername">clearSiteDataHeaderValue</span></td>
+        <td><p>The Clear-Site-Data header value.</p>
 </td>
       </tr>
     </tbody>
@@ -177,8 +148,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td><p>The task object representing the asynchronous operation.</p>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
+        <td><p>The service collection.</p>
 </td>
       </tr>
     </tbody>
