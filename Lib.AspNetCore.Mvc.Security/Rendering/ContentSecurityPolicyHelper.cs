@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Lib.AspNetCore.Security.Http.Features;
 using Lib.AspNetCore.Security.Http.Headers;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Http;
 
 namespace Lib.AspNetCore.Mvc.Security.Rendering
 {
@@ -52,6 +53,10 @@ namespace Lib.AspNetCore.Mvc.Security.Rendering
         internal ContentSecurityPolicyHelper(ViewContext viewContext)
         {
             _cspFeature = viewContext.HttpContext.Features.Get<IContentSecurityPolicyInlineExecutionFeature>();
+        }
+        internal ContentSecurityPolicyHelper(HttpContext httpContext)
+        {
+            _cspFeature = httpContext.Features.Get<IContentSecurityPolicyInlineExecutionFeature>();
         }
         #endregion
 
