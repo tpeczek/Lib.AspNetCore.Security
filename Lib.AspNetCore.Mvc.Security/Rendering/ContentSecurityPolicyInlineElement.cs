@@ -53,7 +53,7 @@ namespace Lib.AspNetCore.Mvc.Security.Rendering
             {
                 StringBuilder elementInnerHtmlBuilder = ((StringWriter)_viewContext.Writer).GetStringBuilder();
                 string elementInnerHtml = elementInnerHtmlBuilder.ToString();
-                string elementHash = ContentSecurityPolicyHelper.ComputeHash(_currentInlineExecution, elementInnerHtml);
+                string elementHash = _cspHelper.ComputeHash(_currentInlineExecution, elementInnerHtml);
 
                 _cspHelper.AddHashToInlineExecutionSources(_elementTag.TagName, elementHash);
 

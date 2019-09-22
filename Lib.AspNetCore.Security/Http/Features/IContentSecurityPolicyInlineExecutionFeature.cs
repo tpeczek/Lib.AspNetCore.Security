@@ -37,6 +37,14 @@ namespace Lib.AspNetCore.Security.Http.Features
 
         #region Methods
         /// <summary>
+        /// Computes the hash for given content.
+        /// </summary>
+        /// <param name="hashAlgorithm">The algorithm for computing the hash.</param>
+        /// <param name="elementContent">The content for which the hash is to be computed.</param>
+        /// <returns>The hash.</returns>
+        string ComputeHash(ContentSecurityPolicyInlineExecution hashAlgorithm, string elementContent);
+
+        /// <summary>
         /// Gets the hash from cache.
         /// </summary>
         /// <param name="cacheKey">The cache key.</param>

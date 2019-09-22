@@ -75,7 +75,7 @@ namespace Lib.AspNetCore.Mvc.Security.Rendering
                 if (contentHash == null)
                 {
                     string content = output.Content.IsModified ? output.Content.GetContent() : (await output.GetChildContentAsync()).GetContent();
-                    contentHash = ContentSecurityPolicyHelper.ComputeHash(currentInlineExecution, content);
+                    contentHash = cspHelper.ComputeHash(currentInlineExecution, content);
 
                     if (!String.IsNullOrEmpty(uniqueId))
                     {

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using System.Collections.Generic;
 using System.Collections.Concurrent;
 using System.Security.Cryptography;
@@ -8,10 +9,32 @@ namespace Lib.AspNetCore.Security.Http.Features
 {
     internal class ContentSecurityPolicyInlineExecutionFeature : IContentSecurityPolicyInlineExecutionFeature
     {
-        #region Fields
-        private readonly ConcurrentDictionary<string, string> _hashesCache;
+        #region Structs
+        private struct HashAlgorithmInfo
+        {
+            public string SourcePrefix { get; }
 
+            public Func<HashAlgorithm> AlgorithmImplementationCreator { get; }
+
+            public HashAlgorithmInfo(string sourcePrefix, Func<HashAlgorithm> algorithmImplementationCreator)
+            {
+                SourcePrefix = sourcePrefix;
+                AlgorithmImplementationCreator = algorithmImplementationCreator;
+            }
+        }
+        #endregion
+
+        #region Fields
         private const int _nonceLength = 128 / 8;
+
+        private readonly static IReadOnlyDictionary<ContentSecurityPolicyInlineExecution, HashAlgorithmInfo> _hashAlgorithmsInfos = new Dictionary<ContentSecurityPolicyInlineExecution, HashAlgorithmInfo>
+        {
+            { ContentSecurityPolicyInlineExecution.Hash, new HashAlgorithmInfo("sha256-", SHA256.Create) },
+            { ContentSecurityPolicyInlineExecution.Hash384, new HashAlgorithmInfo("sha384-", SHA384.Create) },
+            { ContentSecurityPolicyInlineExecution.Hash512, new HashAlgorithmInfo("sha512-", SHA512.Create) }
+        };
+
+        private readonly ConcurrentDictionary<string, string> _hashesCache;
         #endregion
 
         #region Properties
@@ -56,6 +79,20 @@ namespace Lib.AspNetCore.Security.Http.Features
         #endregion
 
         #region Methods
+        public string ComputeHash(ContentSecurityPolicyInlineExecution hashAlgorithm, string elementContent)
+        {
+            HashAlgorithmInfo hashAlgorithmInfo = _hashAlgorithmsInfos[hashAlgorithm];
+            byte[] elementHashBytes = null;
+
+            using (HashAlgorithm hashAlgorithmImplementation = hashAlgorithmInfo.AlgorithmImplementationCreator())
+            {
+                elementContent = elementContent.Replace("\r\n", "\n");
+                elementHashBytes = hashAlgorithmImplementation.ComputeHash(Encoding.UTF8.GetBytes(elementContent));
+            }
+
+            return hashAlgorithmInfo.SourcePrefix + Convert.ToBase64String(elementHashBytes);
+        }
+
         public string GetHashFromCache(string cacheKey)
         {
             string hash = null;
