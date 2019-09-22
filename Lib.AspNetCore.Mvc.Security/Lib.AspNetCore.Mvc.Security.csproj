@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Description>Lib.AspNetCore.Mvc.Security is a library which provides additional control over security features like Content Security Policy for ASP.NET Core MVC</Description>
     <Copyright>Copyright © 2016 - 2019 Tomasz Pęczek</Copyright>
-    <VersionPrefix>3.0.0</VersionPrefix>
+    <VersionPrefix>3.1.0</VersionPrefix>
     <Authors>Tomasz Pęczek</Authors>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <AssemblyTitle>Lib.AspNetCore.Mvc.Security</AssemblyTitle>
@@ -10,7 +10,7 @@
     <PackageId>Lib.AspNetCore.Mvc.Security</PackageId>
     <PackageTags>aspnetcore;aspnetcoremvc;security;csp</PackageTags>
     <PackageProjectUrl>https://github.com/tpeczek/Lib.AspNetCore.Security</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/tpeczek/Lib.AspNetCore.Security/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>git://github.com/tpeczek/Lib.AspNetCore.Security</RepositoryUrl>
     <GenerateAssemblyTitleAttribute>true</GenerateAssemblyTitleAttribute>
@@ -24,7 +24,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Runtime" Version="2.0.0" />
-    <!--<PackageReference Include="Lib.AspNetCore.Security" Version="3.0.0" />-->
+    <!--<PackageReference Include="Lib.AspNetCore.Security" Version="3.1.0" />-->
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Lib.AspNetCore.Security\Lib.AspNetCore.Security.csproj" />

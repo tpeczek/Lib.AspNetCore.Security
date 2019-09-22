@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Description>Lib.AspNetCore.Security is a library which provides security features like Content Security Policy, Strict Transport Security or Expect-CT for ASP.NET Core</Description>
     <Copyright>Copyright © 2017 - 2019 Tomasz Pęczek</Copyright>
-    <VersionPrefix>3.0.0</VersionPrefix>
+    <VersionPrefix>3.1.0</VersionPrefix>
     <Authors>Tomasz Pęczek</Authors>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <AssemblyTitle>Lib.AspNetCore.Security</AssemblyTitle>
@@ -10,7 +10,7 @@
     <PackageId>Lib.AspNetCore.Security</PackageId>
     <PackageTags>aspnetcore;security;csp;hsts</PackageTags>
     <PackageProjectUrl>https://github.com/tpeczek/Lib.AspNetCore.Security</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/tpeczek/Lib.AspNetCore.Security/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>git://github.com/tpeczek/Lib.AspNetCore.Security</RepositoryUrl>
     <GenerateAssemblyTitleAttribute>true</GenerateAssemblyTitleAttribute>
