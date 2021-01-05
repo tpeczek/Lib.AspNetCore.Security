@@ -1,11 +1,9 @@
 ﻿using System;
-using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using Newtonsoft.Json;
+using Lib.AspNetCore.Security.Json;
 using Lib.AspNetCore.Security.Http.Reports;
-using Lib.AspNetCore.Security.Json.Converters;
 
 namespace Lib.AspNetCore.Security
 {
@@ -41,19 +39,7 @@ namespace Lib.AspNetCore.Security
         {
             if (IsExpectCtReportRequest(context.Request))
             {
-                ExpectCtViolationReport report = null;
-
-                using (StreamReader requestBodyReader = new StreamReader(context.Request.Body))
-                {
-                    using (JsonReader requestBodyJsonReader = new JsonTextReader(requestBodyReader))
-                    {
-                        JsonSerializer serializer = new JsonSerializer();
-                        serializer.Converters.Add(new ExpectCtViolationReportJsonConverter());
-                        serializer.DateFormatHandling = DateFormatHandling.IsoDateFormat;
-
-                        report = serializer.Deserialize<ExpectCtViolationReport>(requestBodyJsonReader);
-                    }
-                }
+                ExpectCtViolationReport report = await ExpectCtViolationReportJsonDeserializer.DeserializeAsync(context.Request.Body);
 
                 if (report != null)
                 {

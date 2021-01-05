@@ -42,7 +42,7 @@
     "dest": "wwwroot",
     "globalMetadata": {
       "_appTitle": "Lib.AspNetCore.Security",
-      "_appFooter": "Copyright © 2016 - 2020 Tomasz Pęczek",
+      "_appFooter": "Copyright © 2016 - 2021 Tomasz Pęczek",
       "_appLogoPath": "resources/svg/logo.svg",
       "_appFaviconPath": "resources/ico/favicon.ico",
       "_disableBreadcrumb": true,

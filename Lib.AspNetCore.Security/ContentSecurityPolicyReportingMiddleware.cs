@@ -1,11 +1,9 @@
 ﻿using System;
-using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using Newtonsoft.Json;
+using Lib.AspNetCore.Security.Json;
 using Lib.AspNetCore.Security.Http.Reports;
-using Lib.AspNetCore.Security.Json.Converters;
 
 namespace Lib.AspNetCore.Security
 {
@@ -41,18 +39,7 @@ namespace Lib.AspNetCore.Security
         {
             if (IsCspReportRequest(context.Request))
             {
-                ContentSecurityPolicyViolationReport report = null;
-
-                using (StreamReader requestBodyReader = new StreamReader(context.Request.Body))
-                {
-                    using (JsonReader requestBodyJsonReader = new JsonTextReader(requestBodyReader))
-                    {
-                        JsonSerializer serializer = new JsonSerializer();
-                        serializer.Converters.Add(new ContentSecurityPolicyViolationReportJsonConverter());
-
-                        report = serializer.Deserialize<ContentSecurityPolicyViolationReport>(requestBodyJsonReader);
-                    }
-                }
+                ContentSecurityPolicyViolationReport report = await ContentSecurityPolicyViolationReportJsonDeserializer.DeserializeAsync(context.Request.Body);
 
                 if (report != null)
                 {
@@ -69,7 +56,7 @@ namespace Lib.AspNetCore.Security
             }
         }
 
-        private bool IsCspReportRequest(HttpRequest request)
+        private static bool IsCspReportRequest(HttpRequest request)
         {
             return HttpMethods.IsPost(request.Method) && (request.ContentType == _cspReportContentType);
         }
