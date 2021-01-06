@@ -28,6 +28,25 @@ public void Configure(IApplicationBuilder app)
 }
 ```
 
+There are also similar extension methods which can be used with endpoint routing.
+
+```cs
+public void Configure(IApplicationBuilder app)
+{
+    ...
+
+    app.UseEndpoints(endpoints =>
+    {
+        ...
+        endpoints.MapContentSecurityPolicyReporting("/report-csp");
+        endpoints.MapExpectCtReporting("/report-ct");
+        ...
+    });
+
+    ...
+}
+```
+
 Underneath the covers the middlewares will look for [`ISecurityHeadersReportingService`](../api/Lib.AspNetCore.Security.ISecurityHeadersReportingService.html) service implementation, which might look like this:
 
 ```cs

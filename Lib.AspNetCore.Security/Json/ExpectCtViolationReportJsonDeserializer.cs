@@ -48,7 +48,6 @@ namespace Lib.AspNetCore.Security.Json
                                                 value.EffectiveExpirationDate = reader.GetDateTime();
                                                 break;
                                             default:
-                                                reader.Skip();
                                                 break;
                                         }
                                     }
@@ -60,6 +59,8 @@ namespace Lib.AspNetCore.Security.Json
                             reader.Skip();
                         }
                     }
+
+                    reader.Read();
                 }
 
                 return value;

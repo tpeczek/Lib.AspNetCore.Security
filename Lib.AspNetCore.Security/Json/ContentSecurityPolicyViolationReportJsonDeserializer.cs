@@ -72,7 +72,6 @@ namespace Lib.AspNetCore.Security.Json
                                                 value.ColumnNumber = reader.GetInt32();
                                                 break;
                                             default:
-                                                reader.Skip();
                                                 break;
                                         }
                                     }
@@ -84,6 +83,8 @@ namespace Lib.AspNetCore.Security.Json
                             reader.Skip();
                         }
                     }
+
+                    reader.Read();
                 }
 
                 return value;

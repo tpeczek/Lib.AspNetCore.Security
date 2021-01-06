@@ -47,7 +47,29 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 
 	...
 }
+```
 
+```cs
+public void Configure(IApplicationBuilder app)
+{
+    ...
+
+    app.UseEndpoints(endpoints =>
+    {
+        ...
+        endpoints..MapTargetedSiteDataClearing("/clear-site-data", new TargetedSiteDataClearingOptions
+        {
+            ValidateAntiforgery = true,
+            ClearCache = true,
+            ClearCookies = true,
+            ClearStorage = true,
+            ClearExecutionContexts = true
+        });
+        ...
+    });
+
+    ...
+}
 ```
 
 The middleware behaviour can be controlled through [`TargetedSiteDataClearingOptions`](../api/Lib.AspNetCore.Security.TargetedSiteDataClearingOptions.html).
