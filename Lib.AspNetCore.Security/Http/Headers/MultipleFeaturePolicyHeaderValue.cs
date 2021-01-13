@@ -7,6 +7,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
     /// <summary>
     /// Represents value of Feature-Policy header.
     /// </summary>
+    [Obsolete("Feature Policy has been replaced with Permissions Policy.")]
     public class MultipleFeaturePolicyHeaderValue : FeaturePolicyHeaderValue
     {
         #region Fields

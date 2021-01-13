@@ -1,4 +1,6 @@
-﻿namespace Lib.AspNetCore.Security.Http.Headers
+﻿using System;
+
+namespace Lib.AspNetCore.Security.Http.Headers
 {
     /// <summary>
     /// The names of HTTP headers
@@ -28,7 +30,13 @@
         /// <summary>
         /// The Feature-Policy header.
         /// </summary>
+        [Obsolete("Feature Policy has been replaced with Permissions Policy.")]
         public const string FeaturePolicy = "Feature-Policy";
+
+        /// <summary>
+        /// The Permissions-Policy header.
+        /// </summary>
+        public const string PermissionsPolicy = "Permissions-Policy";
 
         /// <summary>
         /// The Referrer-Policy header.

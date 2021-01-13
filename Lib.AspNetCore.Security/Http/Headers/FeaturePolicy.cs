@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using System.Collections.Generic;
 
 namespace Lib.AspNetCore.Security.Http.Headers
@@ -6,6 +7,7 @@ namespace Lib.AspNetCore.Security.Http.Headers
     /// <summary>
     /// Policy to selectively enable and disable use of various browser features and APIs.
     /// </summary>
+    [Obsolete("Feature Policy has been replaced with Permissions Policy.")]
     public class FeaturePolicy
     {
         #region Fields

@@ -144,6 +144,7 @@ namespace Lib.AspNetCore.Security
         /// </summary>
         /// <param name="policy">The feature policy.</param>
         /// <returns>The current policy builder.</returns>
+        [Obsolete("Feature Policy has been replaced with Permissions Policy.")]
         public SecurityHeadersPolicyBuilder WithFeaturePolicy(FeaturePolicy policy)
         {
             _policy.FeaturePolicy = new SingleFeaturePolicyHeaderValue(policy);
@@ -156,9 +157,22 @@ namespace Lib.AspNetCore.Security
         /// </summary>
         /// <param name="policies">The feature policies.</param>
         /// <returns>The current policy builder.</returns>
+        [Obsolete("Feature Policy has been replaced with Permissions Policy.")]
         public SecurityHeadersPolicyBuilder WithFeaturePolicy(params FeaturePolicy[] policies)
         {
             _policy.FeaturePolicy = new MultipleFeaturePolicyHeaderValue(policies);
+
+            return this;
+        }
+
+        /// <summary>
+        /// Adds the Permissions-Policy.
+        /// </summary>
+        /// <param name="features">The features controlled by Permissions Policy.</param>
+        /// <returns>The current policy builder.</returns>
+        public SecurityHeadersPolicyBuilder WithPermissionsPolicy(params PolicyControlledFeature[] features)
+        {
+            _policy.PermissionsPolicy = new PermissionsPolicyHeaderValue(features);
 
             return this;
         }

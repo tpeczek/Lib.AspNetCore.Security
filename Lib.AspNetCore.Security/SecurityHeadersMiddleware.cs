@@ -53,7 +53,10 @@ namespace Lib.AspNetCore.Security
                 HandleSingleDirectiveHeader(context.Response.SetXContentTypeOptions, _policy.XContentTypeOptions);
                 HandleSingleDirectiveHeader(context.Response.SetXDownloadOptions, _policy.XDownloadOptions);
 
+#pragma warning disable CS0618 // Type or member is obsolete
                 context.Response.SetFeaturePolicy(_policy.FeaturePolicy);
+#pragma warning restore CS0618 // Type or member is obsolete
+                context.Response.SetPermissionsPolicy(_policy.PermissionsPolicy);
                 context.Response.SetReferrerPolicy(_policy.ReferrerPolicy);
                 context.Response.SetStrictTransportSecurity(_policy.Hsts);
                 context.Response.SetXFrameOptions(_policy.XFrameOptions);

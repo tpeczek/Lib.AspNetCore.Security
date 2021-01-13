@@ -1,4 +1,5 @@
-﻿using Lib.AspNetCore.Security.Http.Headers;
+﻿using System;
+using Lib.AspNetCore.Security.Http.Headers;
 
 namespace Lib.AspNetCore.Security
 {
@@ -26,7 +27,13 @@ namespace Lib.AspNetCore.Security
         /// <summary>
         /// Gets or sets the Feature-Policy header value.
         /// </summary>
+        [Obsolete("Feature Policy has been replaced with Permissions Policy.")]
         public FeaturePolicyHeaderValue FeaturePolicy { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Permissions-Policy header value.
+        /// </summary>
+        public PermissionsPolicyHeaderValue PermissionsPolicy { get; set; }
 
         /// <summary>
         /// Gets or sets the HTTP Strict Transport Security header value.

@@ -59,9 +59,20 @@ namespace Lib.AspNetCore.Security.Http.Extensions
         /// </summary>
         /// <param name="response">The response.</param>
         /// <param name="featurePolicy">The Feature-Policy header value.</param>
+        [Obsolete("Feature Policy has been replaced with Permissions Policy.")]
         public static void SetFeaturePolicy(this HttpResponse response, FeaturePolicyHeaderValue featurePolicy)
         {
             response.SetResponseHeader(HeaderNames.FeaturePolicy, featurePolicy?.ToString());
+        }
+
+        /// <summary>
+        /// Sets the Permissions-Policy header value.
+        /// </summary>
+        /// <param name="response">The response.</param>
+        /// <param name="permissionsPolicy">The Permissions-Policy header value.</param>
+        public static void SetPermissionsPolicy(this HttpResponse response, PermissionsPolicyHeaderValue permissionsPolicy)
+        {
+            response.SetResponseHeader(HeaderNames.PermissionsPolicy, permissionsPolicy?.ToString());
         }
 
         /// <summary>
