@@ -13,7 +13,7 @@ Header | Header Value Class | HttpResponse Extension | Middleware
 Clear-Site-Data | [Yes](../api/Lib.AspNetCore.Security.Http.Headers.ClearSiteDataHeaderValue.html) | Yes | No
 Content-Security-Policy*(-Report-Only)* | [Yes](../api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyHeaderValue.html) | No | Yes
 Expect-CT | [Yes](../api/Lib.AspNetCore.Security.Http.Headers.ExpectCtHeaderValue.html) | Yes | Yes
-Feature-Policy | [Yes](../api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue.html) | Yes | Yes
+Permissions-Policy | [Yes](../api/Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.html) | Yes | Yes
 Referrer-Policy | [Yes](../api/Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyHeaderValue.html) | Yes | Yes
 Strict-Transport-Security | [Yes](../api/Lib.AspNetCore.Security.Http.Headers.StrictTransportSecurityHeaderValue.html) | Yes | Yes
 X-Content-Type-Options | No | Yes | Yes

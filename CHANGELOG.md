@@ -1,3 +1,11 @@
+## Lib.AspNetCore.Security 3.2.0 and Lib.AspNetCore.Mvc.Security 3.2.0
+### Additions and Changes
+- Added support for ASP.NET Core 3.1
+- Added support for ASP.NET Core 5.0
+- Added support for endpoint routing
+- Added support for Permissions Policy
+- Marked Feature Policy as obsolete
+
 ## Lib.AspNetCore.Security 3.1.0 and Lib.AspNetCore.Mvc.Security 3.1.0
 ### Additions and Changes
 - Added capability to compute Content Security Policy hash through `IContentSecurityPolicyInlineExecutionFeature`
