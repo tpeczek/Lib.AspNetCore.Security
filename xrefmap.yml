@@ -330,6 +330,19 @@ references:
   isSpec: "True"
   fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetFeaturePolicy
   nameWithType: HttpResponseHeadersExtensions.SetFeaturePolicy
+- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetPermissionsPolicy(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue)
+  name: SetPermissionsPolicy(HttpResponse, PermissionsPolicyHeaderValue)
+  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetPermissionsPolicy_Microsoft_AspNetCore_Http_HttpResponse_Lib_AspNetCore_Security_Http_Headers_PermissionsPolicyHeaderValue_
+  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetPermissionsPolicy(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue)
+  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetPermissionsPolicy(Microsoft.AspNetCore.Http.HttpResponse, Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue)
+  nameWithType: HttpResponseHeadersExtensions.SetPermissionsPolicy(HttpResponse, PermissionsPolicyHeaderValue)
+- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetPermissionsPolicy*
+  name: SetPermissionsPolicy
+  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetPermissionsPolicy_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetPermissionsPolicy
+  isSpec: "True"
+  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetPermissionsPolicy
+  nameWithType: HttpResponseHeadersExtensions.SetPermissionsPolicy
 - uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetReferrerPolicy(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyDirectives)
   name: SetReferrerPolicy(HttpResponse, ReferrerPolicyDirectives)
   href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetReferrerPolicy_Microsoft_AspNetCore_Http_HttpResponse_Lib_AspNetCore_Security_Http_Headers_ReferrerPolicyDirectives_
@@ -1693,6 +1706,12 @@ references:
   commentId: F:Lib.AspNetCore.Security.Http.Headers.HeaderNames.FeaturePolicy
   fullName: Lib.AspNetCore.Security.Http.Headers.HeaderNames.FeaturePolicy
   nameWithType: HeaderNames.FeaturePolicy
+- uid: Lib.AspNetCore.Security.Http.Headers.HeaderNames.PermissionsPolicy
+  name: PermissionsPolicy
+  href: api/Lib.AspNetCore.Security.Http.Headers.HeaderNames.html#Lib_AspNetCore_Security_Http_Headers_HeaderNames_PermissionsPolicy
+  commentId: F:Lib.AspNetCore.Security.Http.Headers.HeaderNames.PermissionsPolicy
+  fullName: Lib.AspNetCore.Security.Http.Headers.HeaderNames.PermissionsPolicy
+  nameWithType: HeaderNames.PermissionsPolicy
 - uid: Lib.AspNetCore.Security.Http.Headers.HeaderNames.ReferrerPolicy
   name: ReferrerPolicy
   href: api/Lib.AspNetCore.Security.Http.Headers.HeaderNames.html#Lib_AspNetCore_Security_Http_Headers_HeaderNames_ReferrerPolicy
@@ -1789,6 +1808,173 @@ references:
   isSpec: "True"
   fullName: Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.ToString
   nameWithType: MultipleFeaturePolicyHeaderValue.ToString
+- uid: Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue
+  name: PermissionsPolicyHeaderValue
+  href: api/Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.html
+  commentId: T:Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue
+  fullName: Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue
+  nameWithType: PermissionsPolicyHeaderValue
+- uid: Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.#ctor(Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature[])
+  name: PermissionsPolicyHeaderValue(PolicyControlledFeature[])
+  href: api/Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_PermissionsPolicyHeaderValue__ctor_Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature___
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.#ctor(Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature[])
+  name.vb: PermissionsPolicyHeaderValue(PolicyControlledFeature())
+  fullName: Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.PermissionsPolicyHeaderValue(Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature[])
+  fullName.vb: Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.PermissionsPolicyHeaderValue(Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature())
+  nameWithType: PermissionsPolicyHeaderValue.PermissionsPolicyHeaderValue(PolicyControlledFeature[])
+  nameWithType.vb: PermissionsPolicyHeaderValue.PermissionsPolicyHeaderValue(PolicyControlledFeature())
+- uid: Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.#ctor*
+  name: PermissionsPolicyHeaderValue
+  href: api/Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_PermissionsPolicyHeaderValue__ctor_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.#ctor
+  isSpec: "True"
+  fullName: Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.PermissionsPolicyHeaderValue
+  nameWithType: PermissionsPolicyHeaderValue.PermissionsPolicyHeaderValue
+- uid: Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.Features
+  name: Features
+  href: api/Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_PermissionsPolicyHeaderValue_Features
+  commentId: P:Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.Features
+  fullName: Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.Features
+  nameWithType: PermissionsPolicyHeaderValue.Features
+- uid: Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.Features*
+  name: Features
+  href: api/Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_PermissionsPolicyHeaderValue_Features_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.Features
+  isSpec: "True"
+  fullName: Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.Features
+  nameWithType: PermissionsPolicyHeaderValue.Features
+- uid: Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.ToString
+  name: ToString()
+  href: api/Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_PermissionsPolicyHeaderValue_ToString
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.ToString
+  fullName: Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.ToString()
+  nameWithType: PermissionsPolicyHeaderValue.ToString()
+- uid: Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.ToString*
+  name: ToString
+  href: api/Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.html#Lib_AspNetCore_Security_Http_Headers_PermissionsPolicyHeaderValue_ToString_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.ToString
+  isSpec: "True"
+  fullName: Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.ToString
+  nameWithType: PermissionsPolicyHeaderValue.ToString
+- uid: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature
+  name: PolicyControlledFeature
+  href: api/Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html
+  commentId: T:Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature
+  fullName: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature
+  nameWithType: PolicyControlledFeature
+- uid: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.AllowList
+  name: AllowList
+  href: api/Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html#Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_AllowList
+  commentId: P:Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.AllowList
+  fullName: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.AllowList
+  nameWithType: PolicyControlledFeature.AllowList
+- uid: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.AllowList*
+  name: AllowList
+  href: api/Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html#Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_AllowList_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.AllowList
+  isSpec: "True"
+  fullName: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.AllowList
+  nameWithType: PolicyControlledFeature.AllowList
+- uid: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateAllowedForAllOrigins(System.String)
+  name: CreateAllowedForAllOrigins(String)
+  href: api/Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html#Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_CreateAllowedForAllOrigins_System_String_
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateAllowedForAllOrigins(System.String)
+  fullName: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateAllowedForAllOrigins(System.String)
+  nameWithType: PolicyControlledFeature.CreateAllowedForAllOrigins(String)
+- uid: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateAllowedForAllOrigins*
+  name: CreateAllowedForAllOrigins
+  href: api/Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html#Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_CreateAllowedForAllOrigins_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateAllowedForAllOrigins
+  isSpec: "True"
+  fullName: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateAllowedForAllOrigins
+  nameWithType: PolicyControlledFeature.CreateAllowedForAllOrigins
+- uid: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateAllowedForAllowList(System.String,System.String[])
+  name: CreateAllowedForAllowList(String, String[])
+  href: api/Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html#Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_CreateAllowedForAllowList_System_String_System_String___
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateAllowedForAllowList(System.String,System.String[])
+  name.vb: CreateAllowedForAllowList(String, String())
+  fullName: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateAllowedForAllowList(System.String, System.String[])
+  fullName.vb: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateAllowedForAllowList(System.String, System.String())
+  nameWithType: PolicyControlledFeature.CreateAllowedForAllowList(String, String[])
+  nameWithType.vb: PolicyControlledFeature.CreateAllowedForAllowList(String, String())
+- uid: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateAllowedForAllowList*
+  name: CreateAllowedForAllowList
+  href: api/Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html#Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_CreateAllowedForAllowList_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateAllowedForAllowList
+  isSpec: "True"
+  fullName: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateAllowedForAllowList
+  nameWithType: PolicyControlledFeature.CreateAllowedForAllowList
+- uid: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateDeniedForAllOrigins(System.String)
+  name: CreateDeniedForAllOrigins(String)
+  href: api/Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html#Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_CreateDeniedForAllOrigins_System_String_
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateDeniedForAllOrigins(System.String)
+  fullName: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateDeniedForAllOrigins(System.String)
+  nameWithType: PolicyControlledFeature.CreateDeniedForAllOrigins(String)
+- uid: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateDeniedForAllOrigins*
+  name: CreateDeniedForAllOrigins
+  href: api/Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html#Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_CreateDeniedForAllOrigins_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateDeniedForAllOrigins
+  isSpec: "True"
+  fullName: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateDeniedForAllOrigins
+  nameWithType: PolicyControlledFeature.CreateDeniedForAllOrigins
+- uid: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.FeatureName
+  name: FeatureName
+  href: api/Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html#Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_FeatureName
+  commentId: P:Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.FeatureName
+  fullName: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.FeatureName
+  nameWithType: PolicyControlledFeature.FeatureName
+- uid: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.FeatureName*
+  name: FeatureName
+  href: api/Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html#Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_FeatureName_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.FeatureName
+  isSpec: "True"
+  fullName: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.FeatureName
+  nameWithType: PolicyControlledFeature.FeatureName
+- uid: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.IsAllowedForAllOrigins
+  name: IsAllowedForAllOrigins
+  href: api/Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html#Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_IsAllowedForAllOrigins
+  commentId: P:Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.IsAllowedForAllOrigins
+  fullName: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.IsAllowedForAllOrigins
+  nameWithType: PolicyControlledFeature.IsAllowedForAllOrigins
+- uid: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.IsAllowedForAllOrigins*
+  name: IsAllowedForAllOrigins
+  href: api/Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html#Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_IsAllowedForAllOrigins_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.IsAllowedForAllOrigins
+  isSpec: "True"
+  fullName: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.IsAllowedForAllOrigins
+  nameWithType: PolicyControlledFeature.IsAllowedForAllOrigins
+- uid: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.IsDeniedForAllOrigins
+  name: IsDeniedForAllOrigins
+  href: api/Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html#Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_IsDeniedForAllOrigins
+  commentId: P:Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.IsDeniedForAllOrigins
+  fullName: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.IsDeniedForAllOrigins
+  nameWithType: PolicyControlledFeature.IsDeniedForAllOrigins
+- uid: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.IsDeniedForAllOrigins*
+  name: IsDeniedForAllOrigins
+  href: api/Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html#Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_IsDeniedForAllOrigins_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.IsDeniedForAllOrigins
+  isSpec: "True"
+  fullName: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.IsDeniedForAllOrigins
+  nameWithType: PolicyControlledFeature.IsDeniedForAllOrigins
+- uid: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.SelfOrigin
+  name: SelfOrigin
+  href: api/Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html#Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_SelfOrigin
+  commentId: F:Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.SelfOrigin
+  fullName: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.SelfOrigin
+  nameWithType: PolicyControlledFeature.SelfOrigin
+- uid: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.ToString
+  name: ToString()
+  href: api/Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html#Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_ToString
+  commentId: M:Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.ToString
+  fullName: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.ToString()
+  nameWithType: PolicyControlledFeature.ToString()
+- uid: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.ToString*
+  name: ToString
+  href: api/Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html#Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_ToString_
+  commentId: Overload:Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.ToString
+  isSpec: "True"
+  fullName: Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.ToString
+  nameWithType: PolicyControlledFeature.ToString
 - uid: Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyDirectives
   name: ReferrerPolicyDirectives
   href: api/Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyDirectives.html
@@ -2633,6 +2819,19 @@ references:
   isSpec: "True"
   fullName: Lib.AspNetCore.Security.SecurityHeadersPolicy.IsCspReportOnly
   nameWithType: SecurityHeadersPolicy.IsCspReportOnly
+- uid: Lib.AspNetCore.Security.SecurityHeadersPolicy.PermissionsPolicy
+  name: PermissionsPolicy
+  href: api/Lib.AspNetCore.Security.SecurityHeadersPolicy.html#Lib_AspNetCore_Security_SecurityHeadersPolicy_PermissionsPolicy
+  commentId: P:Lib.AspNetCore.Security.SecurityHeadersPolicy.PermissionsPolicy
+  fullName: Lib.AspNetCore.Security.SecurityHeadersPolicy.PermissionsPolicy
+  nameWithType: SecurityHeadersPolicy.PermissionsPolicy
+- uid: Lib.AspNetCore.Security.SecurityHeadersPolicy.PermissionsPolicy*
+  name: PermissionsPolicy
+  href: api/Lib.AspNetCore.Security.SecurityHeadersPolicy.html#Lib_AspNetCore_Security_SecurityHeadersPolicy_PermissionsPolicy_
+  commentId: Overload:Lib.AspNetCore.Security.SecurityHeadersPolicy.PermissionsPolicy
+  isSpec: "True"
+  fullName: Lib.AspNetCore.Security.SecurityHeadersPolicy.PermissionsPolicy
+  nameWithType: SecurityHeadersPolicy.PermissionsPolicy
 - uid: Lib.AspNetCore.Security.SecurityHeadersPolicy.ReferrerPolicy
   name: ReferrerPolicy
   href: api/Lib.AspNetCore.Security.SecurityHeadersPolicy.html#Lib_AspNetCore_Security_SecurityHeadersPolicy_ReferrerPolicy
@@ -2933,6 +3132,22 @@ references:
   isSpec: "True"
   fullName: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithNoneXssFiltering
   nameWithType: SecurityHeadersPolicyBuilder.WithNoneXssFiltering
+- uid: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithPermissionsPolicy(Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature[])
+  name: WithPermissionsPolicy(PolicyControlledFeature[])
+  href: api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html#Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder_WithPermissionsPolicy_Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature___
+  commentId: M:Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithPermissionsPolicy(Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature[])
+  name.vb: WithPermissionsPolicy(PolicyControlledFeature())
+  fullName: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithPermissionsPolicy(Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature[])
+  fullName.vb: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithPermissionsPolicy(Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature())
+  nameWithType: SecurityHeadersPolicyBuilder.WithPermissionsPolicy(PolicyControlledFeature[])
+  nameWithType.vb: SecurityHeadersPolicyBuilder.WithPermissionsPolicy(PolicyControlledFeature())
+- uid: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithPermissionsPolicy*
+  name: WithPermissionsPolicy
+  href: api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html#Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder_WithPermissionsPolicy_
+  commentId: Overload:Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithPermissionsPolicy
+  isSpec: "True"
+  fullName: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithPermissionsPolicy
+  nameWithType: SecurityHeadersPolicyBuilder.WithPermissionsPolicy
 - uid: Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithReferrerPolicy(Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyDirectives)
   name: WithReferrerPolicy(ReferrerPolicyDirectives)
   href: api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html#Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder_WithReferrerPolicy_Lib_AspNetCore_Security_Http_Headers_ReferrerPolicyDirectives_

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SecurityHeadersPolicyBuilder
    | Lib.AspNetCore.Security ">
-    <meta name="generator" content="docfx 2.33.0.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../resources/ico/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -22,7 +22,7 @@
     
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -309,7 +309,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SecurityHeadersPolicyBuilder WithCsp(string baseUri = null, string childSources = null, string connectSources = null, string defaultSources = &quot;'none'&quot;, string fontSources = null, string formAction = null, string frameAncestorsSources = null, string imageSources = null, string manifestSources = null, string mediaSources = null, string objectSources = null, string reportUri = null, bool sandbox = false, ContentSecurityPolicySandboxFlags sandboxFlags = ContentSecurityPolicySandboxFlags.None, string scriptSources = null, ContentSecurityPolicyInlineExecution scriptInlineExecution = ContentSecurityPolicyInlineExecution.Refuse, string styleSources = null, ContentSecurityPolicyInlineExecution styleInlineExecution = ContentSecurityPolicyInlineExecution.Refuse, bool blockAllMixedContent = false, bool upgradeInsecureRequests = false, ContentSecurityPolicyRequireSriFor? requireSriFor = default (ContentSecurityPolicyRequireSriFor? ), string pluginTypes = null, string workerSources = null, string frameSources = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public SecurityHeadersPolicyBuilder WithCsp(string baseUri = null, string childSources = null, string connectSources = null, string defaultSources = &quot;'none'&quot;, string fontSources = null, string formAction = null, string frameAncestorsSources = null, string imageSources = null, string manifestSources = null, string mediaSources = null, string objectSources = null, string reportUri = null, bool sandbox = false, ContentSecurityPolicySandboxFlags sandboxFlags = ContentSecurityPolicySandboxFlags.None, string scriptSources = null, ContentSecurityPolicyInlineExecution scriptInlineExecution = ContentSecurityPolicyInlineExecution.Refuse, string styleSources = null, ContentSecurityPolicyInlineExecution styleInlineExecution = ContentSecurityPolicyInlineExecution.Refuse, bool blockAllMixedContent = false, bool upgradeInsecureRequests = false, ContentSecurityPolicyRequireSriFor? requireSriFor = default(ContentSecurityPolicyRequireSriFor? ), string pluginTypes = null, string workerSources = null, string frameSources = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -570,7 +570,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SecurityHeadersPolicyBuilder WithFeaturePolicy(FeaturePolicy policy)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Feature Policy has been replaced with Permissions Policy.&quot;)]
+public SecurityHeadersPolicyBuilder WithFeaturePolicy(FeaturePolicy policy)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -613,7 +614,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SecurityHeadersPolicyBuilder WithFeaturePolicy(params FeaturePolicy[] policies)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Feature Policy has been replaced with Permissions Policy.&quot;)]
+public SecurityHeadersPolicyBuilder WithFeaturePolicy(params FeaturePolicy[] policies)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -656,7 +658,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SecurityHeadersPolicyBuilder WithHsts(uint maxAge, bool includeSubDomains = false, bool preload = false, int? sslPort = default (int? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public SecurityHeadersPolicyBuilder WithHsts(uint maxAge, bool includeSubDomains = false, bool preload = false, int? sslPort = default(int? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -785,6 +787,49 @@
       </tr>
     </tbody>
   </table>
+  <a id="Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder_WithPermissionsPolicy_" data-uid="Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithPermissionsPolicy*"></a>
+  <h4 id="Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder_WithPermissionsPolicy_Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature___" data-uid="Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithPermissionsPolicy(Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature[])">WithPermissionsPolicy(PolicyControlledFeature[])</h4>
+  <div class="markdown level1 summary"><p>Adds the Permissions-Policy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SecurityHeadersPolicyBuilder WithPermissionsPolicy(params PolicyControlledFeature[] features)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html">PolicyControlledFeature</a>[]</td>
+        <td><span class="parametername">features</span></td>
+        <td><p>The features controlled by Permissions Policy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html">SecurityHeadersPolicyBuilder</a></td>
+        <td><p>The current policy builder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder_WithReferrerPolicy_" data-uid="Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithReferrerPolicy*"></a>
   <h4 id="Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder_WithReferrerPolicy_Lib_AspNetCore_Security_Http_Headers_ReferrerPolicyDirectives_" data-uid="Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.WithReferrerPolicy(Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyDirectives)">WithReferrerPolicy(ReferrerPolicyDirectives)</h4>
   <div class="markdown level1 summary"><p>Adds the Referrer-Policy.</p>
@@ -878,7 +923,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SecurityHeadersPolicyBuilder WithReportOnlyCsp(string baseUri = null, string childSources = null, string connectSources = null, string defaultSources = &quot;'none'&quot;, string fontSources = null, string formAction = null, string frameAncestorsSources = null, string imageSources = null, string manifestSources = null, string mediaSources = null, string objectSources = null, string reportUri = null, bool sandbox = false, ContentSecurityPolicySandboxFlags sandboxFlags = ContentSecurityPolicySandboxFlags.None, string scriptSources = null, ContentSecurityPolicyInlineExecution scriptInlineExecution = ContentSecurityPolicyInlineExecution.Refuse, string styleSources = null, ContentSecurityPolicyInlineExecution styleInlineExecution = ContentSecurityPolicyInlineExecution.Refuse, bool blockAllMixedContent = false, bool upgradeInsecureRequests = false, ContentSecurityPolicyRequireSriFor? requireSriFor = default (ContentSecurityPolicyRequireSriFor? ), string pluginTypes = null, string workerSources = null, string frameSources = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public SecurityHeadersPolicyBuilder WithReportOnlyCsp(string baseUri = null, string childSources = null, string connectSources = null, string defaultSources = &quot;'none'&quot;, string fontSources = null, string formAction = null, string frameAncestorsSources = null, string imageSources = null, string manifestSources = null, string mediaSources = null, string objectSources = null, string reportUri = null, bool sandbox = false, ContentSecurityPolicySandboxFlags sandboxFlags = ContentSecurityPolicySandboxFlags.None, string scriptSources = null, ContentSecurityPolicyInlineExecution scriptInlineExecution = ContentSecurityPolicyInlineExecution.Refuse, string styleSources = null, ContentSecurityPolicyInlineExecution styleInlineExecution = ContentSecurityPolicyInlineExecution.Refuse, bool blockAllMixedContent = false, bool upgradeInsecureRequests = false, ContentSecurityPolicyRequireSriFor? requireSriFor = default(ContentSecurityPolicyRequireSriFor? ), string pluginTypes = null, string workerSources = null, string frameSources = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1207,7 +1252,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright © 2016 - 2019 Tomasz Pęczek
+            Copyright © 2016 - 2021 Tomasz Pęczek
             
           </div>
         </div>

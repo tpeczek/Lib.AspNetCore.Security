@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ClearSiteDataAuthenticationServiceCollectionExtensions
+    <title>Class PermissionsPolicyHeaderValue
    | Lib.AspNetCore.Security </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ClearSiteDataAuthenticationServiceCollectionExtensions
+    <meta name="title" content="Class PermissionsPolicyHeaderValue
    | Lib.AspNetCore.Security ">
     <meta name="generator" content="docfx 2.56.6.0">
     
@@ -60,18 +60,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-12">
-            <article class="content wrap" id="_content" data-uid="Microsoft.Extensions.DependencyInjection.ClearSiteDataAuthenticationServiceCollectionExtensions">
+            <article class="content wrap" id="_content" data-uid="Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue">
   
   
-  <h1 id="Microsoft_Extensions_DependencyInjection_ClearSiteDataAuthenticationServiceCollectionExtensions" data-uid="Microsoft.Extensions.DependencyInjection.ClearSiteDataAuthenticationServiceCollectionExtensions" class="text-break">Class ClearSiteDataAuthenticationServiceCollectionExtensions
+  <h1 id="Lib_AspNetCore_Security_Http_Headers_PermissionsPolicyHeaderValue" data-uid="Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue" class="text-break">Class PermissionsPolicyHeaderValue
   </h1>
-  <div class="markdown level0 summary"><p>Extension methods for setting up authentication service which supports Clear-Site-Data header.</p>
+  <div class="markdown level0 summary"><p>Represents value of Permissions-Policy header.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">ClearSiteDataAuthenticationServiceCollectionExtensions</span></div>
+    <div class="level1"><span class="xref">PermissionsPolicyHeaderValue</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -93,26 +93,23 @@
     <div>
       <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Extensions.DependencyInjection.html">Microsoft.Extensions.DependencyInjection</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Lib.AspNetCore.Security.Http.Headers.html">Lib.AspNetCore.Security.Http.Headers</a></h6>
   <h6><strong>Assembly</strong>: Lib.AspNetCore.Security.dll</h6>
-  <h5 id="Microsoft_Extensions_DependencyInjection_ClearSiteDataAuthenticationServiceCollectionExtensions_syntax">Syntax</h5>
+  <h5 id="Lib_AspNetCore_Security_Http_Headers_PermissionsPolicyHeaderValue_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class ClearSiteDataAuthenticationServiceCollectionExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public class PermissionsPolicyHeaderValue</code></pre>
   </div>
-  <h3 id="methods">Methods
+  <h3 id="constructors">Constructors
   </h3>
-  <a id="Microsoft_Extensions_DependencyInjection_ClearSiteDataAuthenticationServiceCollectionExtensions_AddClearSiteDataAuthentication_" data-uid="Microsoft.Extensions.DependencyInjection.ClearSiteDataAuthenticationServiceCollectionExtensions.AddClearSiteDataAuthentication*"></a>
-  <h4 id="Microsoft_Extensions_DependencyInjection_ClearSiteDataAuthenticationServiceCollectionExtensions_AddClearSiteDataAuthentication_Microsoft_Extensions_DependencyInjection_IServiceCollection_Lib_AspNetCore_Security_Http_Headers_ClearSiteDataHeaderValue_" data-uid="Microsoft.Extensions.DependencyInjection.ClearSiteDataAuthenticationServiceCollectionExtensions.AddClearSiteDataAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection,Lib.AspNetCore.Security.Http.Headers.ClearSiteDataHeaderValue)">AddClearSiteDataAuthentication(IServiceCollection, ClearSiteDataHeaderValue)</h4>
-  <div class="markdown level1 summary"><p>Add authentication service which supports Clear-Site-Data header.</p>
+  <a id="Lib_AspNetCore_Security_Http_Headers_PermissionsPolicyHeaderValue__ctor_" data-uid="Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.#ctor*"></a>
+  <h4 id="Lib_AspNetCore_Security_Http_Headers_PermissionsPolicyHeaderValue__ctor_Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature___" data-uid="Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.#ctor(Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature[])">PermissionsPolicyHeaderValue(PolicyControlledFeature[])</h4>
+  <div class="markdown level1 summary"><p>Instantiates a new <a class="xref" href="Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.html">PermissionsPolicyHeaderValue</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IServiceCollection AddClearSiteDataAuthentication(this IServiceCollection services, ClearSiteDataHeaderValue clearSiteDataHeaderValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public PermissionsPolicyHeaderValue(params PolicyControlledFeature[] features)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -125,19 +122,50 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
-        <td><span class="parametername">services</span></td>
-        <td><p>The service collection.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Lib.AspNetCore.Security.Http.Headers.ClearSiteDataHeaderValue.html">ClearSiteDataHeaderValue</a></td>
-        <td><span class="parametername">clearSiteDataHeaderValue</span></td>
-        <td><p>The Clear-Site-Data header value.</p>
+        <td><a class="xref" href="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html">PolicyControlledFeature</a>[]</td>
+        <td><span class="parametername">features</span></td>
+        <td><p>The features controlled by Permissions Policy.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Lib_AspNetCore_Security_Http_Headers_PermissionsPolicyHeaderValue_Features_" data-uid="Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.Features*"></a>
+  <h4 id="Lib_AspNetCore_Security_Http_Headers_PermissionsPolicyHeaderValue_Features" data-uid="Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.Features">Features</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the features controlled by Permissions Policy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;PolicyControlledFeature&gt; Features { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html">PolicyControlledFeature</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Lib_AspNetCore_Security_Http_Headers_PermissionsPolicyHeaderValue_ToString_" data-uid="Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.ToString*"></a>
+  <h4 id="Lib_AspNetCore_Security_Http_Headers_PermissionsPolicyHeaderValue_ToString" data-uid="Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Gets the string representation of header value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -148,12 +176,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
-        <td><p>The service collection.</p>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The string representation of header value.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
 </article>
           </div>
         </div>

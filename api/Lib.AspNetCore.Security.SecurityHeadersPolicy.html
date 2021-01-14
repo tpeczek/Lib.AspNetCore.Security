@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SecurityHeadersPolicy
    | Lib.AspNetCore.Security ">
-    <meta name="generator" content="docfx 2.33.0.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../resources/ico/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -22,7 +22,7 @@
     
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -160,7 +160,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FeaturePolicyHeaderValue FeaturePolicy { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Feature Policy has been replaced with Permissions Policy.&quot;)]
+public FeaturePolicyHeaderValue FeaturePolicy { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -221,6 +222,30 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Lib_AspNetCore_Security_SecurityHeadersPolicy_PermissionsPolicy_" data-uid="Lib.AspNetCore.Security.SecurityHeadersPolicy.PermissionsPolicy*"></a>
+  <h4 id="Lib_AspNetCore_Security_SecurityHeadersPolicy_PermissionsPolicy" data-uid="Lib.AspNetCore.Security.SecurityHeadersPolicy.PermissionsPolicy">PermissionsPolicy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the Permissions-Policy header value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PermissionsPolicyHeaderValue PermissionsPolicy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.html">PermissionsPolicyHeaderValue</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -405,7 +430,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright © 2016 - 2019 Tomasz Pęczek
+            Copyright © 2016 - 2021 Tomasz Pęczek
             
           </div>
         </div>

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class HeaderNames
+    <title>Class PolicyControlledFeature
    | Lib.AspNetCore.Security </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class HeaderNames
+    <meta name="title" content="Class PolicyControlledFeature
    | Lib.AspNetCore.Security ">
     <meta name="generator" content="docfx 2.56.6.0">
     
@@ -60,18 +60,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-12">
-            <article class="content wrap" id="_content" data-uid="Lib.AspNetCore.Security.Http.Headers.HeaderNames">
+            <article class="content wrap" id="_content" data-uid="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature">
   
   
-  <h1 id="Lib_AspNetCore_Security_Http_Headers_HeaderNames" data-uid="Lib.AspNetCore.Security.Http.Headers.HeaderNames" class="text-break">Class HeaderNames
+  <h1 id="Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature" data-uid="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature" class="text-break">Class PolicyControlledFeature
   </h1>
-  <div class="markdown level0 summary"><p>The names of HTTP headers</p>
+  <div class="markdown level0 summary"><p>Feature controlled by Permissions Policy.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">HeaderNames</span></div>
+    <div class="level1"><span class="xref">PolicyControlledFeature</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -93,25 +93,22 @@
     <div>
       <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Lib.AspNetCore.Security.Http.Headers.html">Lib.AspNetCore.Security.Http.Headers</a></h6>
   <h6><strong>Assembly</strong>: Lib.AspNetCore.Security.dll</h6>
-  <h5 id="Lib_AspNetCore_Security_Http_Headers_HeaderNames_syntax">Syntax</h5>
+  <h5 id="Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class HeaderNames</code></pre>
+    <pre><code class="lang-csharp hljs">public class PolicyControlledFeature</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
-  <h4 id="Lib_AspNetCore_Security_Http_Headers_HeaderNames_ClearSiteData" data-uid="Lib.AspNetCore.Security.Http.Headers.HeaderNames.ClearSiteData">ClearSiteData</h4>
-  <div class="markdown level1 summary"><p>The Clear-Site-Data header.</p>
+  <h4 id="Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_SelfOrigin" data-uid="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.SelfOrigin">SelfOrigin</h4>
+  <div class="markdown level1 summary"><p>The allow list keyword to match current URL’s origin.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string ClearSiteData = &quot;Clear-Site-Data&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string SelfOrigin = &quot;self&quot;</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -128,15 +125,42 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="Lib_AspNetCore_Security_Http_Headers_HeaderNames_ContentSecurityPolicy" data-uid="Lib.AspNetCore.Security.Http.Headers.HeaderNames.ContentSecurityPolicy">ContentSecurityPolicy</h4>
-  <div class="markdown level1 summary"><p>The Content-Security-Policy header.</p>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_AllowList_" data-uid="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.AllowList*"></a>
+  <h4 id="Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_AllowList" data-uid="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.AllowList">AllowList</h4>
+  <div class="markdown level1 summary"><p>Gets the allowlist (the set of allowed origins) for the feature.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string ContentSecurityPolicy = &quot;Content-Security-Policy&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public ReadOnlyCollection&lt;string&gt; AllowList { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.ObjectModel.ReadOnlyCollection</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_FeatureName_" data-uid="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.FeatureName*"></a>
+  <h4 id="Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_FeatureName" data-uid="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.FeatureName">FeatureName</h4>
+  <div class="markdown level1 summary"><p>Gets the feature name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FeatureName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -151,15 +175,201 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="Lib_AspNetCore_Security_Http_Headers_HeaderNames_ContentSecurityPolicyReportOnly" data-uid="Lib.AspNetCore.Security.Http.Headers.HeaderNames.ContentSecurityPolicyReportOnly">ContentSecurityPolicyReportOnly</h4>
-  <div class="markdown level1 summary"><p>The Content-Security-Policy-Report-Only header.</p>
+  <a id="Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_IsAllowedForAllOrigins_" data-uid="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.IsAllowedForAllOrigins*"></a>
+  <h4 id="Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_IsAllowedForAllOrigins" data-uid="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.IsAllowedForAllOrigins">IsAllowedForAllOrigins</h4>
+  <div class="markdown level1 summary"><p>Indicates if the feature is allowed for all origins.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string ContentSecurityPolicyReportOnly = &quot;Content-Security-Policy-Report-Only&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsAllowedForAllOrigins { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_IsDeniedForAllOrigins_" data-uid="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.IsDeniedForAllOrigins*"></a>
+  <h4 id="Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_IsDeniedForAllOrigins" data-uid="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.IsDeniedForAllOrigins">IsDeniedForAllOrigins</h4>
+  <div class="markdown level1 summary"><p>Indicates if the feature should be disabled for all frames.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDeniedForAllOrigins { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_CreateAllowedForAllOrigins_" data-uid="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateAllowedForAllOrigins*"></a>
+  <h4 id="Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_CreateAllowedForAllOrigins_System_String_" data-uid="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateAllowedForAllOrigins(System.String)">CreateAllowedForAllOrigins(String)</h4>
+  <div class="markdown level1 summary"><p>Creates a feature which is allowed for all origins.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PolicyControlledFeature CreateAllowedForAllOrigins(string featureName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">featureName</span></td>
+        <td><p>The feature name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html">PolicyControlledFeature</a></td>
+        <td><p>The feature controlled by Permissions Policy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_CreateAllowedForAllowList_" data-uid="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateAllowedForAllowList*"></a>
+  <h4 id="Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_CreateAllowedForAllowList_System_String_System_String___" data-uid="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateAllowedForAllowList(System.String,System.String[])">CreateAllowedForAllowList(String, String[])</h4>
+  <div class="markdown level1 summary"><p>Creates a feature which is allowed for origins on the allow list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PolicyControlledFeature CreateAllowedForAllowList(string featureName, params string[] allowList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">featureName</span></td>
+        <td><p>The feature name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">allowList</span></td>
+        <td><p>The allowlist (the set of allowed origins) for the feature.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html">PolicyControlledFeature</a></td>
+        <td><p>The feature controlled by Permissions Policy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_CreateDeniedForAllOrigins_" data-uid="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateDeniedForAllOrigins*"></a>
+  <h4 id="Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_CreateDeniedForAllOrigins_System_String_" data-uid="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.CreateDeniedForAllOrigins(System.String)">CreateDeniedForAllOrigins(String)</h4>
+  <div class="markdown level1 summary"><p>Creates a feature which should be disabled for all frames.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PolicyControlledFeature CreateDeniedForAllOrigins(string featureName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">featureName</span></td>
+        <td><p>The feature name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html">PolicyControlledFeature</a></td>
+        <td><p>The feature controlled by Permissions Policy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_ToString_" data-uid="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.ToString*"></a>
+  <h4 id="Lib_AspNetCore_Security_Http_Headers_PolicyControlledFeature_ToString" data-uid="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Gets the string representation of the feature policy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -170,241 +380,13 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The string representation of the feature policy.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  <h4 id="Lib_AspNetCore_Security_Http_Headers_HeaderNames_ExpectCt" data-uid="Lib.AspNetCore.Security.Http.Headers.HeaderNames.ExpectCt">ExpectCt</h4>
-  <div class="markdown level1 summary"><p>The Expect-CT header.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string ExpectCt = &quot;Expect-CT&quot;</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Lib_AspNetCore_Security_Http_Headers_HeaderNames_FeaturePolicy" data-uid="Lib.AspNetCore.Security.Http.Headers.HeaderNames.FeaturePolicy">FeaturePolicy</h4>
-  <div class="markdown level1 summary"><p>The Feature-Policy header.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Feature Policy has been replaced with Permissions Policy.&quot;)]
-public const string FeaturePolicy = &quot;Feature-Policy&quot;</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Lib_AspNetCore_Security_Http_Headers_HeaderNames_PermissionsPolicy" data-uid="Lib.AspNetCore.Security.Http.Headers.HeaderNames.PermissionsPolicy">PermissionsPolicy</h4>
-  <div class="markdown level1 summary"><p>The Permissions-Policy header.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string PermissionsPolicy = &quot;Permissions-Policy&quot;</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Lib_AspNetCore_Security_Http_Headers_HeaderNames_ReferrerPolicy" data-uid="Lib.AspNetCore.Security.Http.Headers.HeaderNames.ReferrerPolicy">ReferrerPolicy</h4>
-  <div class="markdown level1 summary"><p>The Referrer-Policy header.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string ReferrerPolicy = &quot;Referrer-Policy&quot;</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Lib_AspNetCore_Security_Http_Headers_HeaderNames_StrictTransportSecurity" data-uid="Lib.AspNetCore.Security.Http.Headers.HeaderNames.StrictTransportSecurity">StrictTransportSecurity</h4>
-  <div class="markdown level1 summary"><p>The Strict-Transport-Security header.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string StrictTransportSecurity = &quot;Strict-Transport-Security&quot;</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Lib_AspNetCore_Security_Http_Headers_HeaderNames_XContentTypeOptions" data-uid="Lib.AspNetCore.Security.Http.Headers.HeaderNames.XContentTypeOptions">XContentTypeOptions</h4>
-  <div class="markdown level1 summary"><p>The X-Content-Type-Options header.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string XContentTypeOptions = &quot;X-Content-Type-Options&quot;</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Lib_AspNetCore_Security_Http_Headers_HeaderNames_XDownloadOptions" data-uid="Lib.AspNetCore.Security.Http.Headers.HeaderNames.XDownloadOptions">XDownloadOptions</h4>
-  <div class="markdown level1 summary"><p>The X-Download-Options header.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string XDownloadOptions = &quot;X-Download-Options&quot;</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Lib_AspNetCore_Security_Http_Headers_HeaderNames_XFrameOptions" data-uid="Lib.AspNetCore.Security.Http.Headers.HeaderNames.XFrameOptions">XFrameOptions</h4>
-  <div class="markdown level1 summary"><p>The X-Frame-Options header.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string XFrameOptions = &quot;X-Frame-Options&quot;</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Lib_AspNetCore_Security_Http_Headers_HeaderNames_XPermittedCrossDomainPolicies" data-uid="Lib.AspNetCore.Security.Http.Headers.HeaderNames.XPermittedCrossDomainPolicies">XPermittedCrossDomainPolicies</h4>
-  <div class="markdown level1 summary"><p>The X-Permitted-Cross-Domain-Policies header.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string XPermittedCrossDomainPolicies = &quot;X-Permitted-Cross-Domain-Policies&quot;</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Lib_AspNetCore_Security_Http_Headers_HeaderNames_XXssProtection" data-uid="Lib.AspNetCore.Security.Http.Headers.HeaderNames.XXssProtection">XXssProtection</h4>
-  <div class="markdown level1 summary"><p>The X-XSS-Protection header.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string XXssProtection = &quot;X-XSS-Protection&quot;</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
 </article>
           </div>
         </div>

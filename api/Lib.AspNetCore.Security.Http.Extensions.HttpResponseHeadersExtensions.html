@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class HttpResponseHeadersExtensions
    | Lib.AspNetCore.Security ">
-    <meta name="generator" content="docfx 2.33.0.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../resources/ico/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -22,7 +22,7 @@
     
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -178,7 +178,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetFeaturePolicy(this HttpResponse response, FeaturePolicyHeaderValue featurePolicy)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Feature Policy has been replaced with Permissions Policy.&quot;)]
+public static void SetFeaturePolicy(this HttpResponse response, FeaturePolicyHeaderValue featurePolicy)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -200,6 +201,39 @@
         <td><a class="xref" href="Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue.html">FeaturePolicyHeaderValue</a></td>
         <td><span class="parametername">featurePolicy</span></td>
         <td><p>The Feature-Policy header value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetPermissionsPolicy_" data-uid="Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetPermissionsPolicy*"></a>
+  <h4 id="Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetPermissionsPolicy_Microsoft_AspNetCore_Http_HttpResponse_Lib_AspNetCore_Security_Http_Headers_PermissionsPolicyHeaderValue_" data-uid="Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetPermissionsPolicy(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue)">SetPermissionsPolicy(HttpResponse, PermissionsPolicyHeaderValue)</h4>
+  <div class="markdown level1 summary"><p>Sets the Permissions-Policy header value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPermissionsPolicy(this HttpResponse response, PermissionsPolicyHeaderValue permissionsPolicy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Http.HttpResponse</span></td>
+        <td><span class="parametername">response</span></td>
+        <td><p>The response.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.html">PermissionsPolicyHeaderValue</a></td>
+        <td><span class="parametername">permissionsPolicy</span></td>
+        <td><p>The Permissions-Policy header value.</p>
 </td>
       </tr>
     </tbody>
@@ -561,7 +595,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright © 2016 - 2019 Tomasz Pęczek
+            Copyright © 2016 - 2021 Tomasz Pęczek
             
           </div>
         </div>

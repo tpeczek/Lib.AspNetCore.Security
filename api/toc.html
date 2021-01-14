@@ -4,6 +4,7 @@
     <div class="sidefilter">
       <form class="toc-filter">
         <span class="glyphicon glyphicon-filter filter-icon"></span>
+        <span class="glyphicon glyphicon-remove clear-icon" id="toc_filter_clear"></span>
         <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
       </form>
     </div>
@@ -11,187 +12,203 @@
       <div class="toc" id="toc">
           
           <ul class="nav level1">
-            <li>
-              <span class="expand-stub"></span>
-              <a href="Lib.AspNetCore.Mvc.Security.Filters.html" name="" title="Lib.AspNetCore.Mvc.Security.Filters">Lib.AspNetCore.Mvc.Security.Filters</a>
-                
-                <ul class="nav level2">
-                  <li>
-                    <a href="Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.html" name="" title="XFrameOptionsAttribute">XFrameOptionsAttribute</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.html" name="" title="XXssProtectionAttribute">XXssProtectionAttribute</a>
-                  </li>
-                </ul>  </li>
-            <li>
-              <span class="expand-stub"></span>
-              <a href="Lib.AspNetCore.Mvc.Security.Rendering.html" name="" title="Lib.AspNetCore.Mvc.Security.Rendering">Lib.AspNetCore.Mvc.Security.Rendering</a>
-                
-                <ul class="nav level2">
-                  <li>
-                    <a href="Lib.AspNetCore.Mvc.Security.Rendering.ContentSecurityPolicyTagHelper.html" name="" title="ContentSecurityPolicyTagHelper">ContentSecurityPolicyTagHelper</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.html" name="" title="HtmlHelperContentSecurityPolicyExtensions">HtmlHelperContentSecurityPolicyExtensions</a>
-                  </li>
-                </ul>  </li>
-            <li>
-              <span class="expand-stub"></span>
-              <a href="Lib.AspNetCore.Security.html" name="" title="Lib.AspNetCore.Security">Lib.AspNetCore.Security</a>
-                
-                <ul class="nav level2">
-                  <li>
-                    <a href="Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.html" name="" title="ContentSecurityPolicyReportingMiddleware">ContentSecurityPolicyReportingMiddleware</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.ExpectCtReportingMiddleware.html" name="" title="ExpectCtReportingMiddleware">ExpectCtReportingMiddleware</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.ISecurityHeadersReportingService.html" name="" title="ISecurityHeadersReportingService">ISecurityHeadersReportingService</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.SecurityHeadersMiddleware.html" name="" title="SecurityHeadersMiddleware">SecurityHeadersMiddleware</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.SecurityHeadersPolicy.html" name="" title="SecurityHeadersPolicy">SecurityHeadersPolicy</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html" name="" title="SecurityHeadersPolicyBuilder">SecurityHeadersPolicyBuilder</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.html" name="" title="TargetedSiteDataClearingMiddleware">TargetedSiteDataClearingMiddleware</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.TargetedSiteDataClearingOptions.html" name="" title="TargetedSiteDataClearingOptions">TargetedSiteDataClearingOptions</a>
-                  </li>
-                </ul>  </li>
-            <li>
-              <span class="expand-stub"></span>
-              <a href="Lib.AspNetCore.Security.Http.Extensions.html" name="" title="Lib.AspNetCore.Security.Http.Extensions">Lib.AspNetCore.Security.Http.Extensions</a>
-                
-                <ul class="nav level2">
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html" name="" title="HttpResponseHeadersExtensions">HttpResponseHeadersExtensions</a>
-                  </li>
-                </ul>  </li>
-            <li>
-              <span class="expand-stub"></span>
-              <a href="Lib.AspNetCore.Security.Http.Features.html" name="" title="Lib.AspNetCore.Security.Http.Features">Lib.AspNetCore.Security.Http.Features</a>
-                
-                <ul class="nav level2">
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Features.ContentSecurityPolicyInlineExecutionFeatureExtensions.html" name="" title="ContentSecurityPolicyInlineExecutionFeatureExtensions">ContentSecurityPolicyInlineExecutionFeatureExtensions</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Features.IContentSecurityPolicyInlineExecutionFeature.html" name="" title="IContentSecurityPolicyInlineExecutionFeature">IContentSecurityPolicyInlineExecutionFeature</a>
-                  </li>
-                </ul>  </li>
-            <li>
-              <span class="expand-stub"></span>
-              <a href="Lib.AspNetCore.Security.Http.Headers.html" name="" title="Lib.AspNetCore.Security.Http.Headers">Lib.AspNetCore.Security.Http.Headers</a>
-                
-                <ul class="nav level2">
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Headers.ClearSiteDataHeaderValue.html" name="" title="ClearSiteDataHeaderValue">ClearSiteDataHeaderValue</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyHeaderValue.html" name="" title="ContentSecurityPolicyHeaderValue">ContentSecurityPolicyHeaderValue</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution.html" name="" title="ContentSecurityPolicyInlineExecution">ContentSecurityPolicyInlineExecution</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecutionExtensions.html" name="" title="ContentSecurityPolicyInlineExecutionExtensions">ContentSecurityPolicyInlineExecutionExtensions</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyRequireSriFor.html" name="" title="ContentSecurityPolicyRequireSriFor">ContentSecurityPolicyRequireSriFor</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySandboxFlags.html" name="" title="ContentSecurityPolicySandboxFlags">ContentSecurityPolicySandboxFlags</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html" name="" title="ContentSecurityPolicySourceListBuilder">ContentSecurityPolicySourceListBuilder</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Headers.ExpectCtHeaderValue.html" name="" title="ExpectCtHeaderValue">ExpectCtHeaderValue</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html" name="" title="FeaturePolicy">FeaturePolicy</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue.html" name="" title="FeaturePolicyHeaderValue">FeaturePolicyHeaderValue</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Headers.HeaderNames.html" name="" title="HeaderNames">HeaderNames</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.html" name="" title="MultipleFeaturePolicyHeaderValue">MultipleFeaturePolicyHeaderValue</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyDirectives.html" name="" title="ReferrerPolicyDirectives">ReferrerPolicyDirectives</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyHeaderValue.html" name="" title="ReferrerPolicyHeaderValue">ReferrerPolicyHeaderValue</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.html" name="" title="SingleFeaturePolicyHeaderValue">SingleFeaturePolicyHeaderValue</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Headers.StrictTransportSecurityHeaderValue.html" name="" title="StrictTransportSecurityHeaderValue">StrictTransportSecurityHeaderValue</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Headers.XFrameOptionsDirectives.html" name="" title="XFrameOptionsDirectives">XFrameOptionsDirectives</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Headers.XFrameOptionsHeaderValue.html" name="" title="XFrameOptionsHeaderValue">XFrameOptionsHeaderValue</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.html" name="" title="XPermittedCrossDomainPoliciesDirectives">XPermittedCrossDomainPoliciesDirectives</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.html" name="" title="XPermittedCrossDomainPoliciesHeaderValue">XPermittedCrossDomainPoliciesHeaderValue</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Headers.XssFilteringModes.html" name="" title="XssFilteringModes">XssFilteringModes</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Headers.XXssProtectionHeaderValue.html" name="" title="XXssProtectionHeaderValue">XXssProtectionHeaderValue</a>
-                  </li>
-                </ul>  </li>
-            <li>
-              <span class="expand-stub"></span>
-              <a href="Lib.AspNetCore.Security.Http.Reports.html" name="" title="Lib.AspNetCore.Security.Http.Reports">Lib.AspNetCore.Security.Http.Reports</a>
-                
-                <ul class="nav level2">
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Reports.ContentSecurityPolicyDisposition.html" name="" title="ContentSecurityPolicyDisposition">ContentSecurityPolicyDisposition</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Reports.ContentSecurityPolicyViolationReport.html" name="" title="ContentSecurityPolicyViolationReport">ContentSecurityPolicyViolationReport</a>
-                  </li>
-                  <li>
-                    <a href="Lib.AspNetCore.Security.Http.Reports.ExpectCtViolationReport.html" name="" title="ExpectCtViolationReport">ExpectCtViolationReport</a>
-                  </li>
-                </ul>  </li>
-            <li>
-              <span class="expand-stub"></span>
-              <a href="Microsoft.AspNetCore.Builder.html" name="" title="Microsoft.AspNetCore.Builder">Microsoft.AspNetCore.Builder</a>
-                
-                <ul class="nav level2">
-                  <li>
-                    <a href="Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.html" name="" title="SecurityHeadersMiddlewareExtensions">SecurityHeadersMiddlewareExtensions</a>
-                  </li>
-                </ul>  </li>
-            <li>
-              <span class="expand-stub"></span>
-              <a href="Microsoft.Extensions.DependencyInjection.html" name="" title="Microsoft.Extensions.DependencyInjection">Microsoft.Extensions.DependencyInjection</a>
-                
-                <ul class="nav level2">
-                  <li>
-                    <a href="Microsoft.Extensions.DependencyInjection.ClearSiteDataAuthenticationServiceCollectionExtensions.html" name="" title="ClearSiteDataAuthenticationServiceCollectionExtensions">ClearSiteDataAuthenticationServiceCollectionExtensions</a>
-                  </li>
-                </ul>  </li>
-          </ul>      </div>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="Lib.AspNetCore.Mvc.Security.Filters.html" name="" title="Lib.AspNetCore.Mvc.Security.Filters">Lib.AspNetCore.Mvc.Security.Filters</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.html" name="" title="XFrameOptionsAttribute">XFrameOptionsAttribute</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.html" name="" title="XXssProtectionAttribute">XXssProtectionAttribute</a>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="Lib.AspNetCore.Mvc.Security.Rendering.html" name="" title="Lib.AspNetCore.Mvc.Security.Rendering">Lib.AspNetCore.Mvc.Security.Rendering</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="Lib.AspNetCore.Mvc.Security.Rendering.ContentSecurityPolicyTagHelper.html" name="" title="ContentSecurityPolicyTagHelper">ContentSecurityPolicyTagHelper</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.html" name="" title="HtmlHelperContentSecurityPolicyExtensions">HtmlHelperContentSecurityPolicyExtensions</a>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="Lib.AspNetCore.Security.html" name="" title="Lib.AspNetCore.Security">Lib.AspNetCore.Security</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.html" name="" title="ContentSecurityPolicyReportingMiddleware">ContentSecurityPolicyReportingMiddleware</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.ExpectCtReportingMiddleware.html" name="" title="ExpectCtReportingMiddleware">ExpectCtReportingMiddleware</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.ISecurityHeadersReportingService.html" name="" title="ISecurityHeadersReportingService">ISecurityHeadersReportingService</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.SecurityHeadersMiddleware.html" name="" title="SecurityHeadersMiddleware">SecurityHeadersMiddleware</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.SecurityHeadersPolicy.html" name="" title="SecurityHeadersPolicy">SecurityHeadersPolicy</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html" name="" title="SecurityHeadersPolicyBuilder">SecurityHeadersPolicyBuilder</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.html" name="" title="TargetedSiteDataClearingMiddleware">TargetedSiteDataClearingMiddleware</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.TargetedSiteDataClearingOptions.html" name="" title="TargetedSiteDataClearingOptions">TargetedSiteDataClearingOptions</a>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="Lib.AspNetCore.Security.Http.Extensions.html" name="" title="Lib.AspNetCore.Security.Http.Extensions">Lib.AspNetCore.Security.Http.Extensions</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html" name="" title="HttpResponseHeadersExtensions">HttpResponseHeadersExtensions</a>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="Lib.AspNetCore.Security.Http.Features.html" name="" title="Lib.AspNetCore.Security.Http.Features">Lib.AspNetCore.Security.Http.Features</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Features.ContentSecurityPolicyInlineExecutionFeatureExtensions.html" name="" title="ContentSecurityPolicyInlineExecutionFeatureExtensions">ContentSecurityPolicyInlineExecutionFeatureExtensions</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Features.IContentSecurityPolicyInlineExecutionFeature.html" name="" title="IContentSecurityPolicyInlineExecutionFeature">IContentSecurityPolicyInlineExecutionFeature</a>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="Lib.AspNetCore.Security.Http.Headers.html" name="" title="Lib.AspNetCore.Security.Http.Headers">Lib.AspNetCore.Security.Http.Headers</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.ClearSiteDataHeaderValue.html" name="" title="ClearSiteDataHeaderValue">ClearSiteDataHeaderValue</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyHeaderValue.html" name="" title="ContentSecurityPolicyHeaderValue">ContentSecurityPolicyHeaderValue</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution.html" name="" title="ContentSecurityPolicyInlineExecution">ContentSecurityPolicyInlineExecution</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecutionExtensions.html" name="" title="ContentSecurityPolicyInlineExecutionExtensions">ContentSecurityPolicyInlineExecutionExtensions</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyRequireSriFor.html" name="" title="ContentSecurityPolicyRequireSriFor">ContentSecurityPolicyRequireSriFor</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySandboxFlags.html" name="" title="ContentSecurityPolicySandboxFlags">ContentSecurityPolicySandboxFlags</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html" name="" title="ContentSecurityPolicySourceListBuilder">ContentSecurityPolicySourceListBuilder</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.ExpectCtHeaderValue.html" name="" title="ExpectCtHeaderValue">ExpectCtHeaderValue</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html" name="" title="FeaturePolicy">FeaturePolicy</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue.html" name="" title="FeaturePolicyHeaderValue">FeaturePolicyHeaderValue</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.HeaderNames.html" name="" title="HeaderNames">HeaderNames</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.html" name="" title="MultipleFeaturePolicyHeaderValue">MultipleFeaturePolicyHeaderValue</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.html" name="" title="PermissionsPolicyHeaderValue">PermissionsPolicyHeaderValue</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html" name="" title="PolicyControlledFeature">PolicyControlledFeature</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyDirectives.html" name="" title="ReferrerPolicyDirectives">ReferrerPolicyDirectives</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyHeaderValue.html" name="" title="ReferrerPolicyHeaderValue">ReferrerPolicyHeaderValue</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.html" name="" title="SingleFeaturePolicyHeaderValue">SingleFeaturePolicyHeaderValue</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.StrictTransportSecurityHeaderValue.html" name="" title="StrictTransportSecurityHeaderValue">StrictTransportSecurityHeaderValue</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.XFrameOptionsDirectives.html" name="" title="XFrameOptionsDirectives">XFrameOptionsDirectives</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.XFrameOptionsHeaderValue.html" name="" title="XFrameOptionsHeaderValue">XFrameOptionsHeaderValue</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.html" name="" title="XPermittedCrossDomainPoliciesDirectives">XPermittedCrossDomainPoliciesDirectives</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.html" name="" title="XPermittedCrossDomainPoliciesHeaderValue">XPermittedCrossDomainPoliciesHeaderValue</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.XssFilteringModes.html" name="" title="XssFilteringModes">XssFilteringModes</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Headers.XXssProtectionHeaderValue.html" name="" title="XXssProtectionHeaderValue">XXssProtectionHeaderValue</a>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="Lib.AspNetCore.Security.Http.Reports.html" name="" title="Lib.AspNetCore.Security.Http.Reports">Lib.AspNetCore.Security.Http.Reports</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Reports.ContentSecurityPolicyDisposition.html" name="" title="ContentSecurityPolicyDisposition">ContentSecurityPolicyDisposition</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Reports.ContentSecurityPolicyViolationReport.html" name="" title="ContentSecurityPolicyViolationReport">ContentSecurityPolicyViolationReport</a>
+                          </li>
+                          <li>
+                              <a href="Lib.AspNetCore.Security.Http.Reports.ExpectCtViolationReport.html" name="" title="ExpectCtViolationReport">ExpectCtViolationReport</a>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="Microsoft.AspNetCore.Builder.html" name="" title="Microsoft.AspNetCore.Builder">Microsoft.AspNetCore.Builder</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.html" name="" title="SecurityHeadersMiddlewareExtensions">SecurityHeadersMiddlewareExtensions</a>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="Microsoft.Extensions.DependencyInjection.html" name="" title="Microsoft.Extensions.DependencyInjection">Microsoft.Extensions.DependencyInjection</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="Microsoft.Extensions.DependencyInjection.ClearSiteDataAuthenticationServiceCollectionExtensions.html" name="" title="ClearSiteDataAuthenticationServiceCollectionExtensions">ClearSiteDataAuthenticationServiceCollectionExtensions</a>
+                          </li>
+                    </ul>
+                </li>
+          </ul>
+      </div>
     </div>
   </div>
 </div>
