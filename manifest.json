@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.html",
-          "hash": "hTZOj5eqgiRsL+s1PVFhxg=="
+          "hash": "WNJuuIL1gUIs1+q6UhTnIiX2vOo/HZ2g9L7FjuxrbKg="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.html",
-          "hash": "YtPjanmBNoHD5ybEAemoXA=="
+          "hash": "9mdPZ/nk+Bc5oygDjaOmC9NXpvSSrkP2AisttjUn78k="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Mvc.Security.Filters.html",
-          "hash": "qavS5KDb37caygw4U1MhBg=="
+          "hash": "2eavfN0CM2qnXkRoU76tnTDVdkzdTQZ4LoXO+W7SA9g="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Mvc.Security.Rendering.ContentSecurityPolicyTagHelper.html",
-          "hash": "xsg16gH2hfsCC32SxKmvlA=="
+          "hash": "XI3LWiZw5d/b4QCPJHYBNwhGc+qPU1QnOreonoyAcG4="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.html",
-          "hash": "gVzi/gghOw1JvQLlXN8FXA=="
+          "hash": "Jxc7iiMoVrogpbYHI6DdIRmV9kj/frxe9c7OP2aIMTc="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Mvc.Security.Rendering.html",
-          "hash": "OsJJ/28mi9VLl1U6iLK1Pg=="
+          "hash": "yw1R6bwUY8SE6l4sXL0DbQjqylec2DCjDGYYY+TNgK0="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.html",
-          "hash": "1PR6vkzp7ofLTyQD0F8xpg=="
+          "hash": "E9kg+655zSG9gDyyQ2PHI7RdRxR3xxF/9eg6UmEahaI="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.ExpectCtReportingMiddleware.html",
-          "hash": "mFB/ktQY9dDYGp2JCTBZ5w=="
+          "hash": "AM8vrOLqAGZCDsXIPSVWUlc6GGLrtyDnyv6LYbMwH60="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html",
-          "hash": "ipLpnOrX2ko+4mW99OUEaQ=="
+          "hash": "iLbhSYV4OiLjvpsiyt02uD1v1HoGnTyrttg2DeOQArc="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Extensions.html",
-          "hash": "JxXIuwf3L7HpvTjV2BaYmA=="
+          "hash": "ev2vum8MiJjwA3pLq93dwlX8olHkVCWmJx/AR6g7cfc="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Features.ContentSecurityPolicyInlineExecutionFeatureExtensions.html",
-          "hash": "QTGPUaAaQRFmN6wLZCnWUA=="
+          "hash": "as/662ByVRyqWnpvgYyuy4J0kN1fp4tY9OvQjy8A6ns="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Features.IContentSecurityPolicyInlineExecutionFeature.html",
-          "hash": "nZFsLQUkussPisHDPpI2MA=="
+          "hash": "vQ2j79NX22PqCSBXw+6N+O/T+3wTPCJvkz8/LtK27iA="
         }
       },
       "is_incremental": false,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Features.html",
-          "hash": "mgMSxEDfhAMxRY55/x3crw=="
+          "hash": "ghWEGG8+GsoP5TPUJ1PhMxO8DjNw7E35w23UOxcXnGc="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ClearSiteDataHeaderValue.html",
-          "hash": "/FcwUWhZfrWsDzQK6b3Z+A=="
+          "hash": "co/Oy1DplFduQLK01c0nQO7bHyEw89E/2DLEGkuvs5Q="
         }
       },
       "is_incremental": false,
@@ -177,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyHeaderValue.html",
-          "hash": "L5b6fhQdzADVTzscz+LyMg=="
+          "hash": "THRJcljNxuS8WwFbaVIToTgvjxRYWYWrc61QgsF/oSE="
         }
       },
       "is_incremental": false,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecution.html",
-          "hash": "eBWOPuv18FecL2tISIk13Q=="
+          "hash": "YkIk0ebISby+9q4CfdnhBOnIR2xAgGIWmaCwxNCxnbE="
         }
       },
       "is_incremental": false,
@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyInlineExecutionExtensions.html",
-          "hash": "jPbHTI5sXit1z4jKQvhFGw=="
+          "hash": "SXiy17PzwFjfpt5yK8wW6kf/+uEkIdiKvBF3xXzG0yk="
         }
       },
       "is_incremental": false,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicyRequireSriFor.html",
-          "hash": "yDl7umwaUkh0tXq2XhZ8mA=="
+          "hash": "XxJAdALmhh0CjFszo4QMJEA5A/vWfIa0SNI80AhfGBs="
         }
       },
       "is_incremental": false,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySandboxFlags.html",
-          "hash": "jmvxbxJgAYTix903nxEc8Q=="
+          "hash": "p1lYxMXzfERQZ5tfRiBeanGnQ8tMhLF5WMzZhUZsqhI="
         }
       },
       "is_incremental": false,
@@ -237,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ContentSecurityPolicySourceListBuilder.html",
-          "hash": "oy/udGEduwhJxkO14vsSdQ=="
+          "hash": "whoroizDFsUXPwIsZAygHBFf6AZjw89zJ4sFsDsqsgs="
         }
       },
       "is_incremental": false,
@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ExpectCtHeaderValue.html",
-          "hash": "ACSFSAGvu0d4Yv53vVpf3Q=="
+          "hash": "ui3058QuTG7DPWHxwXVh5zKLh0+gCTyfSxAtzs5HC0s="
         }
       },
       "is_incremental": false,
@@ -261,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicy.html",
-          "hash": "joYghF4we/MJ2YCM8yXmeA=="
+          "hash": "J9iPMKjawrMKrOFUMeSKMnDMYjFGmy4EfxOv3SCJcJY="
         }
       },
       "is_incremental": false,
@@ -273,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue.html",
-          "hash": "nBlmg28EXqmF32K1P0QggA=="
+          "hash": "RVM4gDFL0CxMWbZ6s7v6ixf0ah/0OmB8mIEi9kJ+7Qo="
         }
       },
       "is_incremental": false,
@@ -285,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.HeaderNames.html",
-          "hash": "Kt8kSotJ2boLMiXf+9t8pg=="
+          "hash": "r5OBthnrhhW9ps3akUfNdrzocZCO0ZBQt5ZovnvKHDo="
         }
       },
       "is_incremental": false,
@@ -297,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.MultipleFeaturePolicyHeaderValue.html",
-          "hash": "CWir6PrAQVPFggz1Yvy+rA=="
+          "hash": "rtUm+wZkSUZHFUkkjZSvdgyKeu8wgYfYjMOqnUiaAdQ="
         }
       },
       "is_incremental": false,
@@ -309,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue.html",
-          "hash": "Z5GQrB4C30ehjXVB93dfyA=="
+          "hash": "SgiD2bWxDQYGXxgaa5B1IKG4WqE4579ZKV1EsJX12EY="
         }
       },
       "is_incremental": false,
@@ -321,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.PolicyControlledFeature.html",
-          "hash": "EskKE/47O0lsbbV8oAl75Q=="
+          "hash": "vMidmEXtyrEGOReZUriUrxt9ss6VGJi0/XLCCOpbvW4="
         }
       },
       "is_incremental": false,
@@ -333,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyDirectives.html",
-          "hash": "DBZZepN+cuEPTRoS5z97kg=="
+          "hash": "TZl1XIR23rj38KyNKsS8ryZIDkKIQm26nrfdA+3ajhI="
         }
       },
       "is_incremental": false,
@@ -345,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyHeaderValue.html",
-          "hash": "5yOC/3WHl0F4wRtjS5i3mQ=="
+          "hash": "QJYxAT2gmeNCpyvVgkZCVBwMW13A6vPToIZFrbgcmzQ="
         }
       },
       "is_incremental": false,
@@ -357,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.SingleFeaturePolicyHeaderValue.html",
-          "hash": "jc0jC2yaTeuLbKIqoOxJ5w=="
+          "hash": "SZT/PhTE/wOeud6+GvgcGxuB/zRG1P/B6ueqPwyKLgE="
         }
       },
       "is_incremental": false,
@@ -369,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.StrictTransportSecurityHeaderValue.html",
-          "hash": "/I8DOUm/Dr1dNpE2lC1SJA=="
+          "hash": "99FTqoIDYMDuACWo+cIXKqdoUySlb7eomgNHN/K967U="
         }
       },
       "is_incremental": false,
@@ -381,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.XFrameOptionsDirectives.html",
-          "hash": "iLutXa6MXCHlxVrdCu4GAA=="
+          "hash": "qPQypw+HUcYD/2njfJKoQ8XYsFYp4l3a0kFRFIMHAJI="
         }
       },
       "is_incremental": false,
@@ -393,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.XFrameOptionsHeaderValue.html",
-          "hash": "qY8llrqJK/lg8Kp67QzFfQ=="
+          "hash": "HZRH2BIeY1EpBfY6lVk6NCOHuVTqSurttPUgeNlqJFU="
         }
       },
       "is_incremental": false,
@@ -405,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives.html",
-          "hash": "k8fw9DdaTZ1IvFY3x6L7Vg=="
+          "hash": "1rStP++70r+NXpS85Fk278V8PG/qSG5lAsSwinE4rFE="
         }
       },
       "is_incremental": false,
@@ -417,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue.html",
-          "hash": "iCuik08nOvbOwWUJTnzHVQ=="
+          "hash": "F2tCdqJCwO2TQqHvQIjq7vhOxIjHAnhGlTvgf3qIUMM="
         }
       },
       "is_incremental": false,
@@ -429,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.XXssProtectionHeaderValue.html",
-          "hash": "602v/Ef+gjKVWGzuQ1SLYA=="
+          "hash": "hgyCMXvONwk2V3Kjlf+XvcbiXjUf8QVpytfdu+RvQ+k="
         }
       },
       "is_incremental": false,
@@ -441,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.XssFilteringModes.html",
-          "hash": "zmbdd7dpL6/FbHpbyO0xfw=="
+          "hash": "uWQy5w1iDzjAiMNGFWsTw3KpGQ8sGzeum6t7dYLuj+g="
         }
       },
       "is_incremental": false,
@@ -453,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Headers.html",
-          "hash": "FOkPAQVnRurBdkA76UDJBQ=="
+          "hash": "m1MMvhRutFDCbp/od43DE23BHr2YarRA+QtkX+rHBVw="
         }
       },
       "is_incremental": false,
@@ -465,7 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Reports.ContentSecurityPolicyDisposition.html",
-          "hash": "8KlSbxLA0KO55/m5wKrarg=="
+          "hash": "6pQJlP1FtG7vcXtPkicTdoJvUpKkxlbzrDr0zQXxcas="
         }
       },
       "is_incremental": false,
@@ -477,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Reports.ContentSecurityPolicyViolationReport.html",
-          "hash": "Zsn0kVXpDyiPzMswfKk3xg=="
+          "hash": "Yg5WDjFc2DGRXZ2w1LA/guGoSqNq/4EDn4zAWAtzL2Q="
         }
       },
       "is_incremental": false,
@@ -489,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Reports.ExpectCtViolationReport.html",
-          "hash": "nxKzuDklWElIJi327mQuEQ=="
+          "hash": "j1MYHiUTiR2Wo64yBR/8e3h/6l/mLWl+HWGtYrK9kHQ="
         }
       },
       "is_incremental": false,
@@ -501,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.Http.Reports.html",
-          "hash": "CpHzhMEdrHGAwrkSL9mR5A=="
+          "hash": "Prf0ryrYDqo1EDPBSVsIU29H5BJJwGGUkN6PI4qJ/tI="
         }
       },
       "is_incremental": false,
@@ -513,7 +513,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.ISecurityHeadersReportingService.html",
-          "hash": "0fD/UEZFvb+EinpOgcG4lg=="
+          "hash": "RVM8GWahS/G6Kyod+iZNdgs6YhVX7v2bJiiioR6Q4L4="
         }
       },
       "is_incremental": false,
@@ -525,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.SecurityHeadersMiddleware.html",
-          "hash": "CH+0D0AJoqkgRhJb7Xasjg=="
+          "hash": "uWM+j2KOwPe6Xz8X58Z1a/iizRMTU3/Jr8CLxr0MGOs="
         }
       },
       "is_incremental": false,
@@ -537,7 +537,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.SecurityHeadersPolicy.html",
-          "hash": "pLbVvrGS7XQcvt+emc5GUw=="
+          "hash": "usRrTbzvz1Q8vP4O1oHJuffp7JY2cb0uT5n+T1/HXOk="
         }
       },
       "is_incremental": false,
@@ -549,7 +549,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder.html",
-          "hash": "UF0F/gp2rGBT7Z6/fDuNFg=="
+          "hash": "X64uSy3UTfW0qwsMRTIh9FoJ+D2MDbj4uuRHGNJYbqg="
         }
       },
       "is_incremental": false,
@@ -561,7 +561,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.html",
-          "hash": "xNOrH0gI9flJIB1qBfQtFA=="
+          "hash": "0ZWS+U2mIQKoYQmnDFQBnyN8XYWn9/HzOGjs+341Uo0="
         }
       },
       "is_incremental": false,
@@ -573,7 +573,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.TargetedSiteDataClearingOptions.html",
-          "hash": "i7vQ8jpjN2kPdUem22jRzA=="
+          "hash": "pdeDXxnKPAgJCRS20GI8LXyc2FsU2sv3JsOc0DrFRVA="
         }
       },
       "is_incremental": false,
@@ -585,7 +585,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lib.AspNetCore.Security.html",
-          "hash": "GhhL6pjFYK2Yh3DdrAIIJw=="
+          "hash": "Ta7JgYvYnI93m7stiPr0VPKlxn5eX/qi11X1ftup6AE="
         }
       },
       "is_incremental": false,
@@ -597,7 +597,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.html",
-          "hash": "PCLRL+LaiQAammuGCwVzlA=="
+          "hash": "BHx0tF8yPdH45MqKqU8Fs3Hr6e95WIe+l7Pt2nhJvnI="
         }
       },
       "is_incremental": false,
@@ -609,7 +609,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Builder.html",
-          "hash": "+hyQPH5/ENih0Gh77NKJVA=="
+          "hash": "+Agwwgd+j8o6ndFAswO8fisa0/z75QyxqTBpg+ncMCQ="
         }
       },
       "is_incremental": false,
@@ -621,7 +621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.ClearSiteDataAuthenticationServiceCollectionExtensions.html",
-          "hash": "8GML48TbjGUW0bb0aQtGzg=="
+          "hash": "YQWqbULNLFgiibh3ayWj5k61u3oMb5QeAG/wJ63tzGk="
         }
       },
       "is_incremental": false,
@@ -633,7 +633,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.html",
-          "hash": "kRWKSiUsajf1ng4wHgmoGw=="
+          "hash": "6s/KUPRed/60XpmR9AsG0L0r2iWvjL2S4lb2hxUtodI="
         }
       },
       "is_incremental": false,
@@ -645,7 +645,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "IulecRuCa5ry4iqow2dEmA=="
+          "hash": "OdNEE8gyL7v13NFwX21Y46Vo4ARTAiC4735Vs672FzE="
         }
       },
       "is_incremental": false,
@@ -660,7 +660,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/clear-site-data.html",
-          "hash": "+M+ZUOEljDa3tTbZgeBknQ=="
+          "hash": "uM21p2khzH9/z3Vrw2weSr9p9fu6rv9xZbfEIlGHMl0="
         }
       },
       "is_incremental": false,
@@ -675,7 +675,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/csp-tag-helpers.html",
-          "hash": "0Ql0qA1zfMfigwSIsdzWKA=="
+          "hash": "1KWXq39AQNo+DvVcykzJMelVnYMNeX/BRnuj9G0fTks="
         }
       },
       "is_incremental": false,
@@ -690,7 +690,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/security-headers.html",
-          "hash": "XFQ5VLqP/du2S2W+I5RBhg=="
+          "hash": "/FeGHFIoVy16FRIzzbmnn+BCbibwaVpD7tpxrVLZLaw="
         }
       },
       "is_incremental": false,
@@ -705,7 +705,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/violation-reports.html",
-          "hash": "2DoMr9T2vvrWTfT9nLeDhg=="
+          "hash": "9ujCLDeZEp1stMl2YcoHPkrSKcSUB3z7nr637I9vLuY="
         }
       },
       "is_incremental": false,
@@ -717,7 +717,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "keIsOUDCD1GiEpbFmrPa0A=="
+          "hash": "Kz30fwwHu3fQ3YPutWCiG4RgdTnlS4xVHUF3ZbvRH2Q="
         }
       },
       "is_incremental": false,
@@ -754,7 +754,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "BC2pm61hqTaIb/u9/CqIZg=="
+          "hash": "rKxAZGCfpChRbUmhpdOFcSLgG3q9QlI/cEq+n5Hrets="
         }
       },
       "is_incremental": false,
@@ -765,11 +765,11 @@
     {
       "status": {
         "can_incremental": false,
-        "details": "Disable incremental build by force rebuild option.",
+        "details": "Cannot build incrementally because docfx version changed from 2.56.6.0 to 2.58.9.0.",
         "incrementalPhase": "build",
         "total_file_count": 0,
         "skipped_file_count": 0,
-        "full_build_reason_code": "ForceRebuild"
+        "full_build_reason_code": "DocfxVersionChanged"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
@@ -802,8 +802,8 @@
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0
