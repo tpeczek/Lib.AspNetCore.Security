@@ -24,12 +24,12 @@ namespace Lib.AspNetCore.Security.Http.Headers
         private bool _withStrictDynamicKeyword = false;
 
         private const string _sourceSeparator = " ";
-        private const string _httpSource = "http" + _sourceSeparator;
-        private const string _httpsSource = "https" + _sourceSeparator;
-        private const string _dataSource = "data" + _sourceSeparator;
-        private const string _mediastreamSource = "mediastream" + _sourceSeparator;
-        private const string _blobSource = "blob" + _sourceSeparator;
-        private const string _filesystemSource = "filesystem" + _sourceSeparator;
+        private const string _httpSource = "http:" + _sourceSeparator;
+        private const string _httpsSource = "https:" + _sourceSeparator;
+        private const string _dataSource = "data:" + _sourceSeparator;
+        private const string _mediastreamSource = "mediastream:" + _sourceSeparator;
+        private const string _blobSource = "blob:" + _sourceSeparator;
+        private const string _filesystemSource = "filesystem:" + _sourceSeparator;
         private const string _selfSource = ContentSecurityPolicyHeaderValue.SelfSource + _sourceSeparator;
         private const string _unsafeEvalSource = ContentSecurityPolicyHeaderValue.UnsafeEvalSource + _sourceSeparator;
         private const string _unsafeInlineSource = "'unsafe-inline'" + _sourceSeparator;
