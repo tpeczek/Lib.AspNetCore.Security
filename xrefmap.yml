@@ -32,11 +32,11 @@ references:
   isSpec: "True"
   fullName: Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.XFrameOptionsAttribute
   nameWithType: XFrameOptionsAttribute.XFrameOptionsAttribute
-- uid: Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)
+- uid: Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.OnActionExecuted(ActionExecutedContext)
   name: OnActionExecuted(ActionExecutedContext)
-  href: api/Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.html#Lib_AspNetCore_Mvc_Security_Filters_XFrameOptionsAttribute_OnActionExecuted_Microsoft_AspNetCore_Mvc_Filters_ActionExecutedContext_
-  commentId: M:Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)
-  fullName: Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)
+  href: api/Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.html#Lib_AspNetCore_Mvc_Security_Filters_XFrameOptionsAttribute_OnActionExecuted_ActionExecutedContext_
+  commentId: M:Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.OnActionExecuted(ActionExecutedContext)
+  fullName: Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.OnActionExecuted(ActionExecutedContext)
   nameWithType: XFrameOptionsAttribute.OnActionExecuted(ActionExecutedContext)
 - uid: Lib.AspNetCore.Mvc.Security.Filters.XFrameOptionsAttribute.OnActionExecuted*
   name: OnActionExecuted
@@ -96,11 +96,11 @@ references:
   isSpec: "True"
   fullName: Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.FilteringMode
   nameWithType: XXssProtectionAttribute.FilteringMode
-- uid: Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)
+- uid: Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.OnActionExecuted(ActionExecutedContext)
   name: OnActionExecuted(ActionExecutedContext)
-  href: api/Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.html#Lib_AspNetCore_Mvc_Security_Filters_XXssProtectionAttribute_OnActionExecuted_Microsoft_AspNetCore_Mvc_Filters_ActionExecutedContext_
-  commentId: M:Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)
-  fullName: Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)
+  href: api/Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.html#Lib_AspNetCore_Mvc_Security_Filters_XXssProtectionAttribute_OnActionExecuted_ActionExecutedContext_
+  commentId: M:Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.OnActionExecuted(ActionExecutedContext)
+  fullName: Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.OnActionExecuted(ActionExecutedContext)
   nameWithType: XXssProtectionAttribute.OnActionExecuted(ActionExecutedContext)
 - uid: Lib.AspNetCore.Mvc.Security.Filters.XXssProtectionAttribute.OnActionExecuted*
   name: OnActionExecuted
@@ -121,11 +121,11 @@ references:
   commentId: T:Lib.AspNetCore.Mvc.Security.Rendering.ContentSecurityPolicyTagHelper
   fullName: Lib.AspNetCore.Mvc.Security.Rendering.ContentSecurityPolicyTagHelper
   nameWithType: ContentSecurityPolicyTagHelper
-- uid: Lib.AspNetCore.Mvc.Security.Rendering.ContentSecurityPolicyTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+- uid: Lib.AspNetCore.Mvc.Security.Rendering.ContentSecurityPolicyTagHelper.ProcessAsync(TagHelperContext,TagHelperOutput)
   name: ProcessAsync(TagHelperContext, TagHelperOutput)
-  href: api/Lib.AspNetCore.Mvc.Security.Rendering.ContentSecurityPolicyTagHelper.html#Lib_AspNetCore_Mvc_Security_Rendering_ContentSecurityPolicyTagHelper_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
-  commentId: M:Lib.AspNetCore.Mvc.Security.Rendering.ContentSecurityPolicyTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  fullName: Lib.AspNetCore.Mvc.Security.Rendering.ContentSecurityPolicyTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  href: api/Lib.AspNetCore.Mvc.Security.Rendering.ContentSecurityPolicyTagHelper.html#Lib_AspNetCore_Mvc_Security_Rendering_ContentSecurityPolicyTagHelper_ProcessAsync_TagHelperContext_TagHelperOutput_
+  commentId: M:Lib.AspNetCore.Mvc.Security.Rendering.ContentSecurityPolicyTagHelper.ProcessAsync(TagHelperContext,TagHelperOutput)
+  fullName: Lib.AspNetCore.Mvc.Security.Rendering.ContentSecurityPolicyTagHelper.ProcessAsync(TagHelperContext, TagHelperOutput)
   nameWithType: ContentSecurityPolicyTagHelper.ProcessAsync(TagHelperContext, TagHelperOutput)
 - uid: Lib.AspNetCore.Mvc.Security.Rendering.ContentSecurityPolicyTagHelper.ProcessAsync*
   name: ProcessAsync
@@ -153,26 +153,26 @@ references:
   commentId: T:Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions
   fullName: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions
   nameWithType: HtmlHelperContentSecurityPolicyExtensions
-- uid: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper)
+- uid: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(IHtmlHelper)
   name: BeginCspScript(IHtmlHelper)
-  href: api/Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.html#Lib_AspNetCore_Mvc_Security_Rendering_HtmlHelperContentSecurityPolicyExtensions_BeginCspScript_Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_
-  commentId: M:Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper)
-  fullName: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper)
+  href: api/Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.html#Lib_AspNetCore_Mvc_Security_Rendering_HtmlHelperContentSecurityPolicyExtensions_BeginCspScript_IHtmlHelper_
+  commentId: M:Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(IHtmlHelper)
+  fullName: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(IHtmlHelper)
   nameWithType: HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(IHtmlHelper)
-- uid: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper,System.Collections.Generic.IDictionary{System.String,System.Object})
+- uid: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(IHtmlHelper,System.Collections.Generic.IDictionary{System.String,System.Object})
   name: BeginCspScript(IHtmlHelper, IDictionary<String, Object>)
-  href: api/Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.html#Lib_AspNetCore_Mvc_Security_Rendering_HtmlHelperContentSecurityPolicyExtensions_BeginCspScript_Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_System_Collections_Generic_IDictionary_System_String_System_Object__
-  commentId: M:Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper,System.Collections.Generic.IDictionary{System.String,System.Object})
+  href: api/Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.html#Lib_AspNetCore_Mvc_Security_Rendering_HtmlHelperContentSecurityPolicyExtensions_BeginCspScript_IHtmlHelper_System_Collections_Generic_IDictionary_System_String_System_Object__
+  commentId: M:Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(IHtmlHelper,System.Collections.Generic.IDictionary{System.String,System.Object})
   name.vb: BeginCspScript(IHtmlHelper, IDictionary(Of String, Object))
-  fullName: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper, System.Collections.Generic.IDictionary<System.String, System.Object>)
-  fullName.vb: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper, System.Collections.Generic.IDictionary(Of System.String, System.Object))
+  fullName: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(IHtmlHelper, System.Collections.Generic.IDictionary<System.String, System.Object>)
+  fullName.vb: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(IHtmlHelper, System.Collections.Generic.IDictionary(Of System.String, System.Object))
   nameWithType: HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(IHtmlHelper, IDictionary<String, Object>)
   nameWithType.vb: HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(IHtmlHelper, IDictionary(Of String, Object))
-- uid: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper,System.Object)
+- uid: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(IHtmlHelper,System.Object)
   name: BeginCspScript(IHtmlHelper, Object)
-  href: api/Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.html#Lib_AspNetCore_Mvc_Security_Rendering_HtmlHelperContentSecurityPolicyExtensions_BeginCspScript_Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_System_Object_
-  commentId: M:Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper,System.Object)
-  fullName: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper, System.Object)
+  href: api/Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.html#Lib_AspNetCore_Mvc_Security_Rendering_HtmlHelperContentSecurityPolicyExtensions_BeginCspScript_IHtmlHelper_System_Object_
+  commentId: M:Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(IHtmlHelper,System.Object)
+  fullName: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(IHtmlHelper, System.Object)
   nameWithType: HtmlHelperContentSecurityPolicyExtensions.BeginCspScript(IHtmlHelper, Object)
 - uid: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspScript*
   name: BeginCspScript
@@ -181,26 +181,26 @@ references:
   isSpec: "True"
   fullName: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspScript
   nameWithType: HtmlHelperContentSecurityPolicyExtensions.BeginCspScript
-- uid: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper)
+- uid: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(IHtmlHelper)
   name: BeginCspStyle(IHtmlHelper)
-  href: api/Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.html#Lib_AspNetCore_Mvc_Security_Rendering_HtmlHelperContentSecurityPolicyExtensions_BeginCspStyle_Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_
-  commentId: M:Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper)
-  fullName: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper)
+  href: api/Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.html#Lib_AspNetCore_Mvc_Security_Rendering_HtmlHelperContentSecurityPolicyExtensions_BeginCspStyle_IHtmlHelper_
+  commentId: M:Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(IHtmlHelper)
+  fullName: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(IHtmlHelper)
   nameWithType: HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(IHtmlHelper)
-- uid: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper,System.Collections.Generic.IDictionary{System.String,System.Object})
+- uid: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(IHtmlHelper,System.Collections.Generic.IDictionary{System.String,System.Object})
   name: BeginCspStyle(IHtmlHelper, IDictionary<String, Object>)
-  href: api/Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.html#Lib_AspNetCore_Mvc_Security_Rendering_HtmlHelperContentSecurityPolicyExtensions_BeginCspStyle_Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_System_Collections_Generic_IDictionary_System_String_System_Object__
-  commentId: M:Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper,System.Collections.Generic.IDictionary{System.String,System.Object})
+  href: api/Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.html#Lib_AspNetCore_Mvc_Security_Rendering_HtmlHelperContentSecurityPolicyExtensions_BeginCspStyle_IHtmlHelper_System_Collections_Generic_IDictionary_System_String_System_Object__
+  commentId: M:Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(IHtmlHelper,System.Collections.Generic.IDictionary{System.String,System.Object})
   name.vb: BeginCspStyle(IHtmlHelper, IDictionary(Of String, Object))
-  fullName: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper, System.Collections.Generic.IDictionary<System.String, System.Object>)
-  fullName.vb: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper, System.Collections.Generic.IDictionary(Of System.String, System.Object))
+  fullName: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(IHtmlHelper, System.Collections.Generic.IDictionary<System.String, System.Object>)
+  fullName.vb: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(IHtmlHelper, System.Collections.Generic.IDictionary(Of System.String, System.Object))
   nameWithType: HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(IHtmlHelper, IDictionary<String, Object>)
   nameWithType.vb: HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(IHtmlHelper, IDictionary(Of String, Object))
-- uid: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper,System.Object)
+- uid: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(IHtmlHelper,System.Object)
   name: BeginCspStyle(IHtmlHelper, Object)
-  href: api/Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.html#Lib_AspNetCore_Mvc_Security_Rendering_HtmlHelperContentSecurityPolicyExtensions_BeginCspStyle_Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_System_Object_
-  commentId: M:Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper,System.Object)
-  fullName: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper, System.Object)
+  href: api/Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.html#Lib_AspNetCore_Mvc_Security_Rendering_HtmlHelperContentSecurityPolicyExtensions_BeginCspStyle_IHtmlHelper_System_Object_
+  commentId: M:Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(IHtmlHelper,System.Object)
+  fullName: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(IHtmlHelper, System.Object)
   nameWithType: HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle(IHtmlHelper, Object)
 - uid: Lib.AspNetCore.Mvc.Security.Rendering.HtmlHelperContentSecurityPolicyExtensions.BeginCspStyle*
   name: BeginCspStyle
@@ -221,11 +221,11 @@ references:
   commentId: T:Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware
   fullName: Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware
   nameWithType: ContentSecurityPolicyReportingMiddleware
-- uid: Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)
+- uid: Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.#ctor(RequestDelegate)
   name: ContentSecurityPolicyReportingMiddleware(RequestDelegate)
-  href: api/Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.html#Lib_AspNetCore_Security_ContentSecurityPolicyReportingMiddleware__ctor_Microsoft_AspNetCore_Http_RequestDelegate_
-  commentId: M:Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)
-  fullName: Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.ContentSecurityPolicyReportingMiddleware(Microsoft.AspNetCore.Http.RequestDelegate)
+  href: api/Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.html#Lib_AspNetCore_Security_ContentSecurityPolicyReportingMiddleware__ctor_RequestDelegate_
+  commentId: M:Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.#ctor(RequestDelegate)
+  fullName: Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.ContentSecurityPolicyReportingMiddleware(RequestDelegate)
   nameWithType: ContentSecurityPolicyReportingMiddleware.ContentSecurityPolicyReportingMiddleware(RequestDelegate)
 - uid: Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.#ctor*
   name: ContentSecurityPolicyReportingMiddleware
@@ -234,11 +234,11 @@ references:
   isSpec: "True"
   fullName: Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.ContentSecurityPolicyReportingMiddleware
   nameWithType: ContentSecurityPolicyReportingMiddleware.ContentSecurityPolicyReportingMiddleware
-- uid: Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+- uid: Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.Invoke(HttpContext)
   name: Invoke(HttpContext)
-  href: api/Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.html#Lib_AspNetCore_Security_ContentSecurityPolicyReportingMiddleware_Invoke_Microsoft_AspNetCore_Http_HttpContext_
-  commentId: M:Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
-  fullName: Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  href: api/Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.html#Lib_AspNetCore_Security_ContentSecurityPolicyReportingMiddleware_Invoke_HttpContext_
+  commentId: M:Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.Invoke(HttpContext)
+  fullName: Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.Invoke(HttpContext)
   nameWithType: ContentSecurityPolicyReportingMiddleware.Invoke(HttpContext)
 - uid: Lib.AspNetCore.Security.ContentSecurityPolicyReportingMiddleware.Invoke*
   name: Invoke
@@ -253,11 +253,11 @@ references:
   commentId: T:Lib.AspNetCore.Security.ExpectCtReportingMiddleware
   fullName: Lib.AspNetCore.Security.ExpectCtReportingMiddleware
   nameWithType: ExpectCtReportingMiddleware
-- uid: Lib.AspNetCore.Security.ExpectCtReportingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)
+- uid: Lib.AspNetCore.Security.ExpectCtReportingMiddleware.#ctor(RequestDelegate)
   name: ExpectCtReportingMiddleware(RequestDelegate)
-  href: api/Lib.AspNetCore.Security.ExpectCtReportingMiddleware.html#Lib_AspNetCore_Security_ExpectCtReportingMiddleware__ctor_Microsoft_AspNetCore_Http_RequestDelegate_
-  commentId: M:Lib.AspNetCore.Security.ExpectCtReportingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)
-  fullName: Lib.AspNetCore.Security.ExpectCtReportingMiddleware.ExpectCtReportingMiddleware(Microsoft.AspNetCore.Http.RequestDelegate)
+  href: api/Lib.AspNetCore.Security.ExpectCtReportingMiddleware.html#Lib_AspNetCore_Security_ExpectCtReportingMiddleware__ctor_RequestDelegate_
+  commentId: M:Lib.AspNetCore.Security.ExpectCtReportingMiddleware.#ctor(RequestDelegate)
+  fullName: Lib.AspNetCore.Security.ExpectCtReportingMiddleware.ExpectCtReportingMiddleware(RequestDelegate)
   nameWithType: ExpectCtReportingMiddleware.ExpectCtReportingMiddleware(RequestDelegate)
 - uid: Lib.AspNetCore.Security.ExpectCtReportingMiddleware.#ctor*
   name: ExpectCtReportingMiddleware
@@ -266,11 +266,11 @@ references:
   isSpec: "True"
   fullName: Lib.AspNetCore.Security.ExpectCtReportingMiddleware.ExpectCtReportingMiddleware
   nameWithType: ExpectCtReportingMiddleware.ExpectCtReportingMiddleware
-- uid: Lib.AspNetCore.Security.ExpectCtReportingMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+- uid: Lib.AspNetCore.Security.ExpectCtReportingMiddleware.Invoke(HttpContext)
   name: Invoke(HttpContext)
-  href: api/Lib.AspNetCore.Security.ExpectCtReportingMiddleware.html#Lib_AspNetCore_Security_ExpectCtReportingMiddleware_Invoke_Microsoft_AspNetCore_Http_HttpContext_
-  commentId: M:Lib.AspNetCore.Security.ExpectCtReportingMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
-  fullName: Lib.AspNetCore.Security.ExpectCtReportingMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  href: api/Lib.AspNetCore.Security.ExpectCtReportingMiddleware.html#Lib_AspNetCore_Security_ExpectCtReportingMiddleware_Invoke_HttpContext_
+  commentId: M:Lib.AspNetCore.Security.ExpectCtReportingMiddleware.Invoke(HttpContext)
+  fullName: Lib.AspNetCore.Security.ExpectCtReportingMiddleware.Invoke(HttpContext)
   nameWithType: ExpectCtReportingMiddleware.Invoke(HttpContext)
 - uid: Lib.AspNetCore.Security.ExpectCtReportingMiddleware.Invoke*
   name: Invoke
@@ -291,11 +291,11 @@ references:
   commentId: T:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions
   fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions
   nameWithType: HttpResponseHeadersExtensions
-- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetClearSiteData(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.ClearSiteDataHeaderValue)
+- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetClearSiteData(HttpResponse,Lib.AspNetCore.Security.Http.Headers.ClearSiteDataHeaderValue)
   name: SetClearSiteData(HttpResponse, ClearSiteDataHeaderValue)
-  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetClearSiteData_Microsoft_AspNetCore_Http_HttpResponse_Lib_AspNetCore_Security_Http_Headers_ClearSiteDataHeaderValue_
-  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetClearSiteData(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.ClearSiteDataHeaderValue)
-  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetClearSiteData(Microsoft.AspNetCore.Http.HttpResponse, Lib.AspNetCore.Security.Http.Headers.ClearSiteDataHeaderValue)
+  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetClearSiteData_HttpResponse_Lib_AspNetCore_Security_Http_Headers_ClearSiteDataHeaderValue_
+  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetClearSiteData(HttpResponse,Lib.AspNetCore.Security.Http.Headers.ClearSiteDataHeaderValue)
+  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetClearSiteData(HttpResponse, Lib.AspNetCore.Security.Http.Headers.ClearSiteDataHeaderValue)
   nameWithType: HttpResponseHeadersExtensions.SetClearSiteData(HttpResponse, ClearSiteDataHeaderValue)
 - uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetClearSiteData*
   name: SetClearSiteData
@@ -304,11 +304,11 @@ references:
   isSpec: "True"
   fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetClearSiteData
   nameWithType: HttpResponseHeadersExtensions.SetClearSiteData
-- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetExpectCt(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.ExpectCtHeaderValue)
+- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetExpectCt(HttpResponse,Lib.AspNetCore.Security.Http.Headers.ExpectCtHeaderValue)
   name: SetExpectCt(HttpResponse, ExpectCtHeaderValue)
-  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetExpectCt_Microsoft_AspNetCore_Http_HttpResponse_Lib_AspNetCore_Security_Http_Headers_ExpectCtHeaderValue_
-  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetExpectCt(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.ExpectCtHeaderValue)
-  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetExpectCt(Microsoft.AspNetCore.Http.HttpResponse, Lib.AspNetCore.Security.Http.Headers.ExpectCtHeaderValue)
+  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetExpectCt_HttpResponse_Lib_AspNetCore_Security_Http_Headers_ExpectCtHeaderValue_
+  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetExpectCt(HttpResponse,Lib.AspNetCore.Security.Http.Headers.ExpectCtHeaderValue)
+  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetExpectCt(HttpResponse, Lib.AspNetCore.Security.Http.Headers.ExpectCtHeaderValue)
   nameWithType: HttpResponseHeadersExtensions.SetExpectCt(HttpResponse, ExpectCtHeaderValue)
 - uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetExpectCt*
   name: SetExpectCt
@@ -317,11 +317,11 @@ references:
   isSpec: "True"
   fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetExpectCt
   nameWithType: HttpResponseHeadersExtensions.SetExpectCt
-- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetFeaturePolicy(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue)
+- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetFeaturePolicy(HttpResponse,Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue)
   name: SetFeaturePolicy(HttpResponse, FeaturePolicyHeaderValue)
-  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetFeaturePolicy_Microsoft_AspNetCore_Http_HttpResponse_Lib_AspNetCore_Security_Http_Headers_FeaturePolicyHeaderValue_
-  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetFeaturePolicy(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue)
-  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetFeaturePolicy(Microsoft.AspNetCore.Http.HttpResponse, Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue)
+  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetFeaturePolicy_HttpResponse_Lib_AspNetCore_Security_Http_Headers_FeaturePolicyHeaderValue_
+  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetFeaturePolicy(HttpResponse,Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue)
+  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetFeaturePolicy(HttpResponse, Lib.AspNetCore.Security.Http.Headers.FeaturePolicyHeaderValue)
   nameWithType: HttpResponseHeadersExtensions.SetFeaturePolicy(HttpResponse, FeaturePolicyHeaderValue)
 - uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetFeaturePolicy*
   name: SetFeaturePolicy
@@ -330,11 +330,11 @@ references:
   isSpec: "True"
   fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetFeaturePolicy
   nameWithType: HttpResponseHeadersExtensions.SetFeaturePolicy
-- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetPermissionsPolicy(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue)
+- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetPermissionsPolicy(HttpResponse,Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue)
   name: SetPermissionsPolicy(HttpResponse, PermissionsPolicyHeaderValue)
-  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetPermissionsPolicy_Microsoft_AspNetCore_Http_HttpResponse_Lib_AspNetCore_Security_Http_Headers_PermissionsPolicyHeaderValue_
-  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetPermissionsPolicy(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue)
-  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetPermissionsPolicy(Microsoft.AspNetCore.Http.HttpResponse, Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue)
+  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetPermissionsPolicy_HttpResponse_Lib_AspNetCore_Security_Http_Headers_PermissionsPolicyHeaderValue_
+  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetPermissionsPolicy(HttpResponse,Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue)
+  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetPermissionsPolicy(HttpResponse, Lib.AspNetCore.Security.Http.Headers.PermissionsPolicyHeaderValue)
   nameWithType: HttpResponseHeadersExtensions.SetPermissionsPolicy(HttpResponse, PermissionsPolicyHeaderValue)
 - uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetPermissionsPolicy*
   name: SetPermissionsPolicy
@@ -343,17 +343,17 @@ references:
   isSpec: "True"
   fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetPermissionsPolicy
   nameWithType: HttpResponseHeadersExtensions.SetPermissionsPolicy
-- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetReferrerPolicy(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyDirectives)
+- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetReferrerPolicy(HttpResponse,Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyDirectives)
   name: SetReferrerPolicy(HttpResponse, ReferrerPolicyDirectives)
-  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetReferrerPolicy_Microsoft_AspNetCore_Http_HttpResponse_Lib_AspNetCore_Security_Http_Headers_ReferrerPolicyDirectives_
-  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetReferrerPolicy(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyDirectives)
-  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetReferrerPolicy(Microsoft.AspNetCore.Http.HttpResponse, Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyDirectives)
+  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetReferrerPolicy_HttpResponse_Lib_AspNetCore_Security_Http_Headers_ReferrerPolicyDirectives_
+  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetReferrerPolicy(HttpResponse,Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyDirectives)
+  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetReferrerPolicy(HttpResponse, Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyDirectives)
   nameWithType: HttpResponseHeadersExtensions.SetReferrerPolicy(HttpResponse, ReferrerPolicyDirectives)
-- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetReferrerPolicy(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyHeaderValue)
+- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetReferrerPolicy(HttpResponse,Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyHeaderValue)
   name: SetReferrerPolicy(HttpResponse, ReferrerPolicyHeaderValue)
-  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetReferrerPolicy_Microsoft_AspNetCore_Http_HttpResponse_Lib_AspNetCore_Security_Http_Headers_ReferrerPolicyHeaderValue_
-  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetReferrerPolicy(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyHeaderValue)
-  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetReferrerPolicy(Microsoft.AspNetCore.Http.HttpResponse, Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyHeaderValue)
+  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetReferrerPolicy_HttpResponse_Lib_AspNetCore_Security_Http_Headers_ReferrerPolicyHeaderValue_
+  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetReferrerPolicy(HttpResponse,Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyHeaderValue)
+  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetReferrerPolicy(HttpResponse, Lib.AspNetCore.Security.Http.Headers.ReferrerPolicyHeaderValue)
   nameWithType: HttpResponseHeadersExtensions.SetReferrerPolicy(HttpResponse, ReferrerPolicyHeaderValue)
 - uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetReferrerPolicy*
   name: SetReferrerPolicy
@@ -362,11 +362,11 @@ references:
   isSpec: "True"
   fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetReferrerPolicy
   nameWithType: HttpResponseHeadersExtensions.SetReferrerPolicy
-- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetStrictTransportSecurity(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.StrictTransportSecurityHeaderValue)
+- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetStrictTransportSecurity(HttpResponse,Lib.AspNetCore.Security.Http.Headers.StrictTransportSecurityHeaderValue)
   name: SetStrictTransportSecurity(HttpResponse, StrictTransportSecurityHeaderValue)
-  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetStrictTransportSecurity_Microsoft_AspNetCore_Http_HttpResponse_Lib_AspNetCore_Security_Http_Headers_StrictTransportSecurityHeaderValue_
-  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetStrictTransportSecurity(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.StrictTransportSecurityHeaderValue)
-  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetStrictTransportSecurity(Microsoft.AspNetCore.Http.HttpResponse, Lib.AspNetCore.Security.Http.Headers.StrictTransportSecurityHeaderValue)
+  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetStrictTransportSecurity_HttpResponse_Lib_AspNetCore_Security_Http_Headers_StrictTransportSecurityHeaderValue_
+  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetStrictTransportSecurity(HttpResponse,Lib.AspNetCore.Security.Http.Headers.StrictTransportSecurityHeaderValue)
+  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetStrictTransportSecurity(HttpResponse, Lib.AspNetCore.Security.Http.Headers.StrictTransportSecurityHeaderValue)
   nameWithType: HttpResponseHeadersExtensions.SetStrictTransportSecurity(HttpResponse, StrictTransportSecurityHeaderValue)
 - uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetStrictTransportSecurity*
   name: SetStrictTransportSecurity
@@ -375,11 +375,11 @@ references:
   isSpec: "True"
   fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetStrictTransportSecurity
   nameWithType: HttpResponseHeadersExtensions.SetStrictTransportSecurity
-- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetWildcardClearSiteData(Microsoft.AspNetCore.Http.HttpResponse)
+- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetWildcardClearSiteData(HttpResponse)
   name: SetWildcardClearSiteData(HttpResponse)
-  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetWildcardClearSiteData_Microsoft_AspNetCore_Http_HttpResponse_
-  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetWildcardClearSiteData(Microsoft.AspNetCore.Http.HttpResponse)
-  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetWildcardClearSiteData(Microsoft.AspNetCore.Http.HttpResponse)
+  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetWildcardClearSiteData_HttpResponse_
+  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetWildcardClearSiteData(HttpResponse)
+  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetWildcardClearSiteData(HttpResponse)
   nameWithType: HttpResponseHeadersExtensions.SetWildcardClearSiteData(HttpResponse)
 - uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetWildcardClearSiteData*
   name: SetWildcardClearSiteData
@@ -388,11 +388,11 @@ references:
   isSpec: "True"
   fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetWildcardClearSiteData
   nameWithType: HttpResponseHeadersExtensions.SetWildcardClearSiteData
-- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXContentTypeOptions(Microsoft.AspNetCore.Http.HttpResponse)
+- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXContentTypeOptions(HttpResponse)
   name: SetXContentTypeOptions(HttpResponse)
-  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetXContentTypeOptions_Microsoft_AspNetCore_Http_HttpResponse_
-  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXContentTypeOptions(Microsoft.AspNetCore.Http.HttpResponse)
-  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXContentTypeOptions(Microsoft.AspNetCore.Http.HttpResponse)
+  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetXContentTypeOptions_HttpResponse_
+  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXContentTypeOptions(HttpResponse)
+  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXContentTypeOptions(HttpResponse)
   nameWithType: HttpResponseHeadersExtensions.SetXContentTypeOptions(HttpResponse)
 - uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXContentTypeOptions*
   name: SetXContentTypeOptions
@@ -401,11 +401,11 @@ references:
   isSpec: "True"
   fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXContentTypeOptions
   nameWithType: HttpResponseHeadersExtensions.SetXContentTypeOptions
-- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXDownloadOptions(Microsoft.AspNetCore.Http.HttpResponse)
+- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXDownloadOptions(HttpResponse)
   name: SetXDownloadOptions(HttpResponse)
-  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetXDownloadOptions_Microsoft_AspNetCore_Http_HttpResponse_
-  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXDownloadOptions(Microsoft.AspNetCore.Http.HttpResponse)
-  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXDownloadOptions(Microsoft.AspNetCore.Http.HttpResponse)
+  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetXDownloadOptions_HttpResponse_
+  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXDownloadOptions(HttpResponse)
+  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXDownloadOptions(HttpResponse)
   nameWithType: HttpResponseHeadersExtensions.SetXDownloadOptions(HttpResponse)
 - uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXDownloadOptions*
   name: SetXDownloadOptions
@@ -414,11 +414,11 @@ references:
   isSpec: "True"
   fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXDownloadOptions
   nameWithType: HttpResponseHeadersExtensions.SetXDownloadOptions
-- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXFrameOptions(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.XFrameOptionsHeaderValue)
+- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXFrameOptions(HttpResponse,Lib.AspNetCore.Security.Http.Headers.XFrameOptionsHeaderValue)
   name: SetXFrameOptions(HttpResponse, XFrameOptionsHeaderValue)
-  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetXFrameOptions_Microsoft_AspNetCore_Http_HttpResponse_Lib_AspNetCore_Security_Http_Headers_XFrameOptionsHeaderValue_
-  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXFrameOptions(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.XFrameOptionsHeaderValue)
-  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXFrameOptions(Microsoft.AspNetCore.Http.HttpResponse, Lib.AspNetCore.Security.Http.Headers.XFrameOptionsHeaderValue)
+  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetXFrameOptions_HttpResponse_Lib_AspNetCore_Security_Http_Headers_XFrameOptionsHeaderValue_
+  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXFrameOptions(HttpResponse,Lib.AspNetCore.Security.Http.Headers.XFrameOptionsHeaderValue)
+  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXFrameOptions(HttpResponse, Lib.AspNetCore.Security.Http.Headers.XFrameOptionsHeaderValue)
   nameWithType: HttpResponseHeadersExtensions.SetXFrameOptions(HttpResponse, XFrameOptionsHeaderValue)
 - uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXFrameOptions*
   name: SetXFrameOptions
@@ -427,17 +427,17 @@ references:
   isSpec: "True"
   fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXFrameOptions
   nameWithType: HttpResponseHeadersExtensions.SetXFrameOptions
-- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives)
+- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies(HttpResponse,Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives)
   name: SetXPermittedCrossDomainPolicies(HttpResponse, XPermittedCrossDomainPoliciesDirectives)
-  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetXPermittedCrossDomainPolicies_Microsoft_AspNetCore_Http_HttpResponse_Lib_AspNetCore_Security_Http_Headers_XPermittedCrossDomainPoliciesDirectives_
-  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives)
-  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies(Microsoft.AspNetCore.Http.HttpResponse, Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives)
+  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetXPermittedCrossDomainPolicies_HttpResponse_Lib_AspNetCore_Security_Http_Headers_XPermittedCrossDomainPoliciesDirectives_
+  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies(HttpResponse,Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives)
+  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies(HttpResponse, Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesDirectives)
   nameWithType: HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies(HttpResponse, XPermittedCrossDomainPoliciesDirectives)
-- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue)
+- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies(HttpResponse,Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue)
   name: SetXPermittedCrossDomainPolicies(HttpResponse, XPermittedCrossDomainPoliciesHeaderValue)
-  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetXPermittedCrossDomainPolicies_Microsoft_AspNetCore_Http_HttpResponse_Lib_AspNetCore_Security_Http_Headers_XPermittedCrossDomainPoliciesHeaderValue_
-  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue)
-  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies(Microsoft.AspNetCore.Http.HttpResponse, Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue)
+  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetXPermittedCrossDomainPolicies_HttpResponse_Lib_AspNetCore_Security_Http_Headers_XPermittedCrossDomainPoliciesHeaderValue_
+  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies(HttpResponse,Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue)
+  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies(HttpResponse, Lib.AspNetCore.Security.Http.Headers.XPermittedCrossDomainPoliciesHeaderValue)
   nameWithType: HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies(HttpResponse, XPermittedCrossDomainPoliciesHeaderValue)
 - uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies*
   name: SetXPermittedCrossDomainPolicies
@@ -446,17 +446,17 @@ references:
   isSpec: "True"
   fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies
   nameWithType: HttpResponseHeadersExtensions.SetXPermittedCrossDomainPolicies
-- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXXssProtection(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.XssFilteringModes)
+- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXXssProtection(HttpResponse,Lib.AspNetCore.Security.Http.Headers.XssFilteringModes)
   name: SetXXssProtection(HttpResponse, XssFilteringModes)
-  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetXXssProtection_Microsoft_AspNetCore_Http_HttpResponse_Lib_AspNetCore_Security_Http_Headers_XssFilteringModes_
-  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXXssProtection(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.XssFilteringModes)
-  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXXssProtection(Microsoft.AspNetCore.Http.HttpResponse, Lib.AspNetCore.Security.Http.Headers.XssFilteringModes)
+  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetXXssProtection_HttpResponse_Lib_AspNetCore_Security_Http_Headers_XssFilteringModes_
+  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXXssProtection(HttpResponse,Lib.AspNetCore.Security.Http.Headers.XssFilteringModes)
+  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXXssProtection(HttpResponse, Lib.AspNetCore.Security.Http.Headers.XssFilteringModes)
   nameWithType: HttpResponseHeadersExtensions.SetXXssProtection(HttpResponse, XssFilteringModes)
-- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXXssProtection(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.XXssProtectionHeaderValue)
+- uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXXssProtection(HttpResponse,Lib.AspNetCore.Security.Http.Headers.XXssProtectionHeaderValue)
   name: SetXXssProtection(HttpResponse, XXssProtectionHeaderValue)
-  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetXXssProtection_Microsoft_AspNetCore_Http_HttpResponse_Lib_AspNetCore_Security_Http_Headers_XXssProtectionHeaderValue_
-  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXXssProtection(Microsoft.AspNetCore.Http.HttpResponse,Lib.AspNetCore.Security.Http.Headers.XXssProtectionHeaderValue)
-  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXXssProtection(Microsoft.AspNetCore.Http.HttpResponse, Lib.AspNetCore.Security.Http.Headers.XXssProtectionHeaderValue)
+  href: api/Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.html#Lib_AspNetCore_Security_Http_Extensions_HttpResponseHeadersExtensions_SetXXssProtection_HttpResponse_Lib_AspNetCore_Security_Http_Headers_XXssProtectionHeaderValue_
+  commentId: M:Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXXssProtection(HttpResponse,Lib.AspNetCore.Security.Http.Headers.XXssProtectionHeaderValue)
+  fullName: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXXssProtection(HttpResponse, Lib.AspNetCore.Security.Http.Headers.XXssProtectionHeaderValue)
   nameWithType: HttpResponseHeadersExtensions.SetXXssProtection(HttpResponse, XXssProtectionHeaderValue)
 - uid: Lib.AspNetCore.Security.Http.Extensions.HttpResponseHeadersExtensions.SetXXssProtection*
   name: SetXXssProtection
@@ -2722,11 +2722,11 @@ references:
   commentId: T:Lib.AspNetCore.Security.SecurityHeadersMiddleware
   fullName: Lib.AspNetCore.Security.SecurityHeadersMiddleware
   nameWithType: SecurityHeadersMiddleware
-- uid: Lib.AspNetCore.Security.SecurityHeadersMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Lib.AspNetCore.Security.SecurityHeadersPolicy)
+- uid: Lib.AspNetCore.Security.SecurityHeadersMiddleware.#ctor(RequestDelegate,Lib.AspNetCore.Security.SecurityHeadersPolicy)
   name: SecurityHeadersMiddleware(RequestDelegate, SecurityHeadersPolicy)
-  href: api/Lib.AspNetCore.Security.SecurityHeadersMiddleware.html#Lib_AspNetCore_Security_SecurityHeadersMiddleware__ctor_Microsoft_AspNetCore_Http_RequestDelegate_Lib_AspNetCore_Security_SecurityHeadersPolicy_
-  commentId: M:Lib.AspNetCore.Security.SecurityHeadersMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Lib.AspNetCore.Security.SecurityHeadersPolicy)
-  fullName: Lib.AspNetCore.Security.SecurityHeadersMiddleware.SecurityHeadersMiddleware(Microsoft.AspNetCore.Http.RequestDelegate, Lib.AspNetCore.Security.SecurityHeadersPolicy)
+  href: api/Lib.AspNetCore.Security.SecurityHeadersMiddleware.html#Lib_AspNetCore_Security_SecurityHeadersMiddleware__ctor_RequestDelegate_Lib_AspNetCore_Security_SecurityHeadersPolicy_
+  commentId: M:Lib.AspNetCore.Security.SecurityHeadersMiddleware.#ctor(RequestDelegate,Lib.AspNetCore.Security.SecurityHeadersPolicy)
+  fullName: Lib.AspNetCore.Security.SecurityHeadersMiddleware.SecurityHeadersMiddleware(RequestDelegate, Lib.AspNetCore.Security.SecurityHeadersPolicy)
   nameWithType: SecurityHeadersMiddleware.SecurityHeadersMiddleware(RequestDelegate, SecurityHeadersPolicy)
 - uid: Lib.AspNetCore.Security.SecurityHeadersMiddleware.#ctor*
   name: SecurityHeadersMiddleware
@@ -2735,11 +2735,11 @@ references:
   isSpec: "True"
   fullName: Lib.AspNetCore.Security.SecurityHeadersMiddleware.SecurityHeadersMiddleware
   nameWithType: SecurityHeadersMiddleware.SecurityHeadersMiddleware
-- uid: Lib.AspNetCore.Security.SecurityHeadersMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+- uid: Lib.AspNetCore.Security.SecurityHeadersMiddleware.Invoke(HttpContext)
   name: Invoke(HttpContext)
-  href: api/Lib.AspNetCore.Security.SecurityHeadersMiddleware.html#Lib_AspNetCore_Security_SecurityHeadersMiddleware_Invoke_Microsoft_AspNetCore_Http_HttpContext_
-  commentId: M:Lib.AspNetCore.Security.SecurityHeadersMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
-  fullName: Lib.AspNetCore.Security.SecurityHeadersMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  href: api/Lib.AspNetCore.Security.SecurityHeadersMiddleware.html#Lib_AspNetCore_Security_SecurityHeadersMiddleware_Invoke_HttpContext_
+  commentId: M:Lib.AspNetCore.Security.SecurityHeadersMiddleware.Invoke(HttpContext)
+  fullName: Lib.AspNetCore.Security.SecurityHeadersMiddleware.Invoke(HttpContext)
   nameWithType: SecurityHeadersMiddleware.Invoke(HttpContext)
 - uid: Lib.AspNetCore.Security.SecurityHeadersMiddleware.Invoke*
   name: Invoke
@@ -3254,13 +3254,13 @@ references:
   commentId: T:Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware
   fullName: Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware
   nameWithType: TargetedSiteDataClearingMiddleware
-- uid: Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions{Lib.AspNetCore.Security.TargetedSiteDataClearingOptions})
+- uid: Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.#ctor(RequestDelegate,IOptions{Lib.AspNetCore.Security.TargetedSiteDataClearingOptions})
   name: TargetedSiteDataClearingMiddleware(RequestDelegate, IOptions<TargetedSiteDataClearingOptions>)
-  href: api/Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.html#Lib_AspNetCore_Security_TargetedSiteDataClearingMiddleware__ctor_Microsoft_AspNetCore_Http_RequestDelegate_Microsoft_Extensions_Options_IOptions_Lib_AspNetCore_Security_TargetedSiteDataClearingOptions__
-  commentId: M:Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions{Lib.AspNetCore.Security.TargetedSiteDataClearingOptions})
+  href: api/Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.html#Lib_AspNetCore_Security_TargetedSiteDataClearingMiddleware__ctor_RequestDelegate_IOptions_Lib_AspNetCore_Security_TargetedSiteDataClearingOptions__
+  commentId: M:Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.#ctor(RequestDelegate,IOptions{Lib.AspNetCore.Security.TargetedSiteDataClearingOptions})
   name.vb: TargetedSiteDataClearingMiddleware(RequestDelegate, IOptions(Of TargetedSiteDataClearingOptions))
-  fullName: Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.TargetedSiteDataClearingMiddleware(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.Extensions.Options.IOptions<Lib.AspNetCore.Security.TargetedSiteDataClearingOptions>)
-  fullName.vb: Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.TargetedSiteDataClearingMiddleware(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.Extensions.Options.IOptions(Of Lib.AspNetCore.Security.TargetedSiteDataClearingOptions))
+  fullName: Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.TargetedSiteDataClearingMiddleware(RequestDelegate, IOptions<Lib.AspNetCore.Security.TargetedSiteDataClearingOptions>)
+  fullName.vb: Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.TargetedSiteDataClearingMiddleware(RequestDelegate, IOptions(Of Lib.AspNetCore.Security.TargetedSiteDataClearingOptions))
   nameWithType: TargetedSiteDataClearingMiddleware.TargetedSiteDataClearingMiddleware(RequestDelegate, IOptions<TargetedSiteDataClearingOptions>)
   nameWithType.vb: TargetedSiteDataClearingMiddleware.TargetedSiteDataClearingMiddleware(RequestDelegate, IOptions(Of TargetedSiteDataClearingOptions))
 - uid: Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.#ctor*
@@ -3270,11 +3270,11 @@ references:
   isSpec: "True"
   fullName: Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.TargetedSiteDataClearingMiddleware
   nameWithType: TargetedSiteDataClearingMiddleware.TargetedSiteDataClearingMiddleware
-- uid: Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+- uid: Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.Invoke(HttpContext)
   name: Invoke(HttpContext)
-  href: api/Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.html#Lib_AspNetCore_Security_TargetedSiteDataClearingMiddleware_Invoke_Microsoft_AspNetCore_Http_HttpContext_
-  commentId: M:Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
-  fullName: Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  href: api/Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.html#Lib_AspNetCore_Security_TargetedSiteDataClearingMiddleware_Invoke_HttpContext_
+  commentId: M:Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.Invoke(HttpContext)
+  fullName: Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.Invoke(HttpContext)
   nameWithType: TargetedSiteDataClearingMiddleware.Invoke(HttpContext)
 - uid: Lib.AspNetCore.Security.TargetedSiteDataClearingMiddleware.Invoke*
   name: Invoke
@@ -3366,11 +3366,11 @@ references:
   commentId: T:Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions
   fullName: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions
   nameWithType: SecurityHeadersMiddlewareExtensions
-- uid: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapContentSecurityPolicyReporting(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.PathString)
+- uid: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapContentSecurityPolicyReporting(IApplicationBuilder,PathString)
   name: MapContentSecurityPolicyReporting(IApplicationBuilder, PathString)
-  href: api/Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.html#Microsoft_AspNetCore_Builder_SecurityHeadersMiddlewareExtensions_MapContentSecurityPolicyReporting_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Http_PathString_
-  commentId: M:Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapContentSecurityPolicyReporting(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.PathString)
-  fullName: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapContentSecurityPolicyReporting(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Http.PathString)
+  href: api/Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.html#Microsoft_AspNetCore_Builder_SecurityHeadersMiddlewareExtensions_MapContentSecurityPolicyReporting_IApplicationBuilder_PathString_
+  commentId: M:Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapContentSecurityPolicyReporting(IApplicationBuilder,PathString)
+  fullName: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapContentSecurityPolicyReporting(IApplicationBuilder, PathString)
   nameWithType: SecurityHeadersMiddlewareExtensions.MapContentSecurityPolicyReporting(IApplicationBuilder, PathString)
 - uid: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapContentSecurityPolicyReporting*
   name: MapContentSecurityPolicyReporting
@@ -3379,11 +3379,11 @@ references:
   isSpec: "True"
   fullName: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapContentSecurityPolicyReporting
   nameWithType: SecurityHeadersMiddlewareExtensions.MapContentSecurityPolicyReporting
-- uid: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapExpectCtReporting(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.PathString)
+- uid: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapExpectCtReporting(IApplicationBuilder,PathString)
   name: MapExpectCtReporting(IApplicationBuilder, PathString)
-  href: api/Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.html#Microsoft_AspNetCore_Builder_SecurityHeadersMiddlewareExtensions_MapExpectCtReporting_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Http_PathString_
-  commentId: M:Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapExpectCtReporting(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.PathString)
-  fullName: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapExpectCtReporting(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Http.PathString)
+  href: api/Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.html#Microsoft_AspNetCore_Builder_SecurityHeadersMiddlewareExtensions_MapExpectCtReporting_IApplicationBuilder_PathString_
+  commentId: M:Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapExpectCtReporting(IApplicationBuilder,PathString)
+  fullName: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapExpectCtReporting(IApplicationBuilder, PathString)
   nameWithType: SecurityHeadersMiddlewareExtensions.MapExpectCtReporting(IApplicationBuilder, PathString)
 - uid: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapExpectCtReporting*
   name: MapExpectCtReporting
@@ -3392,17 +3392,17 @@ references:
   isSpec: "True"
   fullName: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapExpectCtReporting
   nameWithType: SecurityHeadersMiddlewareExtensions.MapExpectCtReporting
-- uid: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapTargetedSiteDataClearing(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.PathString)
+- uid: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapTargetedSiteDataClearing(IApplicationBuilder,PathString)
   name: MapTargetedSiteDataClearing(IApplicationBuilder, PathString)
-  href: api/Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.html#Microsoft_AspNetCore_Builder_SecurityHeadersMiddlewareExtensions_MapTargetedSiteDataClearing_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Http_PathString_
-  commentId: M:Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapTargetedSiteDataClearing(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.PathString)
-  fullName: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapTargetedSiteDataClearing(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Http.PathString)
+  href: api/Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.html#Microsoft_AspNetCore_Builder_SecurityHeadersMiddlewareExtensions_MapTargetedSiteDataClearing_IApplicationBuilder_PathString_
+  commentId: M:Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapTargetedSiteDataClearing(IApplicationBuilder,PathString)
+  fullName: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapTargetedSiteDataClearing(IApplicationBuilder, PathString)
   nameWithType: SecurityHeadersMiddlewareExtensions.MapTargetedSiteDataClearing(IApplicationBuilder, PathString)
-- uid: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapTargetedSiteDataClearing(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.PathString,Lib.AspNetCore.Security.TargetedSiteDataClearingOptions)
+- uid: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapTargetedSiteDataClearing(IApplicationBuilder,PathString,Lib.AspNetCore.Security.TargetedSiteDataClearingOptions)
   name: MapTargetedSiteDataClearing(IApplicationBuilder, PathString, TargetedSiteDataClearingOptions)
-  href: api/Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.html#Microsoft_AspNetCore_Builder_SecurityHeadersMiddlewareExtensions_MapTargetedSiteDataClearing_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Http_PathString_Lib_AspNetCore_Security_TargetedSiteDataClearingOptions_
-  commentId: M:Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapTargetedSiteDataClearing(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.PathString,Lib.AspNetCore.Security.TargetedSiteDataClearingOptions)
-  fullName: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapTargetedSiteDataClearing(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Http.PathString, Lib.AspNetCore.Security.TargetedSiteDataClearingOptions)
+  href: api/Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.html#Microsoft_AspNetCore_Builder_SecurityHeadersMiddlewareExtensions_MapTargetedSiteDataClearing_IApplicationBuilder_PathString_Lib_AspNetCore_Security_TargetedSiteDataClearingOptions_
+  commentId: M:Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapTargetedSiteDataClearing(IApplicationBuilder,PathString,Lib.AspNetCore.Security.TargetedSiteDataClearingOptions)
+  fullName: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapTargetedSiteDataClearing(IApplicationBuilder, PathString, Lib.AspNetCore.Security.TargetedSiteDataClearingOptions)
   nameWithType: SecurityHeadersMiddlewareExtensions.MapTargetedSiteDataClearing(IApplicationBuilder, PathString, TargetedSiteDataClearingOptions)
 - uid: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapTargetedSiteDataClearing*
   name: MapTargetedSiteDataClearing
@@ -3411,13 +3411,13 @@ references:
   isSpec: "True"
   fullName: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.MapTargetedSiteDataClearing
   nameWithType: SecurityHeadersMiddlewareExtensions.MapTargetedSiteDataClearing
-- uid: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.UseSecurityHeaders(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Action{Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder})
+- uid: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.UseSecurityHeaders(IApplicationBuilder,System.Action{Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder})
   name: UseSecurityHeaders(IApplicationBuilder, Action<SecurityHeadersPolicyBuilder>)
-  href: api/Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.html#Microsoft_AspNetCore_Builder_SecurityHeadersMiddlewareExtensions_UseSecurityHeaders_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_Action_Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder__
-  commentId: M:Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.UseSecurityHeaders(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Action{Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder})
+  href: api/Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.html#Microsoft_AspNetCore_Builder_SecurityHeadersMiddlewareExtensions_UseSecurityHeaders_IApplicationBuilder_System_Action_Lib_AspNetCore_Security_SecurityHeadersPolicyBuilder__
+  commentId: M:Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.UseSecurityHeaders(IApplicationBuilder,System.Action{Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder})
   name.vb: UseSecurityHeaders(IApplicationBuilder, Action(Of SecurityHeadersPolicyBuilder))
-  fullName: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.UseSecurityHeaders(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Action<Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder>)
-  fullName.vb: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.UseSecurityHeaders(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Action(Of Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder))
+  fullName: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.UseSecurityHeaders(IApplicationBuilder, System.Action<Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder>)
+  fullName.vb: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.UseSecurityHeaders(IApplicationBuilder, System.Action(Of Lib.AspNetCore.Security.SecurityHeadersPolicyBuilder))
   nameWithType: SecurityHeadersMiddlewareExtensions.UseSecurityHeaders(IApplicationBuilder, Action<SecurityHeadersPolicyBuilder>)
   nameWithType.vb: SecurityHeadersMiddlewareExtensions.UseSecurityHeaders(IApplicationBuilder, Action(Of SecurityHeadersPolicyBuilder))
 - uid: Microsoft.AspNetCore.Builder.SecurityHeadersMiddlewareExtensions.UseSecurityHeaders*
@@ -3439,11 +3439,11 @@ references:
   commentId: T:Microsoft.Extensions.DependencyInjection.ClearSiteDataAuthenticationServiceCollectionExtensions
   fullName: Microsoft.Extensions.DependencyInjection.ClearSiteDataAuthenticationServiceCollectionExtensions
   nameWithType: ClearSiteDataAuthenticationServiceCollectionExtensions
-- uid: Microsoft.Extensions.DependencyInjection.ClearSiteDataAuthenticationServiceCollectionExtensions.AddClearSiteDataAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection,Lib.AspNetCore.Security.Http.Headers.ClearSiteDataHeaderValue)
+- uid: Microsoft.Extensions.DependencyInjection.ClearSiteDataAuthenticationServiceCollectionExtensions.AddClearSiteDataAuthentication(IServiceCollection,Lib.AspNetCore.Security.Http.Headers.ClearSiteDataHeaderValue)
   name: AddClearSiteDataAuthentication(IServiceCollection, ClearSiteDataHeaderValue)
-  href: api/Microsoft.Extensions.DependencyInjection.ClearSiteDataAuthenticationServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ClearSiteDataAuthenticationServiceCollectionExtensions_AddClearSiteDataAuthentication_Microsoft_Extensions_DependencyInjection_IServiceCollection_Lib_AspNetCore_Security_Http_Headers_ClearSiteDataHeaderValue_
-  commentId: M:Microsoft.Extensions.DependencyInjection.ClearSiteDataAuthenticationServiceCollectionExtensions.AddClearSiteDataAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection,Lib.AspNetCore.Security.Http.Headers.ClearSiteDataHeaderValue)
-  fullName: Microsoft.Extensions.DependencyInjection.ClearSiteDataAuthenticationServiceCollectionExtensions.AddClearSiteDataAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection, Lib.AspNetCore.Security.Http.Headers.ClearSiteDataHeaderValue)
+  href: api/Microsoft.Extensions.DependencyInjection.ClearSiteDataAuthenticationServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ClearSiteDataAuthenticationServiceCollectionExtensions_AddClearSiteDataAuthentication_IServiceCollection_Lib_AspNetCore_Security_Http_Headers_ClearSiteDataHeaderValue_
+  commentId: M:Microsoft.Extensions.DependencyInjection.ClearSiteDataAuthenticationServiceCollectionExtensions.AddClearSiteDataAuthentication(IServiceCollection,Lib.AspNetCore.Security.Http.Headers.ClearSiteDataHeaderValue)
+  fullName: Microsoft.Extensions.DependencyInjection.ClearSiteDataAuthenticationServiceCollectionExtensions.AddClearSiteDataAuthentication(IServiceCollection, Lib.AspNetCore.Security.Http.Headers.ClearSiteDataHeaderValue)
   nameWithType: ClearSiteDataAuthenticationServiceCollectionExtensions.AddClearSiteDataAuthentication(IServiceCollection, ClearSiteDataHeaderValue)
 - uid: Microsoft.Extensions.DependencyInjection.ClearSiteDataAuthenticationServiceCollectionExtensions.AddClearSiteDataAuthentication*
   name: AddClearSiteDataAuthentication

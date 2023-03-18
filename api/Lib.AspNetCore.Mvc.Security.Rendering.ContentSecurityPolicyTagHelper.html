@@ -71,56 +71,13 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">Microsoft.AspNetCore.Razor.TagHelpers.TagHelper</span></div>
-    <div class="level2"><span class="xref">ContentSecurityPolicyTagHelper</span></div>
-  </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper</span></div>
-    <div><span class="xref">Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)</span>
-    </div>
-    <div>
-      <span class="xref">Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)</span>
-    </div>
-    <div>
-      <span class="xref">Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Order</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
+    <div class="level1"><span class="xref">ContentSecurityPolicyTagHelper</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Lib.AspNetCore.Mvc.Security.Rendering.html">Lib.AspNetCore.Mvc.Security.Rendering</a></h6>
   <h6><strong>Assembly</strong>: Lib.AspNetCore.Mvc.Security.dll</h6>
   <h5 id="Lib_AspNetCore_Mvc_Security_Rendering_ContentSecurityPolicyTagHelper_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HtmlTargetElement(&quot;csp-style&quot;)]
-[HtmlTargetElement(&quot;style&quot;, Attributes = &quot;asp-csp&quot;)]
-[HtmlTargetElement(&quot;csp-script&quot;)]
-[HtmlTargetElement(&quot;script&quot;, Attributes = &quot;asp-csp&quot;)]
-public class ContentSecurityPolicyTagHelper : TagHelper, ITagHelper, ITagHelperComponent</code></pre>
+    <pre><code class="lang-csharp hljs">public class ContentSecurityPolicyTagHelper : TagHelper</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -131,8 +88,7 @@ public class ContentSecurityPolicyTagHelper : TagHelper, ITagHelper, ITagHelperC
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[ViewContext]
-public ViewContext ViewContext { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ViewContext ViewContext { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -144,7 +100,7 @@ public ViewContext ViewContext { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.AspNetCore.Mvc.Rendering.ViewContext</span></td>
+        <td><span class="xref">ViewContext</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -152,7 +108,7 @@ public ViewContext ViewContext { get; set; }</code></pre>
   <h3 id="methods">Methods
   </h3>
   <a id="Lib_AspNetCore_Mvc_Security_Rendering_ContentSecurityPolicyTagHelper_ProcessAsync_" data-uid="Lib.AspNetCore.Mvc.Security.Rendering.ContentSecurityPolicyTagHelper.ProcessAsync*"></a>
-  <h4 id="Lib_AspNetCore_Mvc_Security_Rendering_ContentSecurityPolicyTagHelper_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="Lib.AspNetCore.Mvc.Security.Rendering.ContentSecurityPolicyTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">ProcessAsync(TagHelperContext, TagHelperOutput)</h4>
+  <h4 id="Lib_AspNetCore_Mvc_Security_Rendering_ContentSecurityPolicyTagHelper_ProcessAsync_TagHelperContext_TagHelperOutput_" data-uid="Lib.AspNetCore.Mvc.Security.Rendering.ContentSecurityPolicyTagHelper.ProcessAsync(TagHelperContext,TagHelperOutput)">ProcessAsync(TagHelperContext, TagHelperOutput)</h4>
   <div class="markdown level1 summary"><p>Asynchronously processes the TagHelper.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -171,13 +127,13 @@ public ViewContext ViewContext { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext</span></td>
+        <td><span class="xref">TagHelperContext</span></td>
         <td><span class="parametername">context</span></td>
         <td><p>The context.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput</span></td>
+        <td><span class="xref">TagHelperOutput</span></td>
         <td><span class="parametername">output</span></td>
         <td><p>The output.</p>
 </td>
@@ -199,15 +155,6 @@ public ViewContext ViewContext { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)</span></div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper</span>
-  </div>
-  <div>
-      <span class="xref">Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent</span>
-  </div>
 </article>
           </div>
         </div>
@@ -220,7 +167,7 @@ public ViewContext ViewContext { get; set; }</code></pre>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright © 2016 - 2022 Tomasz Pęczek
+            Copyright © 2016 - 2023 Tomasz Pęczek
             
           </div>
         </div>
