@@ -1,5 +1,7 @@
 ﻿# Lib.AspNetCore.Security
-[![NuGet version](https://badge.fury.io/nu/Lib.AspNetCore.Security.svg)](http://badge.fury.io/nu/Lib.AspNetCore.Security) [![NuGet version](https://badge.fury.io/nu/Lib.AspNetCore.Mvc.Security.svg)](http://badge.fury.io/nu/Lib.AspNetCore.Mvc.Security)
+[![NuGet Version](https://img.shields.io/nuget/v/Lib.AspNetCore.Security?label=Lib.AspNetCore.Security&logo=nuget)](https://www.nuget.org/packages/Lib.AspNetCore.Security)
+
+[![NuGet Version](https://img.shields.io/nuget/v/Lib.AspNetCore.Mvc.Security?label=Lib.AspNetCore.Mvc.Security&logo=nuget)](https://www.nuget.org/packages/Lib.AspNetCore.Mvc.Security)
 
 Lib.AspNetCore.Security is a library which provides security features like Content Security Policy, Strict Transport Security or Expect-CT for ASP.NET Core
 
