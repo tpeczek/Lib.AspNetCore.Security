@@ -1,13 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.4
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lib.AspNetCore.Mvc.Security", "Lib.AspNetCore.Mvc.Security\Lib.AspNetCore.Mvc.Security.csproj", "{1198B831-93F7-45D1-A797-D4AF389E3D64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lib.AspNetCore.Mvc.Security", "src\Lib.AspNetCore.Mvc.Security\Lib.AspNetCore.Mvc.Security.csproj", "{1198B831-93F7-45D1-A797-D4AF389E3D64}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lib.AspNetCore.Security", "Lib.AspNetCore.Security\Lib.AspNetCore.Security.csproj", "{25244090-1D8A-4392-86B3-4D6F18B8B3D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lib.AspNetCore.Security", "src\Lib.AspNetCore.Security\Lib.AspNetCore.Security.csproj", "{25244090-1D8A-4392-86B3-4D6F18B8B3D7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocFx.AspNetCore.Security", "DocFx.AspNetCore.Security\DocFx.AspNetCore.Security.csproj", "{DC9E7F7D-F638-4F5A-BCB9-1B639C27F028}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocFx.AspNetCore.Security", "docs\DocFx.AspNetCore.Security\DocFx.AspNetCore.Security.csproj", "{DC9E7F7D-F638-4F5A-BCB9-1B639C27F028}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{20FC6268-D0F6-490A-8E98-2F38C008E876}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{9B9F6C89-B9FA-40D2-A11C-0E2CE1D5F964}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3B3A484F-4A61-483C-949D-C3E3E3E3C4BD}"
+	ProjectSection(SolutionItems) = preProject
+		CHANGELOG.md = CHANGELOG.md
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +41,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1198B831-93F7-45D1-A797-D4AF389E3D64} = {20FC6268-D0F6-490A-8E98-2F38C008E876}
+		{25244090-1D8A-4392-86B3-4D6F18B8B3D7} = {20FC6268-D0F6-490A-8E98-2F38C008E876}
+		{DC9E7F7D-F638-4F5A-BCB9-1B639C27F028} = {9B9F6C89-B9FA-40D2-A11C-0E2CE1D5F964}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21F711E8-7B5C-414C-B127-9A7DFEBE596A}
 	EndGlobalSection
 EndGlobal

@@ -27,9 +27,9 @@ bld/
 #wwwroot/
 
 # DocFX generated stuff
-DocFx.AspNetCore.Security/log.txt
-DocFx.AspNetCore.Security/api/
-DocFx.AspNetCore.Security/wwwroot/
+docs/DocFx.AspNetCore.Security/log.txt
+docs/DocFx.AspNetCore.Security/api/
+docs/DocFx.AspNetCore.Security/wwwroot/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/

@@ -4,16 +4,16 @@
       "src": [
         {
           "files": [
-            "Lib.AspNetCore.Security/Lib.AspNetCore.Security.csproj",
-            "Lib.AspNetCore.Mvc.Security/Lib.AspNetCore.Mvc.Security.csproj"
+            "src/Lib.AspNetCore.Security/Lib.AspNetCore.Security.csproj",
+            "src/Lib.AspNetCore.Mvc.Security/Lib.AspNetCore.Mvc.Security.csproj"
           ],
           "exclude": [ "**/bin/**", "**/obj/**" ],
-          "src": ".."
+          "src": "../.."
         }
       ],
       "dest": "api",
       "properties": {
-        "TargetFramework": "netstandard2.0"
+        "TargetFramework": "net5.0"
       }
     }
   ],
