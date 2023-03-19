@@ -22,4 +22,4 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4.4.1
       with:
         branch: gh-pages
-        folder: DocFx.AspNetCore.Security/wwwroot
+        folder: docs/DocFx.AspNetCore.Security/wwwroot
