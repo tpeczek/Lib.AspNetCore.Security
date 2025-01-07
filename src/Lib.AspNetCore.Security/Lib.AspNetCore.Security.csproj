@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Description>Lib.AspNetCore.Security is a library which provides security features like Content Security Policy, Strict Transport Security or Expect-CT for ASP.NET Core</Description>
-    <Copyright>Copyright © 2017 - 2024 Tomasz Pęczek</Copyright>
+    <Copyright>Copyright © 2017 - 2025 Tomasz Pęczek</Copyright>
     <VersionPrefix>3.2.0</VersionPrefix>
     <Authors>Tomasz Pęczek</Authors>
     <TargetFrameworks>netstandard2.0;netcoreapp3.1;net5.0</TargetFrameworks>
